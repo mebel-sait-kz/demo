@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bek Furniture — мебельная фурнитура, Алматы (демо)</title>
+<meta name="description" content="Демо-концепция сайта Bek Furniture: мебельная фурнитура, Байбесик, Алматы.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Golos+Text:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+
+<!-- Шапка -->
+<header class="sticky top-0 z-40 bg-deep text-white border-b border-white/10">
+  <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between gap-3">
+    <a href="#top" class="font-head font-semibold uppercase tracking-[.08em] text-lg">Bek <span class="text-accent">Furniture</span></a>
+    <nav class="hidden md:flex items-center gap-6 font-head uppercase tracking-wider text-sm" aria-label="Меню">
+      <a class="hover:text-accent" href="#list" data-i18n="nav.list">Список</a>
+      <a class="hover:text-accent" href="#catalog" data-i18n="nav.catalog">Каталог</a>
+      <a class="hover:text-accent" href="#terms" data-i18n="nav.terms">Условия</a>
+      <a class="hover:text-accent" href="#contacts" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <div role="group" aria-label="Язык / Тіл" class="flex border border-white/40 font-head text-sm">
+        <button type="button" data-lang="ru" aria-pressed="true" class="px-3 h-10 min-w-[44px] aria-pressed:bg-accent aria-pressed:text-deep">RU</button>
+        <button type="button" data-lang="kk" aria-pressed="false" class="px-3 h-10 min-w-[44px] aria-pressed:bg-accent aria-pressed:text-deep">KZ</button>
+      </div>
+      <button type="button" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Меню" class="md:hidden w-11 h-11 flex flex-col items-center justify-center gap-1.5 border border-white/40">
+        <span class="block w-5 h-0.5 bg-white"></span><span class="block w-5 h-0.5 bg-white"></span><span class="block w-5 h-0.5 bg-white"></span>
+      </button>
+    </div>
+  </div>
+  <nav id="menu" class="hidden md:hidden bg-dark border-t border-white/10 font-head uppercase tracking-wider" aria-label="Меню">
+    <a class="block px-4 py-4 border-b border-white/10" href="#list" data-i18n="nav.list">Список</a>
+    <a class="block px-4 py-4 border-b border-white/10" href="#catalog" data-i18n="nav.catalog">Каталог</a>
+    <a class="block px-4 py-4 border-b border-white/10" href="#terms" data-i18n="nav.terms">Условия</a>
+    <a class="block px-4 py-4" href="#contacts" data-i18n="nav.contacts">Контакты</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- Первый экран: hero-type -->
+<section class="relative bg-deep text-white overflow-hidden" style="background-image:linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px">
+  <div class="mx-auto max-w-6xl px-4 pt-14 pb-12 md:pt-24 md:pb-20">
+    <p class="font-head uppercase tracking-[.18em] text-accent text-sm md:text-base mb-5" data-i18n="hero.meta">Алматы · Байбесик · опт и розница</p>
+    <h1 class="text-[clamp(2.75rem,12vw,8.5rem)] break-words" data-i18n="hero.title">Мебельная фурнитура · Алматы</h1>
+    <div class="mt-8 md:mt-12 grid gap-6 md:grid-cols-[1.2fr_1fr] md:items-end">
+      <p class="text-lg md:text-xl text-white/85 max-w-xl" data-i18n="hero.lead">Большой ассортимент, оптовые цены, доставка по всему КЗ. Опт и розница.</p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <span class="btn btn-accent" role="button" aria-disabled="true" data-i18n="btn.wa">Написать в WhatsApp</span>
+        <a class="btn btn-line" href="https://2gis.kz/almaty/firm/70000001094355176" target="_blank" rel="noopener" data-i18n="btn.route">Маршрут</a>
+      </div>
+    </div>
+    <p class="mt-6 inline-flex items-center gap-2 border border-white/30 px-3 py-2 text-sm"><span class="w-2.5 h-2.5 rounded-full bg-accent" aria-hidden="true"></span><span id="badge">Открыто до 19:00</span></p>
+  </div>
+  <div class="h-3" style="background:repeating-linear-gradient(135deg,#E0A526 0 18px,#16191B 18px 36px)"></div>
+</section>
+
+<!-- Бегущая строка -->
+<div class="bg-accent text-deep overflow-hidden border-y border-deep" aria-label="Ассортимент">
+  <div class="flex w-max animate-marquee font-head uppercase tracking-wider text-lg py-3 whitespace-nowrap" id="ticker"></div>
+</div>
+
+<!-- Пришлите список -->
+<section id="list" class="bg-dark text-white">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:py-20 grid gap-8 md:grid-cols-2 md:gap-12 items-start">
+    <div>
+      <span class="chapter-tag !text-accent" data-i18n="list.tag">Заявка</span>
+      <h2 class="text-4xl md:text-6xl" data-i18n="list.title">Пришлите список — ответим в WhatsApp</h2>
+      <p class="mt-5 text-white/85 text-lg" data-i18n="list.text">Напишите, что нужно: артикул или фото, количество. Ответим в WhatsApp.</p>
+    </div>
+    <div>
+      <p class="font-head uppercase tracking-wider text-accent mb-3" data-i18n="list.what">Что указать в сообщении</p>
+      <ol class="space-y-3 mb-8">
+        <li class="flex gap-4 border-t border-white/20 pt-3"><span class="font-head text-accent">01</span><span data-i18n="list.i1">артикул или фото позиции</span></li>
+        <li class="flex gap-4 border-t border-white/20 pt-3"><span class="font-head text-accent">02</span><span data-i18n="list.i2">количество</span></li>
+        <li class="flex gap-4 border-t border-white/20 pt-3"><span class="font-head text-accent">03</span><span data-i18n="list.i3">город, если нужна доставка</span></li>
+      </ol>
+      <span class="btn btn-accent w-full sm:w-auto" role="button" aria-disabled="true" data-i18n="list.btn">Отправить список в WhatsApp</span>
+    </div>
+  </div>
+</section>
+
+<!-- Каталог: catalog-index -->
+<section id="catalog" class="bg-light">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <span class="chapter-tag" data-i18n="cat.tag">Каталог</span>
+    <h2 class="text-4xl md:text-6xl" data-i18n="cat.title">Каталог</h2>
+    <p class="mt-4 max-w-2xl text-muted text-lg" data-i18n="cat.intro">Основная позиция — мебельные ручки. Остальной ассортимент, наличие и цены уточняйте в WhatsApp.</p>
+
+    <ol class="mt-10 border-t-2 border-deep">
+      <li class="border-b border-line">
+        <div class="grid grid-cols-[2.5rem_1fr] md:grid-cols-[4rem_1fr_1.4fr_auto] gap-x-4 gap-y-1 items-baseline py-6 md:py-7">
+          <span class="font-head text-accent-text text-lg">01</span>
+          <span class="font-head font-semibold uppercase text-2xl md:text-4xl" data-i18n="c1.name">Ручки</span>
+          <span class="col-start-2 md:col-start-auto text-muted" data-i18n="c1.sub">Мебельные ручки: чёрные, золото, матовый хром</span>
+          <span class="col-start-2 md:col-start-auto mt-2 md:mt-0 font-head uppercase tracking-wider text-sm text-ink underline decoration-accent decoration-2 underline-offset-4" role="button" aria-disabled="true" data-i18n="c.ask">Спросить про наличие</span>
+        </div>
+      </li>
+      <li class="border-b border-line">
+        <div class="grid grid-cols-[2.5rem_1fr] md:grid-cols-[4rem_1fr_1.4fr_auto] gap-x-4 gap-y-1 items-baseline py-6 md:py-7">
+          <span class="font-head text-accent-text text-lg">02</span>
+          <span class="font-head font-semibold uppercase text-2xl md:text-4xl" data-i18n="c2.name">Другая фурнитура</span>
+          <span class="col-start-2 md:col-start-auto text-muted" data-i18n="c2.sub">Мебельная фурнитура — уточняйте ассортимент в WhatsApp</span>
+          <span class="col-start-2 md:col-start-auto mt-2 md:mt-0 font-head uppercase tracking-wider text-sm text-ink underline decoration-accent decoration-2 underline-offset-4" role="button" aria-disabled="true" data-i18n="c.ask">Спросить про наличие</span>
+        </div>
+      </li>
+      <li class="border-b border-line">
+        <div class="grid grid-cols-[2.5rem_1fr] md:grid-cols-[4rem_1fr_1.4fr_auto] gap-x-4 gap-y-1 items-baseline py-6 md:py-7">
+          <span class="font-head text-accent-text text-lg">03</span>
+          <span class="font-head font-semibold uppercase text-2xl md:text-4xl" data-i18n="c3.name">Инструмент и расходники</span>
+          <span class="col-start-2 md:col-start-auto text-muted" data-i18n="c3.sub">Сверла, отвёртки, рулетки, малярная лента</span>
+          <span class="col-start-2 md:col-start-auto mt-2 md:mt-0 font-head uppercase tracking-wider text-sm text-ink underline decoration-accent decoration-2 underline-offset-4" role="button" aria-disabled="true" data-i18n="c.ask">Спросить про наличие</span>
+        </div>
+      </li>
+    </ol>
+
+    <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3">
+      <img class="w-full aspect-square object-cover" src="images/handles-1.jpg" alt="Мебельные ручки на витрине" data-i18n-alt="img.alt" loading="lazy" width="400" height="400">
+      <img class="w-full aspect-square object-cover" src="images/handles-2.jpg" alt="Мебельные ручки на витрине" data-i18n-alt="img.alt" loading="lazy" width="400" height="400">
+      <img class="w-full aspect-square object-cover" src="images/handles-3.jpg" alt="Мебельные ручки на витрине" data-i18n-alt="img.alt" loading="lazy" width="400" height="400">
+      <img class="w-full aspect-square object-cover" src="images/showcase-1.jpg" alt="Инструмент и расходники на витрине магазина" data-i18n-alt="img.alt2" loading="lazy" width="400" height="400">
+    </div>
+  </div>
+</section>
+
+<!-- Условия -->
+<section id="terms" class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <span class="chapter-tag" data-i18n="terms.tag">Условия</span>
+    <h2 class="text-4xl md:text-6xl mb-10" data-i18n="terms.title">Условия</h2>
+    <ul class="grid md:grid-cols-2 gap-x-12 border-t-2 border-deep">
+      <li class="py-4 border-b border-line" data-i18n="t1">Опт и розница.</li>
+      <li class="py-4 border-b border-line" data-i18n="t2">Доставка по всему Казахстану. Сроки и стоимость — уточняйте в WhatsApp.</li>
+      <li class="py-4 border-b border-line" data-i18n="t3">Оплата: карта, наличные, перевод с карты, QR.</li>
+      <li class="py-4 border-b border-line" data-i18n="t4">Самовывоз: уточняйте в WhatsApp.</li>
+      <li class="py-4 border-b border-line" data-i18n="t5">Цены уточняйте в WhatsApp.</li>
+      <li class="py-4 border-b border-line" data-i18n="t6">Заказ — через WhatsApp.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- За что хвалят -->
+<section id="praise" class="bg-deep text-white">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:py-20 grid gap-8 md:grid-cols-[1fr_1.4fr] md:gap-12">
+    <div>
+      <span class="chapter-tag !text-accent" data-i18n="pr.tag">Отзывы</span>
+      <h2 class="text-4xl md:text-6xl" data-i18n="pr.title">За что хвалят</h2>
+      <p class="mt-6 font-head text-6xl text-accent">4.3</p>
+      <p class="text-white/85" data-i18n="pr.rating">Рейтинг в 2ГИС (26 оценок, 7 отзывов)</p>
+      <a class="btn btn-line mt-6" href="https://2gis.kz/almaty/firm/70000001094355176/tab/reviews" target="_blank" rel="noopener" data-i18n="pr.link">Смотреть отзывы в 2ГИС</a>
+    </div>
+    <div>
+      <p class="text-white/85 mb-4" data-i18n="pr.intro">Покупатели пишут в отзывах:</p>
+      <ol class="border-t-2 border-accent">
+        <li class="py-4 border-b border-white/20 flex gap-4"><span class="font-head text-accent">01</span><span data-i18n="pr.1">Персонал вежливый и быстрый, помогает с подбором и упаковкой — об этом пишут 5 из 7 отзывов.</span></li>
+        <li class="py-4 border-b border-white/20 flex gap-4"><span class="font-head text-accent">02</span><span data-i18n="pr.2">Большой выбор фурнитуры — 2 отзыва.</span></li>
+        <li class="py-4 border-b border-white/20 flex gap-4"><span class="font-head text-accent">03</span><span data-i18n="pr.3">Приемлемые цены — 1 отзыв.</span></li>
+      </ol>
+      <p class="mt-4 text-sm text-white/70" data-i18n="pr.note">Оценка показана как есть: в отзывах есть и критичные.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Контакты -->
+<section id="contacts" class="bg-light">
+  <div class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <span class="chapter-tag" data-i18n="ct.tag">Контакты</span>
+    <h2 class="text-4xl md:text-6xl mb-10" data-i18n="ct.title">Контакты</h2>
+    <dl class="grid md:grid-cols-2 gap-x-12 border-t-2 border-deep">
+      <div class="py-4 border-b border-line"><dt class="font-head uppercase tracking-wider text-sm text-accent-text" data-i18n="ct.addr.k">Адрес</dt><dd class="mt-1" data-i18n="ct.addr.v">Алматы, ул. Байдибек би, 54, 1 этаж, мкр Байбесик, Алатауский район, 050024</dd></div>
+      <div class="py-4 border-b border-line"><dt class="font-head uppercase tracking-wider text-sm text-accent-text" data-i18n="ct.hours.k">Часы работы</dt><dd class="mt-1" data-i18n="ct.hours.v">Пн–Сб 9:00–19:00, воскресенье — выходной</dd></div>
+      <div class="py-4 border-b border-line"><dt class="font-head uppercase tracking-wider text-sm text-accent-text" data-i18n="ct.phone.k">Телефон</dt><dd class="mt-1" data-i18n="ct.phone.v">[номер уточняется]</dd></div>
+      <div class="py-4 border-b border-line"><dt class="font-head uppercase tracking-wider text-sm text-accent-text">WhatsApp</dt><dd class="mt-1" data-i18n="ct.phone.v">[номер уточняется]</dd></div>
+    </dl>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3">
+      <a class="btn btn-dark" href="https://2gis.kz/almaty/firm/70000001094355176" target="_blank" rel="noopener" data-i18n="btn.route">Маршрут</a>
+      <a class="btn btn-dark" href="https://www.instagram.com/bek_furnitura_almaty/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="mt-4 text-sm text-muted" data-i18n="ct.insta">Последний пост в Instagram — 09.2024, наличие уточняйте.</p>
+  </div>
+</section>
+</main>
+
+<footer class="bg-deep text-white/80 pb-24 md:pb-0">
+  <div class="mx-auto max-w-6xl px-4 py-8 text-sm">
+    <p class="font-head uppercase tracking-[.08em] text-white mb-2">Bek <span class="text-accent">Furniture</span></p>
+    <p data-i18n="foot">Демо-концепция. Не является официальным сайтом компании; данные взяты из 2ГИС и Instagram, ждут подтверждения владельца.</p>
+  </div>
+</footer>
+
+<!-- Плавающая кнопка (телефон) -->
+<span id="fab" class="md:hidden fixed bottom-4 right-4 left-4 z-30 btn btn-accent shadow-lg" role="button" aria-disabled="true" data-i18n="btn.wa">Написать в WhatsApp</span>
+
+<script src="app.js"></script>
+</body>
+</html>

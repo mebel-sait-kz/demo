@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#092D2B">
+  <title>Keruen Textile — материалы для мягкой мебели, Алматы (демо)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Keruen Textile">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text">KERUEN <span>TEXTILE</span></span>
+      </a>
+
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Меню">
+        <a href="#catalog" data-i18n="nav.catalog">Каталог</a>
+        <a href="#why" data-i18n="nav.about">О компании</a>
+        <a href="#delivery" data-i18n="nav.delivery">Доставка и оплата</a>
+        <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык / Тіл">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. ПЕРВЫЙ ЭКРАН -->
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+
+        <div class="hero__copy">
+          <p class="hero__meta">
+            <span>Алматы</span><span class="dot" aria-hidden="true"></span><span>Байбесик</span><span class="dot" aria-hidden="true"></span><span data-i18n="hero.meta">Опт и розница</span>
+          </p>
+          <h1 class="hero__title" data-i18n="hero.title">Всё необходимое для&nbsp;производства мягкой мебели <em>в&nbsp;одном месте</em></h1>
+          <p class="hero__lead" data-i18n="hero.lead">Ткани, поролон, наполнители, механизмы, основания и&nbsp;фурнитура — всё для мастерской и&nbsp;цеха.<br><span>Опт и розница, заказ в любом объёме, доставка по Казахстану.</span></p>
+          <div class="buttons">
+            <span class="btn btn--gold is-placeholder" data-i18n="btn.wa.hero">Написать в WhatsApp · [номер уточняется]</span>
+            <a class="btn btn--line" href="#catalog" data-i18n="btn.catalog">Открыть каталог <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <!-- Альбом образцов на вешалке: настоящее фото ткани компании -->
+        <figure class="album">
+          <div class="swatchbook__hanger" aria-hidden="true"></div>
+          <div class="album__photo">
+            <img src="images/fabrics-1.jpg" alt="Альбом образцов ткани ANFORA" width="900" height="1125">
+          </div>
+          <figcaption class="album__label">ANFORA</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Бегущая строка -->
+    <div class="ticker">
+      <div class="ticker__track" data-i18n="ticker">
+        <span>Ткани</span><i>✦</i><span>ППУ</span><i>✦</i><span>Наполнители</span><i>✦</i><span>Основания</span><i>✦</i><span>Механизмы</span><i>✦</i><span>Опоры</span><i>✦</i><span>Фурнитура</span><i>✦</i>
+        <span aria-hidden="true">Ткани</span><i aria-hidden="true">✦</i><span aria-hidden="true">ППУ</span><i aria-hidden="true">✦</i><span aria-hidden="true">Наполнители</span><i aria-hidden="true">✦</i><span aria-hidden="true">Основания</span><i aria-hidden="true">✦</i><span aria-hidden="true">Механизмы</span><i aria-hidden="true">✦</i><span aria-hidden="true">Опоры</span><i aria-hidden="true">✦</i><span aria-hidden="true">Фурнитура</span><i aria-hidden="true">✦</i>
+      </div>
+    </div>
+
+    <!-- Короткое заявление -->
+    <section class="manifest">
+      <div class="container">
+        <p class="manifest__text" data-i18n="manifest">С&nbsp;<em>2018 года</em> Keruen Textile поставляет мебельным цехам и&nbsp;мастерам ткани, поролон, механизмы и&nbsp;комплектующие. Опт и&nbsp;розница, заказ в&nbsp;любом объёме, доставка по&nbsp;всему Казахстану.</p>
+      </div>
+    </section>
+
+    <!-- 2. КАТАЛОГ -->
+    <section class="section section--warm" id="catalog">
+      <div class="container">
+        <header class="chapter">
+          <span class="chapter__tag" data-i18n="cat.tag">Каталог</span>
+          <h2 class="chapter__title" data-i18n="cat.title">Оглавление<br><em>альбома</em></h2>
+        </header>
+
+        <ol class="index">
+          <li>
+            <a class="index__row" href="#fabrics">
+              <span class="index__num">01</span>
+              <span class="index__name" data-i18n="p1.name">Мебельные ткани</span>
+              <span class="index__sub" data-i18n="p1.sub">Ткани для мебели — от 700 ₸ за метр</span>
+              <span class="index__chip chip--velvet" aria-hidden="true"></span>
+              <span class="index__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index__row" href="#foam">
+              <span class="index__num">02</span>
+              <span class="index__name" data-i18n="p2.name">Поролон и наполнители</span>
+              <span class="index__sub" data-i18n="p2.sub">ППУ и наполнители. Наличие и цену — в WhatsApp</span>
+              <span class="index__chip chip--foam" aria-hidden="true"></span>
+              <span class="index__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index__row" href="#springs">
+              <span class="index__num">03</span>
+              <span class="index__name" data-i18n="p3.name">Пружинные блоки, основания и механизмы</span>
+              <span class="index__sub" data-i18n="p3.sub">Основания, механизмы и блоки. Цену — в WhatsApp</span>
+              <span class="index__chip chip--spring" aria-hidden="true"></span>
+              <span class="index__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li>
+            <a class="index__row" href="#hardware">
+              <span class="index__num">04</span>
+              <span class="index__name" data-i18n="p4.name">Мебельная фурнитура</span>
+              <span class="index__sub" data-i18n="p4.sub">Опоры и ножки, скобы, прочая фурнитура</span>
+              <span class="index__chip chip--metal" aria-hidden="true"></span>
+              <span class="index__arrow" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. МЕБЕЛЬНЫЕ ТКАНИ -->
+    <section class="page" id="fabrics">
+      <div class="container page__grid">
+        <div class="page__text">
+          <span class="page__num" aria-hidden="true">01</span>
+          <p class="page__tag" data-i18n="p1.tag">Страница 01</p>
+          <h2 data-i18n="p1.name">Мебельные ткани</h2>
+          <p class="page__lead" data-i18n="p1.lead">Ткани для обивки мягкой мебели — <strong>от&nbsp;700&nbsp;₸ за&nbsp;метр</strong>. Продаём оптом и&nbsp;в&nbsp;розницу, заказ в&nbsp;любом объёме. Точную цену на&nbsp;нужную ткань и&nbsp;её наличие уточняйте в&nbsp;WhatsApp.</p>
+          <p class="list-title" data-i18n="p1.coll">Примеры коллекций <span>· наличие уточняйте</span></p>
+          <ul class="tags">
+            <li>MOSHA VELVET <small data-i18n="p1.mosha">износостойкость 60&nbsp;000 циклов по&nbsp;Мартиндейлу</small></li>
+            <li>ANFORA</li>
+            <li>FANTASY</li>
+            <li>MONACO</li>
+            <li>TEDDY</li>
+          </ul>
+          <span class="btn btn--teal is-placeholder" data-i18n="p1.btn">Подобрать ткань в WhatsApp</span>
+        </div>
+        <div class="strip">
+          <figure class="frame swatch--velvet"><img src="images/fabrics-1.jpg" alt="ANFORA" loading="lazy" width="900" height="1125"><figcaption>ANFORA</figcaption></figure>
+          <figure class="frame swatch--weave"><img src="images/fabrics-2.jpg" alt="Альбом образцов ткани на стеллаже с рулонами" loading="lazy" width="652" height="869"><figcaption data-i18n="fig.f2">Образцы на складе</figcaption></figure>
+          <figure class="frame swatch--velvet-gold"><img src="images/fabrics-3.jpg" alt="Фирменные альбомы образцов среди рулонов ткани" loading="lazy" width="652" height="869"><figcaption data-i18n="fig.f3">Альбомы образцов</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="seam" aria-hidden="true"></div>
+
+    <!-- 4. ПОРОЛОН И НАПОЛНИТЕЛИ -->
+    <section class="page page--reverse" id="foam">
+      <div class="container page__grid">
+        <div class="page__text">
+          <span class="page__num" aria-hidden="true">02</span>
+          <p class="page__tag" data-i18n="p2.tag">Страница 02</p>
+          <h2 data-i18n="p2.name">Поролон и&nbsp;наполнители</h2>
+          <p class="page__lead" data-i18n="p2.lead">Поролон (ППУ) и&nbsp;наполнители для мягкой мебели. Новая партия ППУ поступила на&nbsp;склад в&nbsp;октябре 2026&nbsp;года. Нужны определённый тип, размер или объём — напишите в&nbsp;WhatsApp: уточним наличие и&nbsp;цену.</p>
+          <ul class="ticks" data-i18n="p2.list">
+            <li>Поролон (ППУ)</li>
+            <li>Наполнители</li>
+          </ul>
+          <span class="btn btn--teal is-placeholder" data-i18n="p2.btn">Узнать наличие и цену поролона</span>
+        </div>
+        <figure class="frame frame--tall swatch--foam"><img src="images/foam-1.jpg" alt="Стопки поролона в магазине" loading="lazy" width="488" height="869"><figcaption>Поролон (ППУ)</figcaption></figure>
+      </div>
+    </section>
+
+    <div class="seam" aria-hidden="true"></div>
+
+    <!-- 5. ПРУЖИННЫЕ БЛОКИ, ОСНОВАНИЯ И МЕХАНИЗМЫ -->
+    <section class="page" id="springs">
+      <div class="container page__grid">
+        <div class="page__text">
+          <span class="page__num" aria-hidden="true">03</span>
+          <p class="page__tag" data-i18n="p3.tag">Страница 03</p>
+          <h2 data-i18n="p3.name">Пружинные блоки, основания и&nbsp;механизмы</h2>
+          <p class="page__lead" data-i18n="p3.lead">Основания, механизмы и&nbsp;пружинные блоки для мягкой мебели. Характеристики и&nbsp;цены на&nbsp;сайте не&nbsp;публикуем — наличие нужных позиций и&nbsp;цену уточняйте в&nbsp;WhatsApp.</p>
+          <ul class="ticks" data-i18n="p3.list">
+            <li>Основания <small>новая партия — октябрь 2026</small></li>
+            <li>Механизмы</li>
+            <li>Пружинные блоки</li>
+          </ul>
+          <span class="btn btn--teal is-placeholder" data-i18n="p3.btn">Запросить цену и наличие</span>
+        </div>
+        <div class="pair">
+          <figure class="frame frame--product"><img src="images/springs-1.jpg" alt="Механизм для мягкой мебели" loading="lazy" width="800" height="800"><figcaption data-i18n="fig.mech">Механизм</figcaption></figure>
+          <figure class="frame frame--product"><img src="images/springs-2.jpg" alt="Механизм с пружиной для мягкой мебели" loading="lazy" width="800" height="800"><figcaption data-i18n="fig.mech">Механизм</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="seam" aria-hidden="true"></div>
+
+    <!-- 6. МЕБЕЛЬНАЯ ФУРНИТУРА -->
+    <section class="page page--reverse" id="hardware">
+      <div class="container page__grid">
+        <div class="page__text">
+          <span class="page__num" aria-hidden="true">04</span>
+          <p class="page__tag" data-i18n="p4.tag">Страница 04</p>
+          <h2 data-i18n="p4.name">Мебельная фурнитура</h2>
+          <p class="page__lead" data-i18n="p4.lead">Фурнитура и&nbsp;комплектующие для сборки и&nbsp;обивки мебели. Цены на&nbsp;отдельные позиции в&nbsp;публикациях не&nbsp;указаны — пришлите список в&nbsp;WhatsApp, уточним наличие и&nbsp;стоимость.</p>
+          <ul class="ticks" data-i18n="p4.list">
+            <li>Опоры и ножки</li>
+            <li>Скобы</li>
+            <li>Прочие комплектующие</li>
+          </ul>
+          <span class="btn btn--teal is-placeholder" data-i18n="p4.btn">Прислать список — посчитаем</span>
+        </div>
+        <figure class="frame frame--big swatch--metal"><figcaption data-i18n="fig.soon">Здесь будет фото</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Как заказать за 3 шага -->
+    <section class="section section--warm steps" id="order">
+      <div class="container">
+        <header class="chapter">
+          <span class="chapter__tag" data-i18n="steps.tag">Как заказать</span>
+          <h2 class="chapter__title" data-i18n="steps.title">Три шага<br><em>до заказа</em></h2>
+        </header>
+        <ol class="steps__list" data-i18n="steps.list">
+          <li><span class="steps__n">1</span><h3>Пришлите список</h3><p>Напишите в WhatsApp, что нужно: ткани, поролон, механизмы, фурнитура. Можно списком.</p></li>
+          <li><span class="steps__n">2</span><h3>Уточним наличие и цену</h3><p>Ответим, что есть в наличии и сколько стоит. Опт и розница, любой объём.</p></li>
+          <li><span class="steps__n">3</span><h3>Оплата и доставка</h3><p>Наличными или через банк. Доставляем по всему Казахстану.</p></li>
+        </ol>
+        <span class="btn btn--teal is-placeholder" data-i18n="steps.btn">Прислать список в WhatsApp</span>
+      </div>
+    </section>
+
+    <!-- 7. ПОЧЕМУ KERUEN TEXTILE -->
+    <section class="section section--dark" id="why">
+      <div class="container">
+        <header class="chapter chapter--light">
+          <span class="chapter__tag" data-i18n="nav.about">О компании</span>
+          <h2 class="chapter__title" data-i18n="why.title">Почему<br><em>Keruen Textile</em></h2>
+        </header>
+        <ol class="reasons" data-i18n="why.list">
+          <li><span class="reasons__n">01</span><h3>Работаем с 2018 года</h3></li>
+          <li><span class="reasons__n">02</span><h3>Опт и розница, заказ в любом объёме</h3><p>Подходит и цеху с большим заказом, и мастеру на небольшую работу.</p></li>
+          <li><span class="reasons__n">03</span><h3>Всё для мягкой мебели в одном месте</h3><p>Ткани, поролон, наполнители, механизмы, комплектующие.</p></li>
+          <li><span class="reasons__n">04</span><h3>Большой ассортимент в наличии</h3><p>По словам компании. Наличие конкретных позиций уточняйте в WhatsApp.</p></li>
+          <li><span class="reasons__n">05</span><h3>Доставка по всему Казахстану</h3></li>
+          <li><span class="reasons__n">06</span><h3>Рейтинг 5.0 в 2ГИС</h3><p>58 оценок. <a href="https://2gis.kz/almaty/firm/70000001082710211/tab/reviews" target="_blank" rel="noopener">Отзывы в 2ГИС ↗</a></p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 8. ДОСТАВКА И ОПЛАТА -->
+    <section class="section" id="delivery">
+      <div class="container split">
+        <header class="chapter">
+          <span class="chapter__tag" data-i18n="del.tag">Условия</span>
+          <h2 class="chapter__title" data-i18n="del.title">Доставка<br><em>и оплата</em></h2>
+          <figure class="frame frame--tall frame--side"><img src="images/delivery-1.jpg" alt="Машина с товаром на доставке" loading="lazy" width="488" height="869"><figcaption data-i18n="fig.del">Доставка</figcaption></figure>
+        </header>
+        <div class="terms">
+          <div class="terms__item">
+            <h3 data-i18n="del.h1">Доставка</h3>
+            <p data-i18n="del.t1">Доставляем по всему Казахстану. Сроки и стоимость уточняйте в WhatsApp.</p>
+          </div>
+          <div class="terms__item">
+            <h3 data-i18n="del.h2">Оплата</h3>
+            <p data-i18n="del.t2">Наличными или через банк.</p>
+          </div>
+          <div class="terms__item">
+            <h3 data-i18n="del.h3">Как заказать</h3>
+            <p data-i18n="del.t3">Напишите в WhatsApp — узнайте цены и оформите заказ. Можно сразу прислать список нужных позиций.</p>
+          </div>
+          <span class="btn btn--teal is-placeholder" data-i18n="del.btn">Уточнить доставку в WhatsApp</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. КОНТАКТЫ -->
+    <section class="section section--warm" id="contacts">
+      <div class="container split">
+        <header class="chapter">
+          <span class="chapter__tag" data-i18n="nav.contacts">Контакты</span>
+          <h2 class="chapter__title" data-i18n="con.title">Приезжайте<br><em>в Байбесик</em></h2>
+          <figure class="frame frame--tall frame--side"><img src="images/facade-1.jpg" alt="KERUEN TEXTILE" loading="lazy" width="488" height="869"><figcaption>Байдибек би, 181</figcaption></figure>
+        </header>
+        <div class="contacts">
+          <div class="contacts__block">
+            <p class="contacts__label" data-i18n="con.addr">Адрес</p>
+            <p class="contacts__big">Алматы, ул.&nbsp;Байдибек би,&nbsp;181</p>
+            <p>мкр Байбесик, Алатауский район</p>
+          </div>
+          <div class="contacts__block">
+            <p class="contacts__label" data-i18n="con.hours">Часы работы</p>
+            <dl class="hours" data-i18n="con.hourslist">
+              <dt>Пн–Сб</dt><dd>9:00–19:00</dd>
+              <dt>Обед</dt><dd>13:00–14:00</dd>
+              <dt>Вс</dt><dd>выходной</dd>
+            </dl>
+          </div>
+          <div class="contacts__block">
+            <p class="contacts__label">Телефон / WhatsApp</p>
+            <p class="contacts__big" data-i18n="con.phone">[номер уточняется]</p>
+          </div>
+          <div class="contacts__actions">
+            <span class="btn btn--teal is-placeholder" data-i18n="con.wa">Написать в WhatsApp</span>
+            <a class="btn btn--outline" href="https://2gis.kz/almaty/firm/70000001082710211" target="_blank" rel="noopener" data-i18n="con.2gis">Открыть в 2ГИС ↗</a>
+            <a class="btn btn--outline" href="https://instagram.com/keruen_textile_" target="_blank" rel="noopener">Instagram ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--footer" href="#top">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text">KERUEN <span>TEXTILE</span></span>
+      </a>
+      <p class="footer__note" data-i18n="footer">Демо-концепция сайта. Не является официальным сайтом компании Keruen Textile.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Казахская версия (тексты: агент copywriter-kazakh, проверка — пользователь) ----------
+    var KK = {
+      'nav.catalog': 'Каталог',
+      'nav.about': 'Компания туралы',
+      'nav.delivery': 'Жеткізу және төлем',
+      'nav.contacts': 'Байланыс',
+      'hero.meta': 'Көтерме және бөлшек сауда',
+      'hero.title': 'Жұмсақ жиһаз өндірісіне арналған барлық қажеттілік <em>бір&nbsp;жерде</em>',
+      'hero.lead': 'Маталар, поролон, толтырғыштар, механизмдер, основаниелер және&nbsp;фурнитура — шеберхана мен&nbsp;цехқа қажеттінің бәрі.<br><span>Көтерме және бөлшек сауда, кез келген көлемде тапсырыс, Қазақстан бойынша жеткізу.</span>',
+      'btn.wa.hero': 'WhatsApp-қа жазу · [нөмір нақтыланады]',
+      'btn.catalog': 'Каталогты ашу <span aria-hidden="true">↓</span>',
+      'manifest': '<em>2018 жылдан</em> бері Keruen Textile жиһаз цехтары мен&nbsp;шеберлерге маталар, поролон, механизмдер және керек-жарақтар жеткізеді. Оптом да, бөлшек те, кез келген көлемде тапсырыс, бүкіл Қазақстан бойынша жеткізу.',
+      'steps.tag': 'Қалай тапсырыс беру',
+      'steps.title': 'Тапсырысқа дейін<br><em>үш қадам</em>',
+      'steps.list':
+        '<li><span class="steps__n">1</span><h3>Тізім жіберіңіз</h3><p>WhatsApp-қа не керек екенін жазыңыз: маталар, поролон, механизмдер, фурнитура. Тізіммен жіберуге болады.</p></li>' +
+        '<li><span class="steps__n">2</span><h3>Бар-жоғы мен бағасын нақтылаймыз</h3><p>Не бар екенін және бағасын айтамыз. Оптом да, бөлшек те, кез келген көлем.</p></li>' +
+        '<li><span class="steps__n">3</span><h3>Төлем және жеткізу</h3><p>Қолма-қол немесе банк арқылы. Бүкіл Қазақстан бойынша жеткіземіз.</p></li>',
+      'steps.btn': 'Тізімді WhatsApp-қа жіберу',
+      'ticker': (function () {
+        var w = ['Маталар', 'ППУ', 'Толтырғыштар', 'Основаниелер', 'Механизмдер', 'Тіректер', 'Фурнитура'];
+        var a = w.map(function (x) { return '<span>' + x + '</span><i>✦</i>'; }).join('');
+        var b = w.map(function (x) { return '<span aria-hidden="true">' + x + '</span><i aria-hidden="true">✦</i>'; }).join('');
+        return a + b;
+      })(),
+      'cat.tag': 'Каталог',
+      'cat.title': 'Альбомның<br><em>мазмұны</em>',
+      'p1.name': 'Жиһаз маталары',
+      'p1.sub': 'Жиһаз маталары — метрі 700 ₸-ден',
+      'p2.name': 'Поролон және толтырғыштар',
+      'p2.sub': 'ППУ және толтырғыштар. Бар-жоғы мен бағасы — WhatsApp-та',
+      'p3.name': 'Серіппелі блоктар, основаниелер және механизмдер',
+      'p3.sub': 'Основаниелер, механизмдер және блоктар. Бағасы — WhatsApp-та',
+      'p4.name': 'Жиһаз фурнитурасы',
+      'p4.sub': 'Тіректер мен аяқтар, скобалар, басқа фурнитура',
+      'p1.tag': '01-бет', 'p2.tag': '02-бет', 'p3.tag': '03-бет', 'p4.tag': '04-бет',
+      'p1.lead': 'Жұмсақ жиһаз қаптауға арналған маталар — <strong>метрі 700&nbsp;₸-ден</strong>. Оптом да, бөлшек те сатамыз, кез келген көлемде тапсырыс бере аласыз. Керек матаның нақты бағасы мен бар-жоғын WhatsApp арқылы біліңіз.',
+      'p1.coll': 'Коллекция мысалдары <span>· бар-жоғын нақтылаңыз</span>',
+      'p1.mosha': 'Мартиндейл бойынша тозуға төзімділігі 60&nbsp;000 цикл',
+      'p1.btn': 'WhatsApp арқылы мата таңдау',
+      'fig.f2': 'Қоймадағы үлгілер',
+      'fig.f3': 'Үлгі альбомдары',
+      'p2.lead': 'Жұмсақ жиһазға арналған поролон (ППУ) және толтырғыштар. ППУ-дың жаңа партиясы 2026 жылдың қазан айында қоймаға келіп түсті. Белгілі бір түрі, өлшемі немесе көлемі керек болса — WhatsApp-қа жазыңыз: бар-жоғы мен бағасын нақтылап береміз.',
+      'p2.list': '<li>Поролон (ППУ)</li><li>Толтырғыштар</li>',
+      'p2.btn': 'Поролонның бар-жоғы мен бағасын білу',
+      'p3.lead': 'Жұмсақ жиһазға арналған основаниелер, механизмдер және серіппелі блоктар. Сипаттамалары мен бағасын сайтта жарияламаймыз — керек позициялардың бар-жоғы мен бағасын WhatsApp арқылы біліңіз.',
+      'p3.list': '<li>Основаниелер <small>жаңа партия — 2026 жылғы қазан</small></li><li>Механизмдер</li><li>Серіппелі блоктар</li>',
+      'p3.btn': 'Баға мен бар-жоғын сұрау',
+      'fig.mech': 'Механизм',
+      'p4.lead': 'Жиһаз құрастыруға және қаптауға арналған фурнитура мен керек-жарақтар. Жеке позициялардың бағасы жарияланымдарда көрсетілмеген — тізімді WhatsApp-қа жіберіңіз, бар-жоғы мен құнын нақтылап береміз.',
+      'p4.list': '<li>Тіректер мен аяқтар</li><li>Скобалар</li><li>Басқа керек-жарақтар</li>',
+      'p4.btn': 'Тізім жіберіңіз — есептеп береміз',
+      'fig.soon': 'Мұнда фото болады',
+      'why.title': 'Неліктен<br><em>Keruen Textile</em>',
+      'why.list':
+        '<li><span class="reasons__n">01</span><h3>2018 жылдан бері жұмыс істейміз</h3></li>' +
+        '<li><span class="reasons__n">02</span><h3>Оптом да, бөлшек те, кез келген көлемде тапсырыс</h3><p>Үлкен тапсырыс беретін цехқа да, шағын жұмысқа алатын шеберге де ыңғайлы.</p></li>' +
+        '<li><span class="reasons__n">03</span><h3>Жұмсақ жиһазға арналған барлық қажеттілік бір жерде</h3><p>Маталар, поролон, толтырғыштар, механизмдер, керек-жарақтар.</p></li>' +
+        '<li><span class="reasons__n">04</span><h3>Үлкен ассортимент қоймада бар</h3><p>Компанияның айтуынша. Нақты позициялардың бар-жоғын WhatsApp арқылы біліңіз.</p></li>' +
+        '<li><span class="reasons__n">05</span><h3>Бүкіл Қазақстан бойынша жеткізу</h3></li>' +
+        '<li><span class="reasons__n">06</span><h3>2ГИС-те рейтинг 5.0</h3><p>58 баға. <a href="https://2gis.kz/almaty/firm/70000001082710211/tab/reviews" target="_blank" rel="noopener">2ГИС-тегі пікірлер ↗</a></p></li>',
+      'del.tag': 'Шарттар',
+      'del.title': 'Жеткізу<br><em>және төлем</em>',
+      'fig.del': 'Жеткізу',
+      'del.h1': 'Жеткізу',
+      'del.t1': 'Бүкіл Қазақстан бойынша жеткіземіз. Мерзімі мен құнын WhatsApp арқылы нақтылаңыз.',
+      'del.h2': 'Төлем',
+      'del.t2': 'Қолма-қол немесе банк арқылы.',
+      'del.h3': 'Қалай тапсырыс беруге болады',
+      'del.t3': 'WhatsApp-қа жазыңыз — бағасын біліп, тапсырыс рәсімдеңіз. Керек позициялар тізімін бірден жіберуге болады.',
+      'del.btn': 'Жеткізуді WhatsApp арқылы нақтылау',
+      'con.title': 'Байбесикке<br><em>келіңіз</em>',
+      'con.addr': 'Мекенжай',
+      'con.hours': 'Жұмыс уақыты',
+      'con.hourslist': '<dt>Дс–Сн</dt><dd>9:00–19:00</dd><dt>Түскі үзіліс</dt><dd>13:00–14:00</dd><dt>Жс</dt><dd>демалыс</dd>',
+      'con.phone': '[нөмір нақтыланады]',
+      'con.wa': 'WhatsApp-қа жазу',
+      'con.2gis': '2ГИС-те ашу ↗',
+      'footer': 'Сайттың демо-концепциясы. Keruen Textile компаниясының ресми сайты емес.'
+    };
+    var TITLE = { ru: document.title, kk: 'Keruen Textile — жұмсақ жиһазға арналған материалдар, Алматы (демо)' };
+
+    (function () {
+      var nodes = document.querySelectorAll('[data-i18n]');
+      nodes.forEach(function (el) { el.setAttribute('data-ru', el.innerHTML); });
+
+      function setLang(lang) {
+        nodes.forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          el.innerHTML = (lang === 'kk' && KK[key] !== undefined) ? KK[key] : el.getAttribute('data-ru');
+        });
+        document.documentElement.lang = lang;
+        document.title = TITLE[lang];
+        document.querySelectorAll('.lang__item').forEach(function (b) {
+          var on = b.getAttribute('data-lang') === lang;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        });
+        try { localStorage.setItem('kt-lang', lang); } catch (e) {}
+      }
+
+      document.querySelectorAll('.lang__item').forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+      });
+
+      var saved = null;
+      try { saved = localStorage.getItem('kt-lang'); } catch (e) {}
+      if (saved === 'kk') setLang('kk');
+    })();
+
+    // ---------- Мобильное меню и тень шапки ----------
+    (function () {
+      var burger = document.getElementById('burger');
+      var header = document.getElementById('header');
+      function setOpen(open) {
+        header.classList.toggle('is-open', open);
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      burger.addEventListener('click', function () { setOpen(!header.classList.contains('is-open')); });
+      document.querySelectorAll('#nav a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
+      window.addEventListener('scroll', function () { header.classList.toggle('is-scrolled', window.scrollY > 8); }, { passive: true });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Shaxsultan textile — демо</title>
+  <meta name="description" content="Демо-концепция сайта поставщика мебельных тканей Shaxsultan textile, Алматы.">
+  <!-- Собрано tools/build.py из content/shaxsultan-textile.json. Стиль «industrial» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/industrial/tokens.css">
+  <link rel="stylesheet" href="../../blocks/blocks.css">
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Shaxsultan textile">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">Shaxsultan <span>textile</span></span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#addresses" data-i18n="t3">Два адреса</a>
+        <a href="#catalog" data-i18n="t4">Каталог</a>
+        <a href="#howto" data-i18n="t5">Как заказать</a>
+        <a href="#terms" data-i18n="t6">Условия</a>
+        <a href="#rating" data-i18n="t7">Рейтинг</a>
+        <a href="#contacts" data-i18n="t8">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-album -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <p class="hero__meta"><span data-i18n="t10">Алматы · поставщик мебельных тканей</span></p>
+        <h1 class="hero__title" data-i18n="t9">Мебельные ткани <em>оптом и в розницу</em></h1>
+        <p class="hero__lead" data-i18n="t11">Две точки в Алматы: склад на Байдибек би и магазин на рынке Ожет. Наличие и цену уточняйте в WhatsApp.</p>
+        <div class="buttons">
+        <button type="button" class="btn btn--accent is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+        <a class="btn btn--line" href="#addresses" data-i18n="t14">Маршрут</a>
+        </div>
+      </div>
+      <figure class="album">
+        <div class="album__hanger"></div>
+        <div class="album__photo"><img src="images/filler-1.jpg" alt="Холлофайбер — белое волокно-наполнитель для мебели" data-i18n-alt="t15" width="640" height="800"></div>
+        <figcaption class="album__label" data-i18n="t12">2 точки: склад и рынок Ожет</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- БЛОК: addresses -->
+  <section class="section" id="addresses">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t3">Два адреса</h2>
+      </header>
+      <p class="page__lead" data-i18n="t16">У нас две точки в Алматы с разными графиками. Выберите ближайшую и откройте маршрут.</p>
+      <ul class="addr">
+        <li class="addr__card">
+          <p class="addr__kind" data-i18n="t19">Склад</p>
+          <h3 class="addr__name" data-i18n="t20">Байдибек би, 46</h3>
+          <p class="addr__full" data-i18n="t21">мкр Байбесик, Алатауский район, Алматы, 050024</p>
+          <p class="open-badge" data-badge="warehouse">Открыто до 18:00</p>
+          <dl class="hours"><dt data-i18n="t22">Пн–Сб</dt><dd data-i18n="t23">9:00–18:00</dd><dt data-i18n="t24">Вс</dt><dd data-i18n="t25">выходной</dd></dl>
+          <p><strong data-i18n="t18">Оплата:</strong> <span data-i18n="t26">наличные, через банк, по QR-коду</span></p>
+          <div class="buttons"><a class="btn btn--dark" href="https://2gis.kz/almaty/firm/70000001117711445" target="_blank" rel="noopener" data-i18n="t14">Маршрут</a></div>
+        </li>
+        <li class="addr__card">
+          <p class="addr__kind" data-i18n="t27">Магазин на рынке Ожет</p>
+          <h3 class="addr__name" data-i18n="t28">Рынок Ожет</h3>
+          <p class="addr__full" data-i18n="t29">ул. Бекболата, 2/3, корпус Б, складское помещение 9, Алатауский район, Алматы, 050024</p>
+          <p class="open-badge" data-badge="shop">Открыто до 17:00</p>
+          <dl class="hours"><dt data-i18n="t30">Вт–Вс</dt><dd data-i18n="t31">9:00–17:00</dd><dt data-i18n="t32">Пн</dt><dd data-i18n="t25">выходной</dd></dl>
+          <p><strong data-i18n="t18">Оплата:</strong> <span data-i18n="t33">способы уточняйте в WhatsApp</span></p>
+          <div class="buttons"><a class="btn btn--dark" href="https://2gis.kz/almaty/firm/70000001114855299" target="_blank" rel="noopener" data-i18n="t14">Маршрут</a></div>
+        </li>
+      </ul>
+      <p class="price-note" data-i18n="t17">В воскресенье открыт магазин, в понедельник — склад.</p>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-tiles -->
+  <section class="section section--light" id="catalog">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t4">Каталог</h2>
+      </header>
+      <p class="page__lead" data-i18n="t34">Мебельные ткани и наполнители. «Оптом и в розницу». Наличие и цену уточняйте в WhatsApp.</p>
+      <ul class="tiles">
+        <li><div class="tile tex-1"><span class="tile__text"><span class="tile__name" data-i18n="t36">Мебельные ткани</span><span class="tile__sub" data-i18n="t37">Ткани для обивки мебели. Наличие — в WhatsApp</span></span></div></li>
+        <li><div class="tile tex-3"><span class="tile__text"><span class="tile__name" data-i18n="t38">Наполнители</span><span class="tile__sub" data-i18n="t39">Холлофайбер, поролон — наполнители для мебели</span></span></div></li>
+      </ul>
+      <p class="price-note" data-i18n="t40">В Instagram публиковались велюр, жаккард, искусственная кожа, мешковина. Цену и наличие конкретной ткани подскажут в WhatsApp. Список — по постам, актуальность уточняйте.</p>
+      <p class="price-note" data-i18n="t41">Компания рассказывает в Instagram о холлофайбере и поролоне. Цен в постах нет. Размеры, плотность и наличие — спрашивайте в WhatsApp.</p>
+      <button type="button" class="btn btn--dark is-placeholder" data-wa-stub data-i18n="t35">Спросить наличие</button>
+    </div>
+  </section>
+
+  <!-- БЛОК: steps -->
+  <section class="section" id="howto">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t5">Как заказать</h2>
+      </header>
+      <ol class="steps__list steps__list--plain">
+        <li><span class="steps__n">1</span><p data-i18n="t42">Напишите в WhatsApp: что нужно и сколько. [номер уточняется]</p></li>
+        <li><span class="steps__n">2</span><p data-i18n="t43">Уточните наличие и цену — на сайте цен нет, их называют в переписке.</p></li>
+        <li><span class="steps__n">3</span><p data-i18n="t44">Договоритесь, как получить заказ: приехать на склад или в магазин (адреса выше) либо обсудить доставку.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: terms -->
+  <section class="section section--light" id="terms">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t6">Условия</h2>
+      </header>
+      <div class="terms">
+        <div class="terms__item"><p data-i18n="t45">Продажа оптом и в розницу.</p></div>
+        <div class="terms__item"><p data-i18n="t46">Доставка: «по всему KZ». Сроки и стоимость — уточняйте в WhatsApp.</p></div>
+        <div class="terms__item"><p data-i18n="t47">Оплата на складе: наличные, через банк, по QR-коду. Оплата в магазине — уточняйте в WhatsApp.</p></div>
+        <div class="terms__item"><p data-i18n="t48">Минимальный заказ для опта: уточняйте в WhatsApp.</p></div>
+        <div class="terms__item"><p data-i18n="t49">Цены: уточняйте в WhatsApp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК: rating -->
+  <section class="section section--dark" id="rating">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t7">Рейтинг</h2>
+      </header>
+      <div class="rating">
+        <span class="rating__num">5.0</span>
+        <p data-i18n="t50">Магазин на рынке Ожет: рейтинг 5.0 в 2ГИС (4 оценки).</p>
+      <a class="btn btn--line" href="https://2gis.kz/almaty/firm/70000001114855299" target="_blank" rel="noopener" data-i18n="t51">Смотреть в 2ГИС</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t8">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t19">Склад</p><p data-i18n="t55">ул. Байдибек би, 46, мкр Байбесик, Алматы; Пн–Сб 9:00–18:00, Вс выходной</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t56">Магазин</p><p data-i18n="t58">рынок Ожет, ул. Бекболата, 2/3, корп. Б, складское помещение 9; Вт–Вс 9:00–17:00, Пн выходной</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t60">Телефон / WhatsApp</p><p class="contacts__big" data-i18n="t59">[номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t61">Instagram / TikTok</p><p data-i18n="t62"><a href="https://www.instagram.com/Mebelnyi_tkan_almaty/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.tiktok.com/@mebelnyi_tkan_almaty" target="_blank" rel="noopener">TikTok</a></p></div>
+        <div class="contacts__actions">
+        <button type="button" class="btn btn--dark is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+        <a class="btn btn--outline" href="https://2gis.kz/almaty/firm/70000001117711445" target="_blank" rel="noopener" data-i18n="t52">2ГИС: склад ↗</a>
+        <a class="btn btn--outline" href="https://2gis.kz/almaty/firm/70000001114855299" target="_blank" rel="noopener" data-i18n="t53">2ГИС: магазин ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">Shaxsultan <span>textile</span></span></a>
+      <p class="footer__note" data-i18n="t63">Демо-концепция сайта. Демо-версия: не является официальным сайтом компании. Не для публикации без согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <button type="button" class="btn btn--accent is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+    <a class="btn fab__wa" href="#addresses" data-i18n="t14">Маршрут</a>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>
