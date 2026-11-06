@@ -1,10 +1,10 @@
-window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"Мебель на заказ · Байдибек би, 144 — демо","kk":"Тапсырыспен жиһаз · Байдібек би, 144 — демо"},"whatsapp":"77078850640","badges":{"main":{"groups":[{"days":[1,2,3,4,5,6,7],"open":"10:00","close":"20:00"}],"open":{"ru":"Открыто до {close}, без выходных","kk":"{close}-ге дейін ашық, демалыссыз"},"closed":null}},"form":{"materials":[{"id":"mdf","ru":"МДФ","kk":"МДФ","line":{"ru":"МДФ","kk":"МДФ"}},{"id":"idk","ru":"Не знаю, посоветуйте","kk":"Білмеймін, кеңес беріңіз","line":{"ru":"не знаю, посоветуйте","kk":"білмеймін, кеңес беріңіз"}}],"types":[{"id":"table","label":{"ru":"Стол","kk":"Үстел"},"title":"kind","fields":[{"id":"kind","kind":"text","opt":true,"label":{"ru":"Вид стола","kk":"Үстел түрі"},"hint":{"ru":"Например: рабочий, компьютерный, обеденный","kk":"Мысалы: жұмыс үстелі, компьютер үстелі, ас үстелі"}},{"id":"length","kind":"num","size":true,"label":{"ru":"Длина, см","kk":"Ұзындығы, см"}},{"id":"width","kind":"num","size":true,"label":{"ru":"Ширина, см","kk":"Ені, см"}},{"id":"height","kind":"num","size":true,"label":{"ru":"Высота, см","kk":"Биіктігі, см"}}],"sizeHint":{"ru":"Если не знаете — оставьте пустым, уточним","kk":"Білмесеңіз — бос қалдырыңыз, нақтылаймыз"},"size":{"ru":"{length} × {width} см, высота {height} см","kk":"{length} × {width} см, биіктігі {height} см"}},{"id":"cabinet","label":{"ru":"Тумба","kk":"Тумба"},"title":"contents","fields":[{"id":"contents","kind":"text","opt":true,"label":{"ru":"Что будет стоять или лежать","kk":"Онда не тұрады немесе не жатады?"}},{"id":"width","kind":"num","size":true,"label":{"ru":"Ширина, см","kk":"Ені, см"}},{"id":"depth","kind":"num","size":true,"label":{"ru":"Глубина, см","kk":"Тереңдігі, см"}},{"id":"height","kind":"num","size":true,"label":{"ru":"Высота, см","kk":"Биіктігі, см"}}],"sizeHint":{"ru":"Если не знаете — оставьте пустым, уточним","kk":"Білмесеңіз — бос қалдырыңыз, нақтылаймыз"},"size":{"ru":"ширина {width} см, глубина {depth} см, высота {height} см","kk":"ені {width} см, тереңдігі {depth} см, биіктігі {height} см"}},{"id":"other","label":{"ru":"Другое","kk":"Басқа"},"hint":{"ru":"Опишите своими словами на следующем шаге","kk":"Келесі қадамда өз сөзіңізбен жазыңыз"},"title":"what","fields":[{"id":"what","kind":"text","req":true,"label":{"ru":"Что именно нужно?","kk":"Нақты не керек?"},"hint":{"ru":"Например: полка, комод — своими словами","kk":"Мысалы: сөре, комод — өз сөзіңізбен"}},{"id":"approx","kind":"text","opt":true,"label":{"ru":"Примерные размеры","kk":"Шамамен өлшемдері"}}],"size":{"ru":"{approx}","kk":"{approx}"}}]},"kk":{"t1":"Тапсырыспен жиһаз <span>· Байдібек би, 144</span>","t2":"Тапсырыспен жиһаз · Байдібек би, 144 — демо","t3":"Жиһазға өтінім","t4":"Не жасаймыз","t5":"Қалай тапсырыс беруге болады","t6":"Неге мақтайды","t7":"Байланыс","t8":"Тапсырыспен жиһаз — <em>сіздің өлшеміңізге қарай</em>","t9":"Байбесіктегі шеберхана, Алматы","t10":"Идеяңызбен келіңіз. Жиһазға өтінімді бір минутта толтырыңыз — ол бізге WhatsApp-қа келеді.","t11":"Байдібек би көшесі, 144, 3-қабат","t12":"Маршрут","t13":"WhatsApp-қа жазу","t14":"Қонақ бөлмедегі ақ жайылмалы үстел","t15":"2ГИС-те рейтинг 5.0","t16":"(10 баға)","t17":"Шеберхана жиһазды тапсырыспен жасайды — сіздің өлшеміңізге және орныңызға қарай. Клиенттер көбіне үстелдерге, оның ішінде МДФ үстелдерге тапсырыс береді. Басқа нәрсе керек болса — жазыңыз, ақылдасамыз.","t18":"мұнда жұмыс фотосы болады","t19":"Үстелдер","t20":"Өлшеміңізге қарай МДФ үстелдер, оның ішінде жайылмалы консоль-үстелдер","t21":"Мәрмәр түстес жиналмалы консоль-үстел","t22":"Жайылмалы үстел","t23":"Шағын консоль ұзын үстелге айналады","t24":"Толық ұзындыққа жайылған ақ үстел","t25":"Тумбалар","t26":"Орныңызға сай тумба","t27":"Басқа тапсырыспен жиһаз","t28":"Не керек екенін айтыңыз — ақылдасамыз","t29":"Бағасы: WhatsApp арқылы нақтылаңыз","t30":"Мерзімі: WhatsApp арқылы нақтылаңыз","t31":"Сайтта жиһазға өтінім толтырасыз: өлшемдері мен тілектеріңіз","t32":"Өтінім WhatsApp-қа келеді","t33":"Шебер мәліметтер мен бағаны WhatsApp-та нақтылайды","t34":"МДФ үстелдер тапсырыс беруші ойлағандай болып шығады","t35":"Тез жасайды: бір пікірде үстелді 2 сағатта дайындап бергені айтылған","t36":"Арзан әрі сапалы, ұқыпты қаптайды, сыпайы сөйлеседі","t37":"Қайта тапсырыс беретін клиенттер бар","t38":"2ГИС-те рейтинг 5.0: 10 баға, 7 пікір","t39":"2ГИС-тегі пікірлерді қарау","t40":"Алматы қ., Байдібек би көшесі, 144, 3-қабат","t41":"Байбесік шағын ауданы, Алатау ауданы, 050024","t42":"Мекенжай","t43":"Жұмыс уақыты","t44":"Күн сайын","t45":"10:00–20:00, демалыссыз","t46":"+7 707 885 06 40","t47":"Телефон / WhatsApp","t48":"Төлем","t49":"қолма-қол ақша, картадан аударым, QR","t50":"Жеткізу","t51":"WhatsApp арқылы нақтылаңыз +7 707 885 06 40","t52":"Демо-бет. Деректер 2ГИС-тен алынған (06.11.2026), жұмыс фотолары — компанияның WhatsApp профилінен, бұл компанияның ресми сайты емес. Иесінің келісімінсіз жариялауға болмайды.","t53":"WhatsApp"}};
+window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"Мебель на заказ · Байдибек би, 144 — демо","kk":"Тапсырыспен жиһаз · Байдібек би, 144 — демо"},"whatsapp":"77078850640","badges":{"main":{"groups":[{"days":[1,2,3,4,5,6,7],"open":"10:00","close":"20:00"}],"open":{"ru":"Открыто до {close}, без выходных","kk":"{close}-ге дейін ашық, демалыссыз"},"closed":null}},"form":{"materials":[{"id":"mdf","ru":"МДФ","kk":"МДФ","line":{"ru":"МДФ","kk":"МДФ"}},{"id":"idk","ru":"Не знаю, посоветуйте","kk":"Білмеймін, кеңес беріңіз","line":{"ru":"не знаю, посоветуйте","kk":"білмеймін, кеңес беріңіз"}}],"types":[{"id":"table","label":{"ru":"Стол","kk":"Үстел"},"fields":[{"id":"length","kind":"num","size":true,"label":{"ru":"Длина, см","kk":"Ұзындығы, см"}},{"id":"width","kind":"num","size":true,"label":{"ru":"Ширина, см","kk":"Ені, см"}},{"id":"height","kind":"num","size":true,"label":{"ru":"Высота, см","kk":"Биіктігі, см"}}],"sizeHint":{"ru":"Если не знаете — оставьте пустым, уточним","kk":"Білмесеңіз — бос қалдырыңыз, нақтылаймыз"},"size":{"ru":"{length} × {width} см, высота {height} см","kk":"{length} × {width} см, биіктігі {height} см"},"photo":"work-1","photoAlt":{"ru":"Стол-консоль под мрамор — работа мастерской","kk":"Мәрмәр түстес консоль-үстел — шеберхана жұмысы"},"purpose":{"ru":"Обеденный, рабочий, раскладной стол-консоль","kk":"Ас, жұмыс үстелі, жайылмалы консоль-үстел"},"variants":[{"ru":"обеденный","kk":"ас үстелі"},{"ru":"рабочий","kk":"жұмыс үстелі"},{"ru":"компьютерный","kk":"компьютер үстелі"},{"ru":"раскладной стол-консоль","kk":"жайылмалы консоль-үстел"}]},{"id":"cabinet","label":{"ru":"Тумба","kk":"Тумба"},"title":"contents","fields":[{"id":"contents","kind":"text","opt":true,"label":{"ru":"Что будет стоять или лежать","kk":"Онда не тұрады немесе не жатады?"}},{"id":"width","kind":"num","size":true,"label":{"ru":"Ширина, см","kk":"Ені, см"}},{"id":"depth","kind":"num","size":true,"label":{"ru":"Глубина, см","kk":"Тереңдігі, см"}},{"id":"height","kind":"num","size":true,"label":{"ru":"Высота, см","kk":"Биіктігі, см"}}],"sizeHint":{"ru":"Если не знаете — оставьте пустым, уточним","kk":"Білмесеңіз — бос қалдырыңыз, нақтылаймыз"},"size":{"ru":"ширина {width} см, глубина {depth} см, высота {height} см","kk":"ені {width} см, тереңдігі {depth} см, биіктігі {height} см"},"purpose":{"ru":"Тумба под ваши размеры","kk":"Өлшеміңізге қарай тумба"}},{"id":"other","label":{"ru":"Другое","kk":"Басқа"},"title":"what","fields":[{"id":"what","kind":"text","req":true,"label":{"ru":"Что именно нужно?","kk":"Нақты не керек?"},"hint":{"ru":"Например: полка, комод — своими словами","kk":"Мысалы: сөре, комод — өз сөзіңізбен"}},{"id":"approx","kind":"text","opt":true,"label":{"ru":"Примерные размеры","kk":"Шамамен өлшемдері"}}],"size":{"ru":"{approx}","kk":"{approx}"},"purpose":{"ru":"Опишите своими словами","kk":"Өз сөзіңізбен жазыңыз"}}],"when":[{"ru":"Срочно","kk":"Шұғыл"},{"ru":"В течение месяца","kk":"Бір ай ішінде"},{"ru":"Не спешу","kk":"Асықпаймын"}]},"kk":{"t1":"Тапсырыспен жиһаз <span>· Байдібек би, 144</span>","t2":"Тапсырыспен жиһаз · Байдібек би, 144 — демо","t3":"Жиһазға өтінім","t4":"Не жасаймыз","t5":"Қалай тапсырыс беруге болады","t6":"Неге мақтайды","t7":"Байланыс","t8":"Тапсырыспен жиһаз — <em>сіздің өлшеміңізге қарай</em>","t9":"Байбесіктегі шеберхана, Алматы","t10":"Идеяңызбен келіңіз. Жиһазға өтінімді бір минутта толтырыңыз — ол бізге WhatsApp-қа келеді.","t11":"Байдібек би көшесі, 144, 3-қабат","t12":"Маршрут","t13":"WhatsApp-қа жазу","t14":"Қонақ бөлмедегі ақ жайылмалы үстел","t15":"2ГИС-те рейтинг 5.0","t16":"(10 баға)","t17":"Шеберхана жиһазды тапсырыспен жасайды — сіздің өлшеміңізге және орныңызға қарай. Клиенттер көбіне үстелдерге, оның ішінде МДФ үстелдерге тапсырыс береді. Басқа нәрсе керек болса — жазыңыз, ақылдасамыз.","t18":"мұнда жұмыс фотосы болады","t19":"Үстелдер","t20":"Өлшеміңізге қарай МДФ үстелдер, оның ішінде жайылмалы консоль-үстелдер","t21":"Мәрмәр түстес жиналмалы консоль-үстел","t22":"Жайылмалы үстел","t23":"Шағын консоль ұзын үстелге айналады","t24":"Толық ұзындыққа жайылған ақ үстел","t25":"Тумбалар","t26":"Орныңызға сай тумба","t27":"Басқа тапсырыспен жиһаз","t28":"Не керек екенін айтыңыз — ақылдасамыз","t29":"Бағасы: WhatsApp арқылы нақтылаңыз","t30":"Мерзімі: WhatsApp арқылы нақтылаңыз","t31":"Сайтта жиһазға өтінім толтырасыз: өлшемдері мен тілектеріңіз","t32":"Өтінім WhatsApp-қа келеді","t33":"Шебер мәліметтер мен бағаны WhatsApp-та нақтылайды","t34":"МДФ үстелдер тапсырыс беруші ойлағандай болып шығады","t35":"Тез жасайды: бір пікірде үстелді 2 сағатта дайындап бергені айтылған","t36":"Арзан әрі сапалы, ұқыпты қаптайды, сыпайы сөйлеседі","t37":"Қайта тапсырыс беретін клиенттер бар","t38":"2ГИС-те рейтинг 5.0: 10 баға, 7 пікір","t39":"2ГИС-тегі пікірлерді қарау","t40":"Алматы қ., Байдібек би көшесі, 144, 3-қабат","t41":"Байбесік шағын ауданы, Алатау ауданы, 050024","t42":"Мекенжай","t43":"Жұмыс уақыты","t44":"Күн сайын","t45":"10:00–20:00, демалыссыз","t46":"+7 707 885 06 40","t47":"Телефон / WhatsApp","t48":"Төлем","t49":"қолма-қол ақша, картадан аударым, QR","t50":"Жеткізу","t51":"WhatsApp арқылы нақтылаңыз +7 707 885 06 40","t52":"Демо-бет. Деректер 2ГИС-тен алынған (06.11.2026), жұмыс фотолары — компанияның WhatsApp профилінен, бұл компанияның ресми сайты емес. Иесінің келісімінсіз жариялауға болмайды.","t53":"WhatsApp"}};
 /* =========================================================================
    Общий скрипт сайтов FurnitureWeb. Не править в sites/ — править здесь и пересобирать.
    Данные сайта (тексты KZ, часы, форма, номер) build.py кладёт в начало файла: window.SITE = {...}
    1) Переключатель RU/KZ (data-i18n + словарь SITE.kk).
    2) Бейдж «Открыто до …» по часам из чертежа (с учётом дня и времени).
-   3) Блок request-form: мастер-форма из 5 шагов → готовый текст заявки (WhatsApp).
+   3) Блок request-form: карточки видов мебели → детали → панель «Ваша заявка» → WhatsApp.
    4) Меню, плавающие кнопки, подсказка для кнопок-заглушек WhatsApp.
    Данные клиента нигде не сохраняются: только в памяти страницы.
    ========================================================================= */
@@ -19,16 +19,20 @@ window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"М�
   /* Подписи формы по умолчанию (RU / KZ). Чертёж может переопределить: form.ui.ru / form.ui.kk */
   var UI = {
     ru: {
-      intro: 'Расскажите, что нужно, — это займёт минуту. Заявка уйдёт нам в WhatsApp.',
+      intro: 'Выберите, что нужно, и укажите детали — заявка уйдёт мастеру в WhatsApp. Это займёт минуту.',
       progress: 'Шаг {n} из 5',
       next: 'Далее', back: 'Назад', skip: 'Пропустить', optional: '(необязательно)',
       s1: 'Что хотите заказать?', s2: 'Размеры и пожелания', s3: 'Есть фото или рисунок?', s4: 'Район и имя', s5: 'Всё верно?',
+      pick: 'Выбрать', picked: 'Выбрано', chooseFirst: 'Сначала выберите выше, что хотите заказать.',
+      variant: 'Уточните вид', when: 'Когда нужно', errName: 'Укажите имя',
+      s: { eyebrow: 'Ваша заявка', title: 'Что получит мастер', kind: 'Мебель', size: 'Размеры', mat: 'Материал', when: 'Когда',
+           name: 'Имя', empty: 'не указано', price: 'Цена', priceVal: 'мастер рассчитает' },
       material: 'Материал',
       wishes: 'Пожелания', wishesHint: 'Цвет, ручки, что важно — своими словами',
       photoHint: 'После отправки прикрепите фото прямо в чате WhatsApp. Через сайт файл передать нельзя.',
       photoCheck: 'У меня есть фото — пришлю в чате',
-      district: 'Район или адрес, где будет стоять мебель', districtHint: 'Например: Алатауский район, мкр Байбесик',
-      name: 'Как к вам обращаться?', nameHint: 'Ваше имя',
+      district: 'Район или адрес', districtHint: 'Например: Алатауский район, мкр Байбесик',
+      name: 'Ваше имя', nameHint: 'Ваше имя',
       phoneNote: 'Телефон не нужен — заявка придёт с вашего номера в WhatsApp.',
       send: 'Отправить заявку в WhatsApp', copy: 'Скопировать текст', copied: 'Текст скопирован',
       copyFail: 'Не удалось скопировать — выделите текст выше и скопируйте вручную.',
@@ -36,20 +40,24 @@ window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"М�
       demo: 'В демо кнопка показывает текст, но не отправляет — номер уточняется.',
       errReq: 'Заполните это поле', errNum: 'Введите число в сантиметрах', errType: 'Выберите, что хотите заказать',
       sum: { greet: 'Здравствуйте! Заявка с сайта.', what: 'Что нужно', size: 'Размер', mat: 'Материал', wish: 'Пожелания',
-             photo: 'Фото', photoYes: 'пришлю в чате', photoNo: 'нет', district: 'Район', name: 'Имя' },
+             photo: 'Фото', photoYes: 'пришлю в чате', photoNo: 'нет', district: 'Район', name: 'Имя', when: 'Когда нужно', sizeNone: 'уточним' },
       phStub: '[номер уточняется]', closed: 'Сейчас закрыто'
     },
     kk: {
-      intro: 'Не керек екенін айтыңыз — бір минут қана кетеді. Өтінім бізге WhatsApp-қа келеді.',
+      intro: 'Не керек екенін таңдап, мәліметтерді көрсетіңіз — өтінім шеберге WhatsApp арқылы барады. Бір минут қана кетеді.',
       progress: '5 қадамның {n}-қадамы',
       next: 'Әрі қарай', back: 'Артқа', skip: 'Өткізіп жіберу', optional: '(міндетті емес)',
       s1: 'Не тапсырыс бергіңіз келеді?', s2: 'Өлшемдері мен тілектер', s3: 'Фото немесе сурет бар ма?', s4: 'Аудан және есім', s5: 'Бәрі дұрыс па?',
+      pick: 'Таңдау', picked: 'Таңдалды', chooseFirst: 'Алдымен жоғарыдан не тапсырыс беретініңізді таңдаңыз.',
+      variant: 'Түрін нақтылаңыз', when: 'Қашан керек', errName: 'Атыңызды жазыңыз',
+      s: { eyebrow: 'Сіздің өтініміңіз', title: 'Шебер не алады', kind: 'Жиһаз', size: 'Өлшемдері', mat: 'Материал', when: 'Қашан',
+           name: 'Аты', empty: 'көрсетілмеген', price: 'Бағасы', priceVal: 'шебер есептейді' },
       material: 'Материал',
       wishes: 'Тілектер', wishesHint: 'Түсі, тұтқалары, сізге не маңызды — өз сөзіңізбен',
       photoHint: 'Жібергеннен кейін фотоны WhatsApp чатына тіркеңіз. Сайт арқылы файл жіберу мүмкін емес.',
       photoCheck: 'Менде фото бар — чатқа жіберемін',
-      district: 'Жиһаз тұратын аудан немесе мекенжай', districtHint: 'Мысалы: Алатау ауданы, Байбесік ш/а',
-      name: 'Сізге қалай жүгінейік?', nameHint: 'Атыңыз',
+      district: 'Аудан немесе мекенжай', districtHint: 'Мысалы: Алатау ауданы, Байбесік ш/а',
+      name: 'Атыңыз', nameHint: 'Атыңыз',
       phoneNote: 'Телефон керек емес — өтінім WhatsApp-қа өз нөміріңізден келеді.',
       send: 'Өтінімді WhatsApp-қа жіберу', copy: 'Мәтінді көшіру', copied: 'Мәтін көшірілді',
       copyFail: 'Көшіру мүмкін болмады — жоғарыдағы мәтінді белгілеп, қолмен көшіріңіз.',
@@ -57,7 +65,7 @@ window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"М�
       demo: 'Демо нұсқада батырма мәтінді көрсетеді, бірақ жібермейді — нөмір нақтыланып жатыр.',
       errReq: 'Бұл жолды толтырыңыз', errNum: 'Санды сантиметрмен енгізіңіз', errType: 'Не тапсырыс бергіңіз келетінін таңдаңыз',
       sum: { greet: 'Сәлеметсіз бе! Сайттан өтінім.', what: 'Не керек', size: 'Өлшемі', mat: 'Материал', wish: 'Тілектер',
-             photo: 'Фото', photoYes: 'чатқа жіберемін', photoNo: 'жоқ', district: 'Аудан', name: 'Аты' },
+             photo: 'Фото', photoYes: 'чатқа жіберемін', photoNo: 'жоқ', district: 'Аудан', name: 'Аты', when: 'Қашан керек', sizeNone: 'нақтылаймыз' },
       phStub: '[нөмір нақтыланады]', closed: 'Қазір жабық'
     }
   };
@@ -138,131 +146,133 @@ window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"М�
   function typeById(id) { return CONFIG.types.filter(function (t) { return t.id === id; })[0]; }
 
   var form = (function () {
+    /* Заявка в стиле приложения: карточки видов мебели → детали → панель «Ваша заявка» → WhatsApp */
     var root = document.querySelector('[data-request-form]');
-    var st = { step: 1, type: '', vals: {}, material: '', wishes: '', photo: false, district: '', name: '', errors: {}, status: '' };
-    var started = false;
-
+    var st = { type: '', variant: -1, vals: {}, material: '', mopt: -1, when: -1, wishes: '', photo: false, district: '', name: '', err: '', status: '' };
+    var ICON = {
+      table: '<path d="M3 9h18M5 9v10M19 9v10M7 9v6M17 9v6"/>',
+      cabinet: '<rect x="5" y="6" width="14" height="13" rx="1"/><path d="M5 12h14M10 9h4M10 15h4M7 19v2M17 19v2"/>',
+      other: '<path d="M15 4l5 5L9 20H4v-5z"/><path d="M13 6l5 5"/>',
+      def: '<rect x="4" y="6" width="16" height="12" rx="1"/><path d="M12 6v12"/>'
+    };
+    function ic(p) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + p + '</svg>'; }
     function t() { return UI[lang]; }
+    function L(o) { return o ? (o[lang] || o.ru || '') : ''; }
+    function val(id) { return (st.vals[id] || '').trim(); }
+    function ty() { return typeById(st.type); }
+    function matObj() { return CONFIG.materials.filter(function (m) { return m.id === st.material; })[0]; }
 
-    /* ----- текст заявки на выбранном языке ----- */
-    function buildText() {
-      var u = t().sum, ty = typeById(st.type), V = st.vals;
-      function val(id) { return (V[id] || '').trim(); }
-      var typeLine = ty.label[lang];
-      if (ty.title && val(ty.title)) typeLine += ' — ' + val(ty.title);
+    function sizeText() {
+      var y = ty(); if (!y || !y.size) return '';
       var used = 0;
-      var size = ty.size[lang].replace(/\{(\w+)\}/g, function (m, id) {
-        var v = val(id); if (v) used++; return v || '—';
-      });
-      if (!used) size = '—';
-      var mat = CONFIG.materials.filter(function (m) { return m.id === st.material; })[0];
-      return [
-        u.greet,
-        u.what + ': ' + typeLine,
-        u.size + ': ' + size,
-        u.mat + ': ' + (mat ? mat.line[lang] : '—'),
-        u.wish + ': ' + (st.wishes.trim() || '—'),
-        u.photo + ': ' + (st.photo ? u.photoYes : u.photoNo),
-        u.district + ': ' + st.district.trim(),
-        u.name + ': ' + st.name.trim()
-      ].join('\n');
+      var s = y.size[lang].replace(/\{(\w+)\}/g, function (m, id) { var v = val(id); if (v) used++; return v || '—'; });
+      return used ? s : '';
     }
-
-    /* ----- разметка шагов ----- */
-    function fieldHtml(f) {
-      var tt = t(), id = 'rf-' + f.id;
-      var lab = esc(f.label[lang]) + (f.opt ? ' <small>' + tt.optional + '</small>' : '');
-      var err = st.errors[f.id] ? '<p class="rf__error" role="alert">' + esc(st.errors[f.id]) + '</p>' : '';
-      var hint = f.hint ? '<p class="rf__hint">' + esc(f.hint[lang]) + '</p>' : '';
-      return '<div class="rf__field"><label class="rf__label" for="' + id + '">' + lab + '</label>' +
-        '<input class="rf__input" id="' + id + '" data-f="' + f.id + '" type="text"' +
-        (f.kind === 'num' ? ' inputmode="decimal"' : '') + ' value="' + esc(st.vals[f.id] || '') + '" autocomplete="off">' +
-        hint + err + '</div>';
+    function whatText() {
+      var y = ty(); if (!y) return '';
+      if (y.id === 'other') return val('what') || y.label[lang];
+      var s = y.label[lang];
+      if (y.variants && st.variant > -1) s += ' — ' + L(y.variants[st.variant]);
+      if (y.title && val(y.title)) s += ' — ' + val(y.title);
+      return s;
     }
-
-    function stepHtml() {
-      var tt = t(), h = '';
-      if (st.step === 1) {
-        h += '<h3 class="rf__title">' + tt.s1 + '</h3><fieldset class="rf__cards">';
-        CONFIG.types.forEach(function (ty) {
-          h += '<label class="rf__card"><input type="radio" name="rf-type" value="' + ty.id + '"' + (st.type === ty.id ? ' checked' : '') + '>' +
-            '<span>' + esc(ty.label[lang]) + (ty.hint ? '<small>' + esc(ty.hint[lang]) + '</small>' : '') + '</span></label>';
-        });
-        h += '</fieldset>' + (st.errors.type ? '<p class="rf__error" role="alert">' + esc(st.errors.type) + '</p>' : '');
-      } else if (st.step === 2) {
-        var ty = typeById(st.type), sizeF = ty.fields.filter(function (f) { return f.size; }), rest = ty.fields.filter(function (f) { return !f.size; });
-        h += '<h3 class="rf__title">' + tt.s2 + '</h3>';
-        rest.forEach(function (f) { h += fieldHtml(f); });
-        if (sizeF.length) {
-          h += '<div class="rf__sizes">' + sizeF.map(function (f) { return fieldHtml(f); }).join('') + '</div>';
-          if (ty.sizeHint) h += '<p class="rf__hint" style="margin:-6px 0 18px">' + esc(ty.sizeHint[lang]) + '</p>';
-        }
-        if (CONFIG.materials.length) {
-          h += '<fieldset class="rf__radios"><legend>' + tt.material + ' <small style="font-weight:400;color:var(--muted)">' + tt.optional + '</small></legend>';
-          CONFIG.materials.forEach(function (m) {
-            h += '<label class="rf__card"><input type="radio" name="rf-mat" value="' + m.id + '"' + (st.material === m.id ? ' checked' : '') + '><span style="font-size:18px;min-height:56px">' + esc(m[lang]) + '</span></label>';
-          });
-          h += '</fieldset>';
-        }
-        h += '<div class="rf__field"><label class="rf__label" for="rf-wishes">' + tt.wishes + ' <small>' + tt.optional + '</small></label>' +
-          '<textarea class="rf__input" id="rf-wishes" data-w="wishes" placeholder="' + esc(tt.wishesHint) + '">' + esc(st.wishes) + '</textarea></div>';
-      } else if (st.step === 3) {
-        h += '<h3 class="rf__title">' + tt.s3 + '</h3><p class="rf__note">' + tt.photoHint + '</p>' +
-          '<label class="rf__check"><input type="checkbox" id="rf-photo"' + (st.photo ? ' checked' : '') + '><span>' + tt.photoCheck + '</span></label>';
-      } else if (st.step === 4) {
-        h += '<h3 class="rf__title">' + tt.s4 + '</h3>' +
-          '<div class="rf__field"><label class="rf__label" for="rf-district">' + tt.district + '</label><input class="rf__input" id="rf-district" data-w="district" type="text" value="' + esc(st.district) + '" autocomplete="off"><p class="rf__hint">' + tt.districtHint + '</p>' + (st.errors.district ? '<p class="rf__error" role="alert">' + esc(st.errors.district) + '</p>' : '') + '</div>' +
-          '<div class="rf__field"><label class="rf__label" for="rf-name">' + tt.name + '</label><input class="rf__input" id="rf-name" data-w="name" type="text" value="' + esc(st.name) + '" autocomplete="off"><p class="rf__hint">' + tt.nameHint + '</p>' + (st.errors.name ? '<p class="rf__error" role="alert">' + esc(st.errors.name) + '</p>' : '') + '</div>' +
-          '<p class="rf__note">' + tt.phoneNote + '</p>';
-      } else {
-        h += '<h3 class="rf__title">' + tt.s5 + '</h3><div class="rf__preview" id="rf-preview">' + esc(buildText()) + '</div>' +
-          '<div class="rf__nav" style="margin-top:0"><button type="button" class="btn btn--accent' + (CONFIG.whatsapp ? '' : ' is-placeholder') + '" data-act="send">' + tt.send + '</button>' +
-          '<button type="button" class="btn btn--outline" data-act="copy">' + tt.copy + '</button></div>' +
-          '<p class="rf__status" id="rf-status" role="status" aria-live="polite">' + esc(st.status) + '</p>' +
-          '<p class="rf__explain">' + tt.explain + (CONFIG.whatsapp ? '' : ' ' + tt.phStub) + '</p>';
+    function matText() {
+      var m = matObj(); if (!m) return '';
+      return L(m.line || m) + (m.options && st.mopt > -1 ? ' — ' + L(m.options[st.mopt]) : '');
+    }
+    function buildText() {
+      var u = t().sum, w = CONFIG.when || [];
+      var lines = [u.greet, u.what + ': ' + whatText(), u.size + ': ' + (sizeText() || u.sizeNone)];
+      if (matText()) lines.push(u.mat + ': ' + matText());
+      if (st.when > -1) lines.push(u.when + ': ' + L(w[st.when]));
+      if (st.wishes.trim()) lines.push(u.wish + ': ' + st.wishes.trim());
+      if (st.photo) lines.push(u.photo + ': ' + u.photoYes);
+      if (st.district.trim()) lines.push(u.district + ': ' + st.district.trim());
+      lines.push(u.name + ': ' + st.name.trim());
+      return lines.join('\n');
+    }
+    function problem() {
+      var tt = t(), y = ty();
+      if (!y) return { msg: tt.errType, at: 'rq-cards' };
+      for (var i = 0; i < y.fields.length; i++) {
+        var f = y.fields[i], v = val(f.id);
+        if (f.req && !v) return { msg: tt.errReq, at: 'rq-f-' + f.id };
+        if (f.kind === 'num' && v && !/^\d+([.,]\d+)?$/.test(v)) return { msg: tt.errNum, at: 'rq-f-' + f.id };
       }
+      if (!st.name.trim()) return { msg: tt.errName, at: 'rq-name' };
+      return null;
+    }
+
+    function chips(list, on, act) {
+      return '<div class="rq__chips">' + list.map(function (o, i) {
+        return '<button type="button" class="rq__chip" data-' + act + '="' + i + '" aria-pressed="' + (on(i) ? 'true' : 'false') + '">' + esc(L(o)) + '</button>';
+      }).join('') + '</div>';
+    }
+    function cardsHtml() {
+      var tt = t();
+      return CONFIG.types.map(function (y) {
+        var on = st.type === y.id;
+        var img = y.photo ? '<img src="images/' + esc(y.photo) + '.jpg" alt="' + esc(L(y.photoAlt) || y.label[lang]) + '" loading="lazy">'
+                          : '<span class="rq__icon">' + ic(ICON[y.id] || ICON.def) + '</span>';
+        return '<button type="button" class="rq__card' + (on ? ' is-on' : '') + '" data-type="' + y.id + '" aria-pressed="' + on + '">' +
+          '<span class="rq__media">' + img + '</span><span class="rq__body"><strong>' + esc(y.label[lang]) + '</strong>' +
+          (y.purpose ? '<span class="rq__purpose">' + esc(L(y.purpose)) + '</span>' : '') +
+          '<span class="rq__pick">' + (on ? '✓ ' + tt.picked : tt.pick) + '</span></span></button>';
+      }).join('');
+    }
+    function field(f) {
+      var tt = t(), id = 'rq-f-' + f.id;
+      return '<div class="rq__f' + (f.kind === 'text' ? ' rq__f--wide' : '') + '"><label class="rq__label" for="' + id + '">' + esc(f.label[lang]) +
+        (f.opt ? ' <small>' + tt.optional + '</small>' : '') + '</label>' +
+        '<input class="rq__input" id="' + id + '" data-f="' + f.id + '" type="text" value="' + esc(st.vals[f.id] || '') + '" autocomplete="off"' + (f.kind === 'num' ? ' inputmode="decimal"' : '') + '>' +
+        (f.hint ? '<p class="rq__hint">' + esc(f.hint[lang]) + '</p>' : '') + '</div>';
+    }
+    function formHtml() {
+      var tt = t(), y = ty(), h = '';
+      if (!y) return '<p class="rq__empty">' + tt.chooseFirst + '</p>';
+      h += '<p class="rq__kind">' + esc(y.label[lang]) + '</p>';
+      if (y.variants && y.variants.length) h += '<div class="rq__g"><p class="rq__label">' + tt.variant + ' <small>' + tt.optional + '</small></p>' + chips(y.variants, function (i) { return st.variant === i; }, 'variant') + '</div>';
+      h += '<div class="rq__g"><div class="rq__row">' + y.fields.map(field).join('') + '</div>' + (y.sizeHint ? '<p class="rq__hint">' + esc(y.sizeHint[lang]) + '</p>' : '') + '</div>';
+      if (CONFIG.materials.length) {
+        h += '<div class="rq__g"><p class="rq__label">' + tt.material + ' <small>' + tt.optional + '</small></p>' +
+          chips(CONFIG.materials, function (i) { return CONFIG.materials[i].id === st.material; }, 'mat') + '</div>';
+        var m = matObj();
+        if (m && m.options) h += '<div class="rq__g rq__g--sub"><p class="rq__label">' + esc(L(m.optLabel)) + ' <small>' + tt.optional + '</small></p>' + chips(m.options, function (i) { return st.mopt === i; }, 'mopt') + '</div>';
+      }
+      if (CONFIG.when && CONFIG.when.length) h += '<div class="rq__g"><p class="rq__label">' + tt.when + ' <small>' + tt.optional + '</small></p>' + chips(CONFIG.when, function (i) { return st.when === i; }, 'when') + '</div>';
+      h += '<div class="rq__g"><label class="rq__label" for="rq-wishes">' + tt.wishes + ' <small>' + tt.optional + '</small></label>' +
+        '<textarea class="rq__input" id="rq-wishes" data-w="wishes" placeholder="' + esc(tt.wishesHint) + '">' + esc(st.wishes) + '</textarea></div>';
+      h += '<div class="rq__g"><div class="rq__row">' +
+        '<div class="rq__f"><label class="rq__label" for="rq-name">' + tt.name + '</label><input class="rq__input" id="rq-name" data-w="name" type="text" value="' + esc(st.name) + '" autocomplete="given-name"></div>' +
+        '<div class="rq__f"><label class="rq__label" for="rq-district">' + tt.district + ' <small>' + tt.optional + '</small></label><input class="rq__input" id="rq-district" data-w="district" type="text" value="' + esc(st.district) + '" autocomplete="off"><p class="rq__hint">' + tt.districtHint + '</p></div>' +
+        '</div></div>';
+      h += '<div class="rq__g"><label class="rq__check"><input type="checkbox" id="rq-photo"' + (st.photo ? ' checked' : '') + '><span>' + tt.photoCheck + '</span></label><p class="rq__hint">' + tt.photoHint + '</p></div>';
+      h += '<p class="rq__hint">' + tt.phoneNote + '</p>';
       return h;
     }
-
+    function row(k, v) { return '<div><dt>' + t().s[k] + '</dt><dd' + (v ? '' : ' class="is-empty"') + '>' + esc(v || t().s.empty) + '</dd></div>'; }
+    function summaryHtml() {
+      var tt = t(), s = tt.s;
+      var h = '<p class="rq__s-eyebrow">' + s.eyebrow + '</p><p class="rq__s-title">' + s.title + '</p><dl class="rq__lines">' +
+        row('kind', whatText()) + row('size', sizeText()) + row('mat', matText()) +
+        row('when', st.when > -1 ? L(CONFIG.when[st.when]) : '') + row('name', st.name.trim()) + '</dl>' +
+        '<div class="rq__total"><span>' + s.price + '</span><b>' + s.priceVal + '</b></div>';
+      if (st.err) h += '<p class="rq__err" role="alert">' + esc(st.err) + '</p>';
+      h += '<button type="button" class="btn btn--accent rq__send" data-act="send">' + tt.send + '</button>' +
+        '<button type="button" class="btn rq__copy" data-act="copy">' + tt.copy + '</button>' +
+        '<p class="rq__status" id="rq-status" role="status" aria-live="polite">' + esc(st.status) + '</p>' +
+        '<p class="rq__s-note">' + tt.explain + (CONFIG.whatsapp ? '' : ' ' + tt.demo) + '</p>';
+      return h;
+    }
     function render() {
       if (!root) return;
-      var tt = t();
-      var nav = '<div class="rf__nav">';
-      if (st.step > 1) nav += '<button type="button" class="btn btn--outline" data-act="back">' + tt.back + '</button>';
-      if (st.step === 3) nav += '<button type="button" class="btn btn--outline" data-act="skip">' + tt.skip + '</button>';
-      if (st.step < 5) nav += '<button type="button" class="btn btn--dark" data-act="next">' + tt.next + '</button>';
-      nav += '</div>';
-      root.innerHTML = '<p class="rf__intro">' + tt.intro + '</p>' +
-        '<p class="rf__progress" id="rf-progress">' + tt.progress.replace('{n}', st.step) + '</p>' +
-        '<div class="rf__bar" aria-hidden="true"><i style="width:' + (st.step * 20) + '%"></i></div>' +
-        stepHtml() + nav;
-      if (started) {
-        var p = document.getElementById('rf-progress');
-        if (p && p.getBoundingClientRect().top < 70) p.scrollIntoView({ block: 'center' });
-      }
+      root.innerHTML = '<p class="rq__intro">' + t().intro + '</p>' +
+        '<div class="rq__cards" id="rq-cards">' + cardsHtml() + '</div>' +
+        '<div class="rq__grid" id="rq-details"><div class="rq__panel" id="rq-form">' + formHtml() + '</div>' +
+        '<aside class="rq__summary" id="rq-summary" aria-live="polite">' + summaryHtml() + '</aside></div>';
     }
-
-    /* ----- проверка шага ----- */
-    function validate() {
-      var tt = t(), e = {}, ty;
-      if (st.step === 1 && !st.type) e.type = tt.errType;
-      if (st.step === 2) {
-        ty = typeById(st.type);
-        ty.fields.forEach(function (f) {
-          var v = (st.vals[f.id] || '').trim();
-          if (f.req && !v) e[f.id] = tt.errReq;
-          else if (f.kind === 'num' && v && !/^\d+([.,]\d+)?$/.test(v)) e[f.id] = tt.errNum;
-        });
-      }
-      if (st.step === 4) {
-        if (!st.district.trim()) e.district = tt.errReq;
-        if (!st.name.trim()) e.name = tt.errReq;
-      }
-      st.errors = e;
-      return Object.keys(e).length === 0;
-    }
-
-    function go(n) { st.step = n; st.status = ''; started = true; render(); }
+    function part(id, html) { var el = document.getElementById(id); if (el) el.innerHTML = html; }
+    function soft() { if (st.err) { var p = problem(); st.err = p ? p.msg : ''; } st.status = ''; part('rq-summary', summaryHtml()); }
 
     function copyText(txt, done, fail) {
       function legacy() {
@@ -275,39 +285,62 @@ window.SITE = {"slug":"mebel-na-zakaz-144","tz":"Asia/Almaty","title":{"ru":"М�
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(done, legacy);
       else legacy();
     }
-
-    function setStatus(msg) {
-      st.status = msg;
-      var el = document.getElementById('rf-status'); if (el) el.textContent = msg;
+    function check() {
+      var p = problem();
+      if (!p) { st.err = ''; return true; }
+      st.err = p.msg; part('rq-summary', summaryHtml());
+      var el = document.getElementById(p.at);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (el.tagName === 'INPUT') setTimeout(function () { try { el.focus({ preventScroll: true }); } catch (e) {} }, 350);
+      }
+      return false;
     }
 
-    /* ----- события (делегирование, переживают перерисовку) ----- */
     if (root) {
       root.addEventListener('input', function (e) {
         var el = e.target;
         if (el.getAttribute('data-f')) st.vals[el.getAttribute('data-f')] = el.value;
         else if (el.getAttribute('data-w')) st[el.getAttribute('data-w')] = el.value;
+        soft();
       });
-      root.addEventListener('change', function (e) {
-        var el = e.target;
-        if (el.name === 'rf-type') { st.type = el.value; st.errors = {}; }
-        else if (el.name === 'rf-mat') st.material = el.value;
-        else if (el.id === 'rf-photo') st.photo = el.checked;
-      });
+      root.addEventListener('change', function (e) { if (e.target.id === 'rq-photo') { st.photo = e.target.checked; soft(); } });
       root.addEventListener('click', function (e) {
-        var b = e.target.closest('[data-act]'); if (!b) return;
-        var act = b.getAttribute('data-act');
-        if (act === 'next') { if (validate()) go(st.step + 1); else render(); }
-        else if (act === 'back') go(st.step - 1);
-        else if (act === 'skip') { st.photo = false; go(st.step + 1); }
-        else if (act === 'copy') copyText(buildText(), function () { setStatus(t().copied); }, function () { setStatus(t().copyFail); });
+        var c = e.target.closest('[data-type]');
+        if (c) {
+          var id = c.getAttribute('data-type');
+          if (st.type !== id) { st.type = id; st.variant = -1; st.vals = {}; }
+          st.err = ''; part('rq-cards', cardsHtml()); part('rq-form', formHtml()); part('rq-summary', summaryHtml());
+          var d = document.getElementById('rq-details'); if (d) d.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          return;
+        }
+        var b = e.target.closest('.rq__chip');
+        if (b) {
+          var i;
+          if (b.hasAttribute('data-variant')) { i = +b.getAttribute('data-variant'); st.variant = st.variant === i ? -1 : i; }
+          else if (b.hasAttribute('data-mat')) {
+            var m = CONFIG.materials[+b.getAttribute('data-mat')];
+            st.material = st.material === m.id ? '' : m.id; st.mopt = -1; part('rq-form', formHtml()); soft(); return;
+          }
+          else if (b.hasAttribute('data-mopt')) { i = +b.getAttribute('data-mopt'); st.mopt = st.mopt === i ? -1 : i; }
+          else if (b.hasAttribute('data-when')) { i = +b.getAttribute('data-when'); st.when = st.when === i ? -1 : i; }
+          b.parentNode.querySelectorAll('.rq__chip').forEach(function (x) {
+            var on = x.hasAttribute('data-variant') ? st.variant === +x.getAttribute('data-variant') :
+                     x.hasAttribute('data-mopt') ? st.mopt === +x.getAttribute('data-mopt') : st.when === +x.getAttribute('data-when');
+            x.setAttribute('aria-pressed', on ? 'true' : 'false');
+          });
+          soft(); return;
+        }
+        var a = e.target.closest('[data-act]'); if (!a) return;
+        var act = a.getAttribute('data-act');
+        if (!check()) return;
+        if (act === 'copy') copyText(buildText(), function () { st.status = t().copied; part('rq-summary', summaryHtml()); }, function () { st.status = t().copyFail; part('rq-summary', summaryHtml()); });
         else if (act === 'send') {
           if (CONFIG.whatsapp) window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(buildText()), '_blank', 'noopener');
-          else setStatus(t().demo); // номер не подтверждён: ничего не открываем
+          else { st.status = t().demo; part('rq-summary', summaryHtml()); }
         }
       });
     }
-
     return { render: render, text: buildText };
   })();
 
