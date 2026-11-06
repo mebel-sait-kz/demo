@@ -72,7 +72,7 @@
 
   var lang = "ru";
   try { lang = localStorage.getItem("fw-app-lang") === "kk" ? "kk" : "ru"; } catch (e) {}
-  var S = { type: null, variant: null, vals: {}, material: null, extras: [], when: null, photo: false, comment: "", district: "", name: "" };
+  var S = { type: null, variant: null, vals: {}, material: null, mopt: null, extras: [], when: null, photo: false, comment: "", district: "", name: "" };
   var err = "", copied = false;
 
   var $ = function (id) { return document.getElementById(id); };
@@ -115,6 +115,8 @@
     if (ty && ty.variants.length) h += '<div class="group"><p class="label">' + t("variant") + " <small>" + t("optional") + "</small></p>" + chips(ty.variants, function (i) { return S.variant === i; }, "variant") + "</div>";
     if (ty) h += '<div class="group"><div class="row row--3">' + ty.fields.map(field).join("") + "</div></div>";
     h += '<div class="group"><p class="label">' + t("material") + "</p>" + chips(A.materials, function (i) { return S.material === i; }, "material") + "</div>";
+    var mt = S.material !== null ? A.materials[S.material] : null;
+    if (mt && mt.options) h += '<div class="group group--sub"><p class="label">' + esc(L(mt.optLabel)) + " <small>" + t("optional") + "</small></p>" + chips(mt.options, function (i) { return S.mopt === i; }, "mopt") + "</div>";
     h += '<div class="group"><p class="label">' + t("extras") + " <small>" + t("optional") + "</small></p>" + chips(A.extras, function (i) { return S.extras.indexOf(i) > -1; }, "extra") + "</div>";
     h += '<div class="group"><p class="label">' + t("when") + "</p>" + chips(A.when, function (i) { return S.when === i; }, "when") + "</div>";
     h += '<div class="group row">' +
@@ -134,13 +136,17 @@
       return p[0] + " " + S.vals[f.id].trim() + (p[1] ? " " + p[1] : "");
     });
   }
+  function mat() {
+    var mt = A.materials[S.material];
+    return L(mt) + (mt.options && S.mopt !== null ? " — " + L(mt.options[S.mopt]) : "");
+  }
   function message() {
     var m = T[lang].m, ty = type(), lines = [m.hello];
     var what = L(ty.label) + (S.variant !== null ? " — " + L(ty.variants[S.variant]) : "");
     if (ty.id === "other" && (S.vals.what || "").trim()) what = S.vals.what.trim();
     lines.push(m.what + ": " + what);
     var sz = sizes(); lines.push(m.size + ": " + (sz.length ? sz.join(", ") : m.sizeNone));
-    if (S.material !== null) lines.push(m.material + ": " + L(A.materials[S.material]));
+    if (S.material !== null) lines.push(m.material + ": " + mat());
     if (S.extras.length) lines.push(m.extras + ": " + S.extras.map(function (i) { return L(A.extras[i]); }).join(", "));
     if (S.when !== null) lines.push(m.when + ": " + L(A.when[S.when]));
     if (S.comment.trim()) lines.push(m.comment + ": " + S.comment.trim());
@@ -164,7 +170,7 @@
       line("sKind", ty ? (ty.id === "other" && (S.vals.what || "").trim() ? S.vals.what.trim() : L(ty.label)) : "") +
       (ty && ty.variants.length ? line("sVariant", S.variant !== null ? L(ty.variants[S.variant]) : "") : "") +
       line("sSize", sz.join(", ")) +
-      line("sMat", S.material !== null ? L(A.materials[S.material]) : "") +
+      line("sMat", S.material !== null ? mat() : "") +
       line("sExtras", S.extras.map(function (i) { return L(A.extras[i]); }).join(", ")) +
       line("sWhen", S.when !== null ? L(A.when[S.when]) : "") +
       line("sName", S.name.trim()) + "</dl>" +
@@ -208,12 +214,13 @@
     var b = e.target.closest(".chip"); if (!b) return;
     var d = b.dataset, i;
     if (d.variant !== undefined) { i = +d.variant; S.variant = S.variant === i ? null : i; cards(); }
-    else if (d.material !== undefined) { i = +d.material; S.material = S.material === i ? null : i; }
+    else if (d.material !== undefined) { i = +d.material; S.material = S.material === i ? null : i; S.mopt = null; form(); soft(); return; }
+    else if (d.mopt !== undefined) { i = +d.mopt; S.mopt = S.mopt === i ? null : i; }
     else if (d.when !== undefined) { i = +d.when; S.when = S.when === i ? null : i; }
     else if (d.extra !== undefined) { i = +d.extra; var k = S.extras.indexOf(i); if (k > -1) S.extras.splice(k, 1); else S.extras.push(i); }
     b.parentNode.querySelectorAll(".chip").forEach(function (c) {
       var cd = c.dataset;
-      var on = cd.variant !== undefined ? S.variant === +cd.variant : cd.material !== undefined ? S.material === +cd.material :
+      var on = cd.variant !== undefined ? S.variant === +cd.variant : cd.material !== undefined ? S.material === +cd.material : cd.mopt !== undefined ? S.mopt === +cd.mopt :
                cd.when !== undefined ? S.when === +cd.when : S.extras.indexOf(+cd.extra) > -1;
       c.setAttribute("aria-pressed", on);
     });
