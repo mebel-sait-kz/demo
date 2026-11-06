@@ -1,0 +1,37 @@
+/* Стиль «Семейная мастерская» — орех и терракота, тёплый шрифт с засечками, мягкие углы.
+   Для: производителей мебели на заказ, кухонь, шкафов, небольших мастерских.
+   Шрифты: Lora + Nunito Sans (все казахские буквы проверены 05.11.2026). */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Nunito+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --style-name: "warm-workshop";
+
+  --dark: #4A3426;
+  --dark-deep: #33231A;
+  --accent: #E3A47A;
+  --accent-hover: #EBB590;
+  --accent-text: #9A4F2B;
+  --on-accent: #2B1D15;
+  --light: #FAF4EC;
+  --white: #FFFFFF;
+  --text: #2E2520;
+  --muted: #6B5D53;
+  --line: #E4D7C6;
+
+  --font-head: "Lora", Georgia, serif;
+  --font-body: "Nunito Sans", system-ui, Arial, sans-serif;
+  --head-weight: 600;
+  --head-case: none;
+  --head-tracking: -.005em;
+  --head-line: 1.12;
+  --em-style: italic;
+  --logo-tracking: .06em;
+
+  --radius: 14px;
+
+  --tex-1: repeating-linear-gradient(92deg, #8a5a3c 0 3px, #a06a47 3px 7px, #94613f 7px 12px, #7c5035 12px 14px);
+  --tex-2: linear-gradient(160deg, #efe3d3, #dcc8b0);
+  --tex-3: repeating-linear-gradient(0deg, #d9c3a5 0 22px, #c9ae8a 22px 24px);
+  --tex-4: radial-gradient(circle at 30% 30%, #e8b48f, #c06d43);
+  --hero-pattern: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px) 0 0 / 14px 14px;
+}

@@ -1,0 +1,37 @@
+/* Стиль «Склад и производство» — графит и сигнальный жёлтый, узкий рубленый шрифт капсом.
+   Для: поставщиков фурнитуры, распила и кромки, оптовых складов, цехов.
+   Шрифты: Oswald + Golos Text (все казахские буквы проверены 05.11.2026). */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Golos+Text:wght@400;500;600&display=swap");
+
+:root {
+  --style-name: "industrial";
+
+  --dark: #24282B;
+  --dark-deep: #16191B;
+  --accent: #E0A526;
+  --accent-hover: #EDB843;
+  --accent-text: #7A5200;
+  --on-accent: #16191B;
+  --light: #EFEEEA;
+  --white: #FFFFFF;
+  --text: #1F2326;
+  --muted: #565C61;
+  --line: #CFCCC4;
+
+  --font-head: "Oswald", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Golos Text", system-ui, Arial, sans-serif;
+  --head-weight: 600;
+  --head-case: uppercase;
+  --head-tracking: .01em;
+  --head-line: 1.0;
+  --em-style: normal;
+  --logo-tracking: .08em;
+
+  --radius: 0;
+
+  --tex-1: repeating-linear-gradient(135deg, #E0A526 0 18px, #16191B 18px 36px);
+  --tex-2: linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px) 0 0 / 24px 24px, #24282B;
+  --tex-3: linear-gradient(100deg, #6d7378, #c9ced2 25%, #8b9196 45%, #dfe3e6 60%, #6d7378);
+  --tex-4: repeating-linear-gradient(90deg, #cdb38a 0 6px, #b89a6b 6px 9px, #d8c29c 9px 15px);
+  --hero-pattern: linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 48px 48px, linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 48px 48px;
+}
