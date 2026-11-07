@@ -21,8 +21,11 @@
     ru: {
       cta: "Рассчитать", eyebrow: "Наша техника", h1: "Выберите технику под задачу",
       heroLead: "Выберите машину, укажите адрес и часы — увидите примерную цену и отправите заявку в WhatsApp.",
+      heroLeadAsk: "Выберите машину, укажите адрес и часы — заявка уйдёт в WhatsApp, а цену назовёт владелец.",
       flow1: "Техника", flow2: "Объект и часы", flow3: "WhatsApp",
-      photoPh: "здесь будет фото техники", perHour: "/час", approx: "≈ ", minShift: "мин. смена", hShort: "ч",
+      photoPh: "здесь будет фото техники", perHour: "/час", approx: "≈ ", priceAsk: "Цена — по запросу", byOwner: "назовёт владелец", byOwnerBig: "Цену назовёт владелец",
+      byOwnerNote: "Отправьте заявку — владелец посчитает стоимость по адресу, часам и условиям на объекте.",
+      rating: function (r, n) { return "★ " + r + " · " + n + " отзывов в 2ГИС"; }, minShift: "мин. смена", hShort: "ч",
       pick: "Выбрать", picked: "Выбрано", pickedBtn: "Выбрана", busyBtn: "Сейчас занята",
       st: { free: "Свободна", busy: "Занята", ask: "Уточнить" },
       calcEyebrow: "Расчёт аренды", h2: "Укажите детали работы",
@@ -54,14 +57,17 @@
       demo: "Демо-шаблон. Цены примерные. Сайт не сохраняет данные заявки — они уходят только в ваш WhatsApp.",
       edits: "Вы видите цены из панели владельца, сохранённые только в этом браузере. Клиенты их не увидят, пока вы не замените config.js на сайте.",
       m: { hello: "Здравствуйте! Хочу заказать спецтехнику.", equip: "Техника", addr: "Адрес", date: "Дата", time: "Время подачи",
-           hours: "Время работы", h: "ч", calc: "к расчёту", zone: "Подача", price: "Предварительно", zoneAsk: "доставку рассчитаете вы", plusZone: "+ доставка", bySite: "по сайту",
+           hours: "Время работы", h: "ч", calc: "к расчёту", zone: "Подача", price: "Предварительно", zoneAsk: "доставку рассчитаете вы", plusZone: "+ доставка", bySite: "по сайту", askPrice: "прошу рассчитать", priceL: "Цена",
            photo: "Фото объекта", photoYes: "пришлю в чате", comment: "Комментарий", name: "Имя" }
     },
     kk: {
       cta: "Есептеу", eyebrow: "Біздің техника", h1: "Жұмысыңызға сай техниканы таңдаңыз",
       heroLead: "Машинаны таңдап, мекенжай мен сағатты көрсетіңіз — болжамды бағаны көріп, өтінімді WhatsApp-қа жібересіз.",
+      heroLeadAsk: "Машинаны таңдап, мекенжай мен сағатты көрсетіңіз — өтінім WhatsApp-қа кетеді, ал бағасын иесі айтады.",
       flow1: "Техника", flow2: "Нысан мен сағат", flow3: "WhatsApp",
-      photoPh: "мұнда техника фотосы болады", perHour: "/сағ", approx: "≈ ", minShift: "ең аз ауысым", hShort: "сағ",
+      photoPh: "мұнда техника фотосы болады", perHour: "/сағ", approx: "≈ ", priceAsk: "Бағасы — сұрау бойынша", byOwner: "иесі айтады", byOwnerBig: "Бағасын иесі айтады",
+      byOwnerNote: "Өтінім жіберіңіз — иесі құнын мекенжай, сағат және нысандағы жағдай бойынша есептейді.",
+      rating: function (r, n) { return "★ " + r + " · 2ГИС-те " + n + " пікір"; }, minShift: "ең аз ауысым", hShort: "сағ",
       pick: "Таңдау", picked: "Таңдалды", pickedBtn: "Таңдалды", busyBtn: "Қазір бос емес",
       st: { free: "Бос", busy: "Бос емес", ask: "Нақтылау керек" },
       calcEyebrow: "Жалға алу есебі", h2: "Жұмыс мәліметтерін көрсетіңіз",
@@ -93,7 +99,7 @@
       demo: "Демо-үлгі. Бағалар шамамен көрсетілген. Сайт өтінім деректерін сақтамайды — олар тек сіздің WhatsApp-қа кетеді.",
       edits: "Сіз иесінің панеліндегі, тек осы браузерде сақталған бағаларды көріп отырсыз. Сайттағы config.js ауыстырылмайынша, клиенттер оларды көрмейді.",
       m: { hello: "Сәлеметсіз бе! Арнайы техникаға тапсырыс бергім келеді.", equip: "Техника", addr: "Мекенжай", date: "Күні", time: "Келу уақыты",
-           hours: "Жұмыс уақыты", h: "сағ", calc: "есеп бойынша", zone: "Жеткізу", price: "Алдын ала баға", zoneAsk: "жеткізу құнын өзіңіз есептейсіз", plusZone: "+ жеткізу", bySite: "сайт бойынша",
+           hours: "Жұмыс уақыты", h: "сағ", calc: "есеп бойынша", zone: "Жеткізу", price: "Алдын ала баға", zoneAsk: "жеткізу құнын өзіңіз есептейсіз", plusZone: "+ жеткізу", bySite: "сайт бойынша", askPrice: "есептеп беруіңізді сұраймын", priceL: "Бағасы",
            photo: "Нысан фотосы", photoYes: "чатқа жіберемін", comment: "Түсініктеме", name: "Аты" }
     }
   };
@@ -121,14 +127,17 @@
   var fh = function (n) { return String(n).replace(".", ","); };
   function calc() {
     var it = item(); if (!it) return null;
-    var h = hoursVal(), ok = h >= 1 && h <= 24;
-    var billH = ok ? Math.max(h, it.min) : it.min;
-    var rent = billH * it.price, z = zone(), del = z && z.price !== null ? z.price : 0;
+    var h = hoursVal(), ok = h >= 1 && h <= 24, min = it.min || 0;
+    var billH = ok ? Math.max(h, min) : min;
+    var z = zone();
+    /* цены нет (компания не указала) — сумму не считаем, её назовёт владелец */
+    if (it.price == null) return { h: ok ? h : 0, billH: billH, zone: z, under: ok && h < min, noPrice: true };
+    var rent = billH * it.price, del = z && z.price !== null ? z.price : 0;
     var base = rent + del;
     var r = typeof A.roundTo === "number" && A.roundTo > 0 ? A.roundTo : 1000;
     var sp = typeof A.spread === "number" && A.spread >= 0 ? A.spread : 0.1;
     return {
-      h: ok ? h : 0, billH: billH, rent: rent, zone: z, del: del, under: ok && h < it.min, sp: sp,
+      h: ok ? h : 0, billH: billH, rent: rent, zone: z, del: del, under: ok && h < min, sp: sp,
       low: Math.floor(base / r) * r,
       /* Math.round убирает хвост дробей (99000.00000000001), иначе ceil добавлял лишнюю 1000 */
       high: Math.ceil(Math.round(base * (1 + sp)) / r) * r
@@ -136,7 +145,7 @@
   }
 
   /* ---------- каталог ---------- */
-  function badge(st) { return '<span class="st st--' + st + '">' + svg(st === "free" ? I.check : I[st]) + t("st")[st] + "</span>"; }
+  function badge(st) { if (!st || !t("st")[st]) return ""; return '<span class="st st--' + st + '">' + svg(st === "free" ? I.check : I[st]) + t("st")[st] + "</span>"; }
   function cards() {
     $("cards").innerHTML = A.items.map(function (x) {
       var on = S.item === x.id, busy = x.status === "busy";
@@ -146,7 +155,8 @@
           : svg(window.EQUIP_ICON[x.icon] || window.EQUIP_ICON.excavator) + "<small>" + t("photoPh") + "</small>") + "</div>" +
         '<div class="card__body"><div class="card__head"><h3 class="card__name">' + esc(L(x.label)) + "</h3>" + badge(x.status) + "</div>" +
         '<p class="card__purpose">' + esc(L(x.purpose)) + "</p>" +
-        '<p class="card__price"><b>' + (A.demo ? t("approx") : "") + M(x.price) + "</b><span>" + t("perHour") + " · " + t("minShift") + " " + x.min + " " + t("hShort") + "</span></p>" +
+        (x.price == null ? '<p class="card__price card__price--ask"><b>' + t("priceAsk") + "</b>" + (x.min ? "<span>" + t("minShift") + " " + x.min + " " + t("hShort") + "</span>" : "") + "</p>"
+          : '<p class="card__price"><b>' + (A.demo || A.examplePrices ? t("approx") : "") + M(x.price) + "</b><span>" + t("perHour") + (x.min ? " · " + t("minShift") + " " + x.min + " " + t("hShort") : "") + "</span></p>") +
         '<button type="button" class="pick" data-item="' + x.id + '"' + (busy ? " disabled" : "") + ' aria-pressed="' + on + '">' +
           (busy ? t("busyBtn") : on ? svg(I.check) + t("pickedBtn") : t("pick")) + "</button></div></article>";
     }).join("");
@@ -160,7 +170,7 @@
     h += '<div class="group"><label class="label" for="equip">' + t("equip") + '</label><select class="input" id="equip" data-key="item"><option value="">' + t("choose") + "</option>" +
       A.items.map(function (x) {
         return '<option value="' + x.id + '"' + (S.item === x.id ? " selected" : "") + (x.status === "busy" ? " disabled" : "") + ">" +
-          esc(L(x.label)) + " · " + M(x.price) + t("perHour") + (x.status === "busy" ? " — " + t("st").busy.toLowerCase() : "") + "</option>";
+          esc(L(x.label)) + (x.price == null ? "" : " · " + M(x.price) + t("perHour")) + (x.status === "busy" ? " — " + t("st").busy.toLowerCase() : "") + "</option>";
       }).join("") + "</select>" +
       (it && it.status === "ask" ? '<p class="note note--soft">' + svg(I.info) + "<span>" + t("askNote") + "</span></p>" : "") + "</div>";
     h += '<div class="group"><label class="label" for="address">' + t("address") + "</label>" +
@@ -213,13 +223,13 @@
   }
   function message() {
     var m = T[lang].m, it = item(), c = calc(), z = c.zone, lines = [m.hello, ""];
-    lines.push(m.equip + ": " + L(it.label) + " (" + m.bySite + " " + M(it.price) + t("perHour") + ")");
+    lines.push(m.equip + ": " + L(it.label) + (it.price == null ? "" : " (" + m.bySite + " " + M(it.price) + t("perHour") + ")"));
     lines.push(m.addr + ": " + S.address.trim());
     lines.push(m.date + ": " + fmtDate(S.date));
     if (S.time) lines.push(m.time + ": " + S.time);
     lines.push(m.hours + ": " + fh(c.h) + " " + m.h + (c.under ? " (" + m.calc + " " + c.billH + " " + m.h + ")" : ""));
     lines.push(m.zone + ": " + L(z.label) + (z.price === null ? " — " + m.zoneAsk : ""));
-    lines.push(m.price + ": " + priceText(c, true));
+    lines.push(c.noPrice ? m.priceL + ": " + m.askPrice : m.price + ": " + priceText(c, true));
     if (S.photo) lines.push(m.photo + ": " + m.photoYes);
     if (S.comment.trim()) lines.push(m.comment + ": " + S.comment.trim());
     lines.push(m.name + ": " + S.name.trim());
@@ -234,11 +244,13 @@
       '<dl class="lines">' +
       line("sEquip", it ? L(it.label) : "") +
       line("sHours", c && c.h ? fh(c.h) + " " + t("hShort") : "", c && c.under ? t("sCalcH") + ": " + c.billH + " " + t("hShort") : "") +
-      line("sRent", c && c.h ? M(c.rent) : "", c && c.h ? fh(c.billH) + " × " + M(it.price) : "") +
+      (c && c.noPrice ? "" : line("sRent", c && c.h ? M(c.rent) : "", c && c.h ? fh(c.billH) + " × " + M(it.price) : "")) +
       line("sZone", c ? (c.zone.price === null ? t("zoneAsk") : M(c.zone.price)) : "", c ? L(c.zone.label) : "") +
       line("sDate", fmtDate(S.date) + (S.time ? ", " + S.time : "")) +
       "</dl>";
-    if (c && c.h) {
+    if (c && c.noPrice) {
+      h += '<div class="total total--ask"><b>' + t("byOwnerBig") + "</b><p>" + t("byOwnerNote") + "</p></div>";
+    } else if (c && c.h) {
       h += '<div class="total"><b>' + priceText(c) + "</b>" + (c.zone.price === null ? "<small>" + t("plusZone") + "</small>" : "") +
         "<p>" + t("rangeNote") + (c.sp > 0 ? " " + t("spreadNote")(Math.round(c.sp * 100)) : "") + "</p></div>";
     } else {
@@ -253,7 +265,7 @@
     $("summary").innerHTML = h;
 
     var mb = $("mbar");
-    mb.innerHTML = "<span>" + esc(it ? L(it.label) + (c && c.h ? " · " + priceText(c, true) : "") : t("mbarEmpty")) + "</span><b>" + t("mbarGo") + "</b>";
+    mb.innerHTML = "<span>" + esc(it ? L(it.label) + (c && c.h && !c.noPrice ? " · " + priceText(c, true) : "") : t("mbarEmpty")) + "</span><b>" + t("mbarGo") + "</b>";
     mb.setAttribute("href", it ? "#summary" : "#catalog");
   }
 
@@ -265,6 +277,11 @@
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === lang); });
     $("ownerLink").hidden = !A.ownerLink;
     $("demo").hidden = !A.demo;
+    if (A.items.every(function (x) { return x.price == null; })) document.querySelector('[data-t="heroLead"]').textContent = t("heroLeadAsk");
+    if (A.slug) document.title = L(A.name) + " — заявка (демо)";
+    var db = $("demobar"); db.hidden = !A.demoText; if (A.demoText) db.textContent = L(A.demoText);
+    var rt = $("rating");
+    if (rt) { rt.hidden = !A.rating; if (A.rating) { rt.textContent = t("rating")(A.rating.value, A.rating.count); rt.href = A.rating.url; } }
     var eb = $("edits"); eb.textContent = t("edits"); eb.hidden = !window.STORE.hasEdits();
   }
   function all() { texts(); cards(); form(); summary(); }
@@ -272,7 +289,7 @@
     var it = A.items.filter(function (x) { return x.id === id; })[0];
     if (it && it.status === "busy") return;
     S.item = id || null;
-    if (it && !S.hours) S.hours = String(it.min);
+    if (it && !S.hours && it.min) S.hours = String(it.min);
     err = ""; copied = false; cards(); form(); summary();
     if (scroll && id) $("details").scrollIntoView({ behavior: "smooth" });
   }

@@ -193,6 +193,15 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
 .s-err { margin: 0 0 12px; padding: 10px 12px; font-size: 14px; font-weight: 600; color: #FFD9D3; background: rgba(192,57,43,.28); border-radius: 10px; }
 .s-ok { margin: 10px 0 0; font-size: 14px; font-weight: 700; color: #8FE0B5; }
 
+/* рейтинг 2ГИС в первом экране */
+.rating { display: inline-flex; margin: 0 0 14px; padding: 6px 12px; font-size: 14px; font-weight: 700; color: var(--ink); text-decoration: none; background: #fff; border: 1px solid var(--line); border-radius: 999px; }
+.rating:hover { border-color: var(--accent); }
+.card__price--ask b { font-size: 15px; color: var(--accent); }
+.total--ask b { font-size: clamp(20px, 3vw, 24px); }
+
+/* плашка: демо для компании, не официальный сайт */
+.demobar { margin: 0; padding: 8px 16px; font-size: 13px; font-weight: 600; line-height: 1.4; text-align: center; color: #fff; background: var(--accent); }
+
 /* плашка: правки владельца только в этом браузере */
 .edits { margin: 0; padding: 10px 16px; font-size: 14px; font-weight: 600; line-height: 1.4; text-align: center; color: #5B4210; background: #FDF0D2; border-bottom: 1px solid #F1DDB4; }
 

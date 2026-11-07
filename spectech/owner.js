@@ -11,7 +11,7 @@
 
   function stats() {
     var n = { free: 0, busy: 0, ask: 0 };
-    A.items.forEach(function (x) { n[x.status]++; });
+    A.items.forEach(function (x) { if (n[x.status] !== undefined) n[x.status]++; });
     var box = function (k, label, col, bg, ico) {
       return '<div class="stat"><i style="color:' + col + ";background:" + bg + '">' + svg(ico) + "</i><div><b>" + n[k] + "</b><span>" + label + "</span></div></div>";
     };
@@ -27,8 +27,8 @@
         '<div class="o-card__top"><span class="o-card__ico">' + svg(window.EQUIP_ICON[x.icon] || window.EQUIP_ICON.excavator) + "</span>" +
         "<div><strong>" + esc(x.label.ru) + "</strong><span>" + esc(x.purpose.ru) + "</span></div></div>" +
         '<div class="row">' +
-          '<div><label class="label" for="p' + i + '">Цена за час, ₸</label><input class="input" id="p' + i + '" type="number" min="0" step="500" inputmode="numeric" data-f="price" value="' + x.price + '"></div>' +
-          '<div><label class="label" for="m' + i + '">Мин. смена, ч</label><input class="input" id="m' + i + '" type="number" min="1" max="24" inputmode="numeric" data-f="min" value="' + x.min + '"></div>' +
+          '<div><label class="label" for="p' + i + '">Цена за час, ₸</label><input class="input" id="p' + i + '" type="number" min="0" step="500" inputmode="numeric" data-f="price" value="' + (x.price == null ? "" : x.price) + '" placeholder="по запросу"></div>' +
+          '<div><label class="label" for="m' + i + '">Мин. смена, ч</label><input class="input" id="m' + i + '" type="number" min="1" max="24" inputmode="numeric" data-f="min" value="' + (x.min == null ? "" : x.min) + '" placeholder="нет"></div>' +
         "</div>" +
         '<div class="seg" role="group" aria-label="Статус">' +
           ["free", "busy", "ask"].map(function (s) { return '<button type="button" data-st="' + s + '" aria-pressed="' + (x.status === s) + '">' + ST[s] + "</button>"; }).join("") +
@@ -59,9 +59,9 @@
   }
   $("items").addEventListener("input", function (e) {
     var el = e.target, card = el.closest("[data-i]"); if (!card || !el.dataset.f) return;
-    var v = Number(el.value), isMin = el.dataset.f === "min";
-    if (isMin ? !(Number.isInteger(v) && v >= 1 && v <= 24) : !(Number.isInteger(v) && v > 0))
-      return bad(el, isMin ? "мин. смена — целое число от 1 до 24" : "цена — целое число больше 0");
+    var isMin = el.dataset.f === "min", empty = el.value.trim() === "", v = empty ? null : Number(el.value);
+    if (!empty && (isMin ? !(Number.isInteger(v) && v >= 1 && v <= 24) : !(Number.isInteger(v) && v > 0)))
+      return bad(el, isMin ? "мин. смена — целое число от 1 до 24 (или пусто)" : "цена — целое число больше 0 (или пусто — «по запросу»)");
     el.removeAttribute("aria-invalid");
     A.items[+card.dataset.i][el.dataset.f] = v; save();
   });

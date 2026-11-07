@@ -2,7 +2,7 @@
    Правки из «Панели владельца» лежат только в этом браузере (localStorage).
    Чтобы их увидели клиенты, владелец скачивает новый config.js и заменяет файл на сайте. */
 (function () {
-  var KEY = "st-owner-v1";
+  var KEY = "st-owner-v1:" + (window.APP.slug || "demo");
   var base = JSON.parse(JSON.stringify(window.APP));
 
   function read() { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } }
@@ -55,6 +55,10 @@
     truck: '<path d="M2 16V8h11v8M13 11h4l3 3v2"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M2 8l3-3h8"/>',
     crane: '<path d="M2 16v-4h12v4M14 13h4l2 3"/><circle cx="5" cy="18" r="2"/><circle cx="16" cy="18" r="2"/><path d="M6 12L18 3M18 3v8"/>',
     manipulator: '<path d="M2 16v-5h13v5M15 12h3l3 3v1"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M5 11V6l6-3 2 3"/>',
+    bulldozer: '<rect x="5" y="15" width="13" height="4" rx="2"/><path d="M7 15v-5h6v5M13 12h3M2 9l2 0 1 9H2z"/><path d="M9 10V7h3"/>',
+    tractor: '<circle cx="7" cy="17" r="3.5"/><circle cx="18" cy="18" r="2"/><path d="M4 13V8h6l1 5M11 13h8v3M14 13V9"/>',
+    auger: '<path d="M2 17v-4h12v4M14 14h3l2 3"/><circle cx="5" cy="19" r="2"/><circle cx="15" cy="19" r="2"/><path d="M10 13V3M8 5l4 2M8 8l4 2M8 11l4 2"/>',
+    trawl: '<path d="M2 15V9h5l2 3v3M9 15h13v-2H9"/><circle cx="5" cy="17" r="2"/><circle cx="15" cy="17" r="1.5"/><circle cx="19" cy="17" r="1.5"/>',
     lift: '<path d="M2 17v-4h14v4M16 14h3l2 3"/><circle cx="6" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M8 13L15 4M13 3h5v3h-5z"/>'
   };
 })();
