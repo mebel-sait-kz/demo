@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ran Mebel · мебельный цех, Алматы — демо</title>
+  <meta name="description" content="Демо-концепция сайта мебельного цеха Ran Mebel, Алматы.">
+  <!-- Собрано tools/build.py из content/ran-mebel.json. Стиль «industrial» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/industrial/tokens.css?v=7">
+  <link rel="stylesheet" href="../../blocks/blocks.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Rubik:wght@400;600;700&display=swap">
+  <style>:root { --dark: #1E3A2B; --dark-deep: #12261B; --accent: #B7E36A; --accent-hover: #C8EB8C; --accent-text: #3D6612; --on-accent: #12261B; --light: #F1F5EC; --text: #17261D; --muted: #4D5E53; --line: #D3DFCB; --font-head: "Exo 2", Arial, sans-serif; --font-body: "Rubik", system-ui, Arial, sans-serif; --radius: 4px; --light-bg: repeating-linear-gradient(45deg, rgba(30,58,43,.05) 0 10px, transparent 10px 20px), #F1F5EC; --tex-1: radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,.16), transparent 55%), linear-gradient(160deg, #1E3A2B, #12261B 60%); --tex-2: repeating-linear-gradient(45deg, rgba(30,58,43,.05) 0 10px, transparent 10px 20px), linear-gradient(160deg, #F1F5EC, #D3DFCB); --tex-3: linear-gradient(100deg, #3D6612, #B7E36A 35%, #C8EB8C 60%, #3D6612); --tex-4: radial-gradient(circle at 3px 3px, #1E3A2B33 1.4px, transparent 1.8px) 0 0 / 10px 10px, #F1F5EC; --hero-pattern: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0 10px, transparent 10px 20px); }</style>
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Ran Mebel">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">Ran Mebel <span>· мебельный цех</span></span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#request-form" data-i18n="t3">Заявка на мебель</a>
+        <a href="#catalog" data-i18n="t4">Что делаем</a>
+        <a href="#how-it-works" data-i18n="t5">Как заказать</a>
+        <a href="#praise" data-i18n="t6">За что хвалят</a>
+        <a href="#contacts" data-i18n="t7">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-pick — первый экран с карточкой быстрого выбора: нажали вид мебели — сразу к заявке с этим выбором -->
+  <section class="hero-pick">
+    <div class="container hero-pick__grid">
+      <div>
+        <p class="hero-pick__meta" data-i18n="t9">Мебельный цех, Алматы</p>
+        <h1 class="hero-pick__title" data-i18n="t8">Мебель на заказ <em>из нашего цеха</em></h1>
+        <p class="hero-pick__lead" data-i18n="t10">Кухни, корпусная и мягкая мебель, ремонт и перетяжка. Расскажите, что нужно, — заявка придёт нам в WhatsApp.</p>
+      <p class="open-badge" data-badge="main">Открыто до 19:00, без выходных</p>
+        <div class="buttons">
+        <a class="btn btn--accent" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+        <a class="btn btn--line" href="https://2gis.kz/almaty/firm/70000001091596592" target="_blank" rel="noopener" data-i18n="t11">Маршрут</a>
+        <button type="button" class="btn btn--line is-placeholder" data-wa-stub data-i18n="t12">Написать в WhatsApp</button>
+        </div>
+      </div>
+      <div class="hero-pick__card">
+        <p class="hero-pick__q" data-i18n="t18">Что нужно?</p>
+        <div class="hero-pick__list">
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="kitchen"><span data-i18n="t13">Кухня</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="corpus"><span data-i18n="t14">Корпусная мебель</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="soft"><span data-i18n="t15">Мягкая мебель</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="repair"><span data-i18n="t16">Ремонт и перетяжка</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="other"><span data-i18n="t17">Другое</span><b aria-hidden="true">→</b></a>
+        </div>
+        <p class="hero-pick__note" data-i18n="t19">Нажмите — откроется заявка с этим выбором</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК: request-form -->
+  <section class="section section--light" id="request-form">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t3">Заявка на мебель</h2>
+      </header>
+      <div class="rq" data-request-form></div>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-accordion — каталог «раскрывашками»: название крупно, по нажатию — пояснение и кнопка заявки -->
+  <section class="section" id="catalog">
+    <div class="container acc-wrap">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t4">Что делаем</h2>
+        <p class="page__lead" data-i18n="t20">Мебельный цех: мебель на заказ и ремонт мебели. Не нашли нужное — напишите, обсудим.</p>
+      </header>
+      <div class="acc">
+        <details class="acc__item"><summary><span class="acc__num">01</span><span class="acc__name" data-i18n="t21">Мебель на заказ</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t22">Делается под ваши пожелания</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+        <details class="acc__item"><summary><span class="acc__num">02</span><span class="acc__name" data-i18n="t23">Мебель для кухни</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t24">Кухни на заказ</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+        <details class="acc__item"><summary><span class="acc__num">03</span><span class="acc__name" data-i18n="t14">Корпусная мебель</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t25">Корпусная мебель под ваше место</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+        <details class="acc__item"><summary><span class="acc__num">04</span><span class="acc__name" data-i18n="t15">Мягкая мебель</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t26">Мягкая мебель на заказ</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+        <details class="acc__item"><summary><span class="acc__num">05</span><span class="acc__name" data-i18n="t27">Ремонт мебели</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t28">По отзывам клиентов: реставрация и перетяжка мебели и дивана</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+        <details class="acc__item"><summary><span class="acc__num">06</span><span class="acc__name" data-i18n="t29">Офисная, детская, для ванной</span><span class="acc__plus" aria-hidden="true"></span></summary><div class="acc__body"><p data-i18n="t30">Другие виды мебели — расскажите, что нужно</p><a class="acc__go" href="#" data-i18n="t32">Оставить заявку</a></div></details>
+      </div>
+      <p class="price-note" data-i18n="t31">Цена: уточняйте в WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- БЛОК: steps -->
+  <section class="section section--light" id="how-it-works">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t5">Как заказать</h2>
+      </header>
+      <ol class="steps__list steps__list--plain">
+        <li><span class="steps__n">1</span><p data-i18n="t34">Заполняете заявку на сайте: что нужно и размеры</p></li>
+        <li><span class="steps__n">2</span><p data-i18n="t35">Заявка приходит в WhatsApp</p></li>
+        <li><span class="steps__n">3</span><p data-i18n="t36">Детали и цену уточняем в WhatsApp</p></li>
+      </ol>
+      <p class="steps__note" data-i18n="t33">Сроки: уточняйте в WhatsApp</p>
+      <a class="btn btn--dark block-btn" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+    </div>
+  </section>
+
+  <!-- БЛОК: reasons -->
+  <section class="section section--dark" id="praise">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t6">За что хвалят</h2>
+      </header>
+      <ol class="reasons reasons--plain">
+        <li><span class="reasons__n">01</span><p data-i18n="t37">По отзывам, делают разную мебель и укладываются в обещанный срок</p></li>
+        <li><span class="reasons__n">02</span><p data-i18n="t38">Реставрация и перетяжка мебели и дивана — быстро и качественно</p></li>
+        <li><span class="reasons__n">03</span><p data-i18n="t39">Изготовили всё, что нужно, по хорошим ценам</p></li>
+        <li><span class="reasons__n">04</span><p data-i18n="t40">Распиливают доски</p></li>
+        <li><span class="reasons__n">05</span><p><span data-i18n="t41">Рейтинг 4.8 в 2ГИС: 72 оценки, 67 отзывов. Есть и критичный отзыв — про установку двери, смотрите в 2ГИС</span><br><a href="https://2gis.kz/almaty/firm/70000001091596592" target="_blank" rel="noopener" data-i18n="t42">Смотреть отзывы в 2ГИС</a></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t7">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t45">Адрес</p><p class="contacts__big" data-i18n="t43">г. Алматы, ул. Толе би, 189/5</p><p data-i18n="t44">Алмалинский район</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t46">Часы</p><dl class="hours"><dt data-i18n="t47">Ежедневно</dt><dd data-i18n="t48">9:00–19:00, без выходных</dd></dl></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t50">Телефон / WhatsApp</p><p class="contacts__big" data-i18n="t49">[номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t51">Оплата</p><p data-i18n="t52">карта, наличные, банк, перевод, QR</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t53">Доставка</p><p data-i18n="t54">уточняйте в WhatsApp [номер уточняется]</p></div>
+        <div class="contacts__actions">
+        <a class="btn btn--dark" href="https://2gis.kz/almaty/firm/70000001091596592" target="_blank" rel="noopener" data-i18n="t11">Маршрут</a>
+        <button type="button" class="btn btn--outline is-placeholder" data-wa-stub data-i18n="t12">Написать в WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">Ran Mebel <span>· мебельный цех</span></span></a>
+      <p class="footer__note" data-i18n="t55">Демо-страница. Данные взяты из 2ГИС (07.11.2026), не является официальным сайтом компании. Не для публикации без согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <a class="btn btn--accent" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+    <button type="button" class="btn fab__wa is-placeholder" data-wa-stub data-i18n="t56">WhatsApp</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>

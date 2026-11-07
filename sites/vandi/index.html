@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>VAnDi — демо</title>
+  <meta name="description" content="Демо-концепция сайта поставщика мебельных тканей VAnDi, Алматы.">
+  <!-- Собрано tools/build.py из content/vandi.json. Стиль «premium-textile» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/premium-textile/tokens.css?v=7">
+  <link rel="stylesheet" href="../../blocks/blocks.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Inter:wght@400;600;700&display=swap">
+  <style>:root { --dark: #1F3A8A; --dark-deep: #142761; --accent: #F2C14E; --accent-hover: #F6D077; --accent-text: #7D5A00; --on-accent: #142761; --light: #F3F5FC; --text: #16203F; --muted: #525C7A; --line: #D7DDF0; --font-head: "Ubuntu", Arial, sans-serif; --font-body: "Inter", system-ui, Arial, sans-serif; --radius: 20px; --light-bg: repeating-linear-gradient(0deg, rgba(31,58,138,.05) 0 1px, transparent 1px 6px), repeating-linear-gradient(90deg, rgba(31,58,138,.05) 0 1px, transparent 1px 6px), #F3F5FC; --tex-1: radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,.16), transparent 55%), linear-gradient(160deg, #1F3A8A, #142761 60%); --tex-2: repeating-linear-gradient(0deg, rgba(31,58,138,.05) 0 1px, transparent 1px 6px), repeating-linear-gradient(90deg, rgba(31,58,138,.05) 0 1px, transparent 1px 6px), linear-gradient(160deg, #F3F5FC, #D7DDF0); --tex-3: linear-gradient(100deg, #7D5A00, #F2C14E 35%, #F6D077 60%, #7D5A00); --tex-4: radial-gradient(circle at 3px 3px, #1F3A8A33 1.4px, transparent 1.8px) 0 0 / 10px 10px, #F3F5FC; --hero-pattern: repeating-linear-gradient(0deg, rgba(255,255,255,.05) 0 1px, transparent 1px 6px), repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 1px, transparent 1px 6px); }</style>
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="VAnDi">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">VA<span>n</span>Di</span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#catalog" data-i18n="t3">Что предлагаем</a>
+        <a href="#howto" data-i18n="t4">Как подобрать</a>
+        <a href="#request-form" data-i18n="t5">Подбор ткани</a>
+        <a href="#praise" data-i18n="t6">За что хвалят</a>
+        <a href="#contacts" data-i18n="t7">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-pick — первый экран с карточкой быстрого выбора: нажали вид мебели — сразу к заявке с этим выбором -->
+  <section class="hero-pick">
+    <div class="container hero-pick__grid">
+      <div>
+        <p class="hero-pick__meta" data-i18n="t9">Алматы · мебельные ткани</p>
+        <h1 class="hero-pick__title" data-i18n="t8">Мебельные ткани — <em>поможем подобрать</em></h1>
+        <p class="hero-pick__lead" data-i18n="t10">Мебельные ткани, а также текстиль для ресторанов и гостиниц. Оставьте заявку на подбор ткани — свяжемся и уточним детали.</p>
+      <p class="open-badge" data-badge="main">Открыто до 17:00</p>
+        <div class="buttons">
+        <a class="btn btn--accent" href="#request-form" data-i18n="t11">Подобрать ткань</a>
+        <a class="btn btn--line" href="https://2gis.kz/almaty/firm/70000001051280143" target="_blank" rel="noopener" data-i18n="t12">Маршрут</a>
+        <button type="button" class="btn btn--line is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+        </div>
+      </div>
+      <div class="hero-pick__card">
+        <p class="hero-pick__q" data-i18n="t17">Что нужно?</p>
+        <div class="hero-pick__list">
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="furn"><span data-i18n="t14">Мебельная ткань</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="horeca"><span data-i18n="t15">Для ресторана или гостиницы</span><b aria-hidden="true">→</b></a>
+          <a class="hero-pick__item" href="#request-form" data-rq-pick="custom"><span data-i18n="t16">Для мебели на заказ</span><b aria-hidden="true">→</b></a>
+        </div>
+        <p class="hero-pick__note" data-i18n="t18">Нажмите — откроется заявка с этим выбором</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-cloud — каталог «облаком»: крупные плашки-слова разной ширины -->
+  <section class="section section--light" id="catalog">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t3">Что предлагаем</h2>
+      </header>
+      <p class="page__lead" data-i18n="t19">Направления из карточки компании в 2ГИС. Наличие и условия уточняйте у менеджера.</p>
+      <ul class="cloud">
+        <li><a class="cloud__pill" href="#"><span class="cloud__name" data-i18n="t20">Мебельные ткани</span><span class="cloud__sub" data-i18n="t21">По отзывам клиентов — большой выбор и удобные каталоги</span></a></li>
+        <li><a class="cloud__pill" href="#"><span class="cloud__name" data-i18n="t22">Текстиль для ресторанов и гостиниц</span><span class="cloud__sub" data-i18n="t23">Отдельное направление в карточке 2ГИС</span></a></li>
+        <li><a class="cloud__pill" href="#"><span class="cloud__name" data-i18n="t24">Для мебели на заказ</span><span class="cloud__sub" data-i18n="t25">Рубрика «Мебель на заказ» в 2ГИС</span></a></li>
+      </ul>
+      <p class="price-note" data-i18n="t26">По отзывам клиентов, ткани бывают в наличии и на заказ. Цен на сайте нет — уточняйте.</p>
+      <a class="btn btn--dark" href="#request-form" data-i18n="t11">Подобрать ткань</a>
+    </div>
+  </section>
+
+  <!-- БЛОК: steps -->
+  <section class="section section--light" id="howto">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t27">Как подобрать ткань</h2>
+      </header>
+      <ol class="steps__list steps__list--plain">
+        <li><span class="steps__n">1</span><p data-i18n="t28">Заполните заявку: для чего нужна ткань и сколько примерно.</p></li>
+        <li><span class="steps__n">2</span><p data-i18n="t29">Менеджер свяжется и поможет с подбором — по отзывам клиентов, здесь помогают выбрать.</p></li>
+        <li><span class="steps__n">3</span><p data-i18n="t30">Наличие, цену и получение заказа обсудите с менеджером. [номер уточняется]</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: request-form -->
+  <section class="section section--light" id="request-form">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t5">Подбор ткани</h2>
+      </header>
+      <div class="rq" data-request-form></div>
+    </div>
+  </section>
+
+  <!-- БЛОК: reasons -->
+  <section class="section section--light" id="praise">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t6">За что хвалят</h2>
+      </header>
+      <ol class="reasons reasons--plain">
+        <li><span class="reasons__n">01</span><p data-i18n="t31">Огромный выбор мебельных тканей</p></li>
+        <li><span class="reasons__n">02</span><p data-i18n="t32">Удобные каталоги</p></li>
+        <li><span class="reasons__n">03</span><p data-i18n="t33">Помогают подобрать ткань</p></li>
+        <li><span class="reasons__n">04</span><p data-i18n="t34">Ткани есть в наличии и на заказ</p></li>
+        <li><span class="reasons__n">05</span><p data-i18n="t35">Внимательный персонал</p></li>
+        <li><span class="reasons__n">06</span><p><span data-i18n="t36">Рейтинг 5.0 в 2ГИС: 51 оценка и 15 отзывов</span><br><a href="https://2gis.kz/almaty/firm/70000001051280143" target="_blank" rel="noopener" data-i18n="t37">Смотреть отзывы в 2ГИС</a></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t7">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t40">Адрес</p><p class="contacts__big" data-i18n="t39">ул. Бродского, 32/2, Жетысуский район, Алматы</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t41">Часы работы</p><dl class="hours"><dt data-i18n="t42">Пн–Пт</dt><dd data-i18n="t43">8:00–17:00, обед 12:00–13:00</dd><dt data-i18n="t44">Сб–Вс</dt><dd data-i18n="t45">выходной</dd></dl></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t47">Телефон / WhatsApp</p><p class="contacts__big" data-i18n="t46">[номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t48">Instagram</p><p data-i18n="t49"><a href="https://www.instagram.com/vandi_textile" target="_blank" rel="noopener">@vandi_textile</a></p></div>
+        <div class="contacts__actions">
+        <button type="button" class="btn btn--dark is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+        <a class="btn btn--outline" href="https://2gis.kz/almaty/firm/70000001051280143" target="_blank" rel="noopener" data-i18n="t12">Маршрут</a>
+        <a class="btn btn--outline" href="https://2gis.kz/almaty/firm/70000001051280143" target="_blank" rel="noopener" data-i18n="t38">Смотреть в 2ГИС</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">VA<span>n</span>Di</span></a>
+      <p class="footer__note" data-i18n="t50">Демо-концепция сайта. Это не официальный сайт компании. Не для публикации без согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <a class="btn btn--accent" href="#request-form" data-i18n="t11">Подобрать ткань</a>
+    <button type="button" class="btn fab__wa is-placeholder" data-wa-stub data-i18n="t13">Написать в WhatsApp</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>

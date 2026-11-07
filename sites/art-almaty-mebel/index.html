@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Art Almaty mebel — демо</title>
+  <meta name="description" content="Демо-концепция сайта мебельного цеха Art Almaty mebel, Алматы.">
+  <!-- Собрано tools/build.py из content/art-almaty-mebel.json. Стиль «premium-textile» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/premium-textile/tokens.css?v=7">
+  <link rel="stylesheet" href="../../blocks/blocks.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Fira+Sans:wght@400;600;700&display=swap">
+  <style>:root { --dark: #0B3F4C; --dark-deep: #072C35; --accent: #FF8A65; --accent-hover: #FFA587; --accent-text: #B03A15; --on-accent: #072C35; --light: #EEF6F7; --text: #12303A; --muted: #4C626A; --line: #D0E3E6; --font-head: "Raleway", Arial, sans-serif; --font-body: "Fira Sans", system-ui, Arial, sans-serif; --radius: 12px; --light-bg: repeating-linear-gradient(45deg, rgba(14,75,90,.05) 0 1px, transparent 1px 14px), repeating-linear-gradient(-45deg, rgba(14,75,90,.05) 0 1px, transparent 1px 14px), #EEF6F7; --tex-1: radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,.16), transparent 55%), linear-gradient(160deg, #0B3F4C, #072C35 60%); --tex-2: repeating-linear-gradient(45deg, rgba(14,75,90,.05) 0 1px, transparent 1px 14px), repeating-linear-gradient(-45deg, rgba(14,75,90,.05) 0 1px, transparent 1px 14px), linear-gradient(160deg, #EEF6F7, #D0E3E6); --tex-3: linear-gradient(100deg, #B03A15, #FF8A65 35%, #FFA587 60%, #B03A15); --tex-4: radial-gradient(circle at 3px 3px, #0B3F4C33 1.4px, transparent 1.8px) 0 0 / 10px 10px, #EEF6F7; --hero-pattern: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px), repeating-linear-gradient(-45deg, rgba(255,255,255,.05) 0 1px, transparent 1px 14px); }</style>
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Art Almaty mebel">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">Art Almaty <span>mebel</span></span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#request-form" data-i18n="t3">Заявка на мебель</a>
+        <a href="#catalog" data-i18n="t4">Что делаем</a>
+        <a href="#how-it-works" data-i18n="t5">Как заказать</a>
+        <a href="#praise" data-i18n="t6">За что хвалят</a>
+        <a href="#contacts" data-i18n="t7">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-rating — первый экран с огромной цифрой рейтинга 2ГИС справа -->
+  <section class="hero-rate">
+    <div class="container hero-rate__grid">
+      <div class="hero-rate__text">
+        <p class="hero-rate__meta" data-i18n="t9">Алматы · мебельный цех</p>
+        <h1 class="hero-rate__title" data-i18n="t8">Мебель на заказ <em>для вашей квартиры</em></h1>
+        <p class="hero-rate__lead" data-i18n="t10">Мебель на заказ и корпусная мебель. Заполните заявку за минуту — она придёт в WhatsApp.</p>
+      <p class="open-badge" data-badge="main">Открыто до 19:00</p>
+        <div class="buttons">
+        <a class="btn btn--accent" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+        <a class="btn btn--line" href="https://2gis.kz/almaty/firm/70000001047642732" target="_blank" rel="noopener" data-i18n="t11">Маршрут</a>
+        </div>
+      </div>
+      <a class="hero-rate__score" href="https://2gis.kz/almaty/firm/70000001047642732" target="_blank" rel="noopener">
+        <span class="hero-rate__num">5.0</span>
+        <span class="hero-rate__stars" aria-hidden="true">★★★★★</span>
+        <span class="hero-rate__sub" data-i18n="t12">рейтинг в 2ГИС, 8 оценок</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- БЛОК: request-form -->
+  <section class="section section--light" id="request-form">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t3">Заявка на мебель</h2>
+      </header>
+      <div class="rq" data-request-form></div>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-index -->
+  <section class="section section--light" id="catalog">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t4">Что делаем</h2>
+      </header>
+      <p class="page__lead" data-i18n="t13">Цех делает мебель на заказ и корпусную мебель. Цены и сроки — в WhatsApp.</p>
+      <ol class="index">
+        <li><a class="index__row" href="#request-form"><span class="index__num">01</span><span class="index__name" data-i18n="t14">Мебель на заказ</span><span class="index__sub" data-i18n="t15">Мебель в квартиру под ваши размеры</span><span class="index__chip tex-1"></span><span class="index__arrow">→</span></a></li>
+        <li><a class="index__row" href="#request-form"><span class="index__num">02</span><span class="index__name" data-i18n="t16">Корпусная мебель</span><span class="index__sub" data-i18n="t17">Шкафы и другая корпусная мебель</span><span class="index__chip tex-3"></span><span class="index__arrow">→</span></a></li>
+      </ol>
+      <p class="price-note" data-i18n="t18">Цена: уточняйте в WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- БЛОК: steps -->
+  <section class="section section--light" id="how-it-works">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t5">Как заказать</h2>
+      </header>
+      <ol class="steps__list steps__list--plain">
+        <li><span class="steps__n">1</span><p data-i18n="t19">Заполняете заявку на мебель на сайте</p></li>
+        <li><span class="steps__n">2</span><p data-i18n="t20">Заявка приходит в WhatsApp</p></li>
+        <li><span class="steps__n">3</span><p data-i18n="t21">Детали, цену и сроки уточняете в переписке</p></li>
+      </ol>
+      <a class="btn btn--dark block-btn" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+    </div>
+  </section>
+
+  <!-- БЛОК: reasons -->
+  <section class="section section--dark" id="praise">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t6">За что хвалят</h2>
+      </header>
+      <ol class="reasons reasons--plain">
+        <li><span class="reasons__n">01</span><p data-i18n="t22">Мебель в квартиру сделали в оговорённые сроки</p></li>
+        <li><span class="reasons__n">02</span><p data-i18n="t23">После работы убрались за собой</p></li>
+        <li><span class="reasons__n">03</span><p data-i18n="t24">Хороший подход к клиенту</p></li>
+        <li><span class="reasons__n">04</span><p><span data-i18n="t25">Рейтинг 5.0 в 2ГИС: 8 оценок, 3 отзыва</span><br><a href="https://2gis.kz/almaty/firm/70000001047642732" target="_blank" rel="noopener" data-i18n="t26">Смотреть отзывы в 2ГИС</a></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t7">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t30">Адрес</p><p class="contacts__big" data-i18n="t28">ул. Ислама Каримова, 164, Алматы</p><p data-i18n="t29">Алмалинский район</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t31">Часы</p><dl class="hours"><dt data-i18n="t32">Пн–Пт</dt><dd data-i18n="t33">10:00–19:00</dd><dt data-i18n="t34">Сб–Вс</dt><dd data-i18n="t35">выходной</dd></dl></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t37">Телефон / WhatsApp</p><p class="contacts__big" data-i18n="t36">[номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t38">Оплата</p><p data-i18n="t39">наличные, через банк</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t40">Доставка</p><p data-i18n="t41">есть, условия уточняйте в WhatsApp [номер уточняется]</p></div>
+        <div class="contacts__actions">
+        <a class="btn btn--dark" href="https://2gis.kz/almaty/firm/70000001047642732" target="_blank" rel="noopener" data-i18n="t11">Маршрут</a>
+        <button type="button" class="btn btn--outline is-placeholder" data-wa-stub data-i18n="t27">Написать в WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">Art Almaty <span>mebel</span></span></a>
+      <p class="footer__note" data-i18n="t42">Демо-страница. Данные взяты из 2ГИС (07.11.2026), фото нет. Не является официальным сайтом компании. Не для публикации без согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <a class="btn btn--accent" href="#request-form" data-i18n="t3">Заявка на мебель</a>
+    <button type="button" class="btn fab__wa is-placeholder" data-wa-stub data-i18n="t43">WhatsApp</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>

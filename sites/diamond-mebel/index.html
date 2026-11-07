@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Diamond Mebel — мебель на заказ, Алматы — демо</title>
+  <meta name="description" content="Демо-концепция сайта мебельной компании Diamond Mebel, Алматы.">
+  <!-- Собрано tools/build.py из content/diamond-mebel.json. Стиль «industrial» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/industrial/tokens.css?v=7">
+  <link rel="stylesheet" href="../../blocks/blocks.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Onest:wght@400;600;700&display=swap">
+  <style>:root { --dark: #0F1B2D; --dark-deep: #08111E; --accent: #4FD1C5; --accent-hover: #74DDD3; --accent-text: #0B6A62; --on-accent: #08111E; --light: #EEF3F7; --text: #132033; --muted: #4F5D6E; --line: #D2DCE6; --font-head: "Play", Arial, sans-serif; --font-body: "Onest", system-ui, Arial, sans-serif; --radius: 10px; --light-bg: radial-gradient(circle at 2px 2px, rgba(15,27,45,.10) 1.2px, transparent 1.6px) 0 0 / 18px 18px, #EEF3F7; --tex-1: radial-gradient(120% 80% at 30% 20%, rgba(255,255,255,.16), transparent 55%), linear-gradient(160deg, #0F1B2D, #08111E 60%); --tex-2: radial-gradient(circle at 2px 2px, rgba(15,27,45,.10) 1.2px, transparent 1.6px) 0 0 / 18px 18px, linear-gradient(160deg, #EEF3F7, #D2DCE6); --tex-3: linear-gradient(100deg, #0B6A62, #4FD1C5 35%, #74DDD3 60%, #0B6A62); --tex-4: radial-gradient(circle at 3px 3px, #0F1B2D33 1.4px, transparent 1.8px) 0 0 / 10px 10px, #EEF3F7; --hero-pattern: radial-gradient(circle at 2px 2px, rgba(255,255,255,.05) 1.2px, transparent 1.6px) 0 0 / 18px 18px; }</style>
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Diamond Mebel">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">Diamond <span>Mebel</span></span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#praise" data-i18n="t3">За что хвалят</a>
+        <a href="#catalog" data-i18n="t4">Что делаем</a>
+        <a href="#request-form" data-i18n="t5">Заявка на мебель</a>
+        <a href="#contacts" data-i18n="t6">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-center — первый экран по центру: крупный заголовок, кнопки и плашки-факты -->
+  <section class="hero-center">
+    <div class="hero-center__deco" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="container hero-center__inner">
+      <p class="hero-center__meta" data-i18n="t8">Алматы, проспект Абая, 68</p>
+      <h1 class="hero-center__title" data-i18n="t7">Мебель на заказ — <em>как на визуализации</em></h1>
+      <p class="hero-center__lead" data-i18n="t9">Diamond Mebel делает мебель на заказ: кухни, корпусную, детскую, офисную. Оставьте заявку — менеджер свяжется и уточнит детали.</p>
+      <p class="open-badge" data-badge="main">Открыто до 18:00</p>
+      <div class="buttons">
+        <a class="btn btn--accent" href="#request-form" data-i18n="t5">Заявка на мебель</a>
+        <a class="btn btn--line" href="https://2gis.kz/almaty/firm/70000001045157114" target="_blank" rel="noopener" data-i18n="t10">Маршрут</a>
+        <button type="button" class="btn btn--line is-placeholder" data-wa-stub data-i18n="t11">Написать в WhatsApp</button>
+      </div>
+      <ul class="hero-center__facts">
+        <li><b data-i18n="t12">5.0</b><span data-i18n="t13">рейтинг в 2ГИС</span></li>
+        <li><b data-i18n="t14">128</b><span data-i18n="t15">оценок</span></li>
+        <li><b data-i18n="t16">115</b><span data-i18n="t17">отзывов</span></li>
+        <li><b data-i18n="t18">Пн–Сб</b><span data-i18n="t19">10:00–18:00</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- БЛОК: reasons -->
+  <section class="section section--dark" id="praise">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t3">За что хвалят</h2>
+      </header>
+      <ol class="reasons">
+        <li><span class="reasons__n">01</span><p data-i18n="t20">Заказывали мебель сразу для двух домов — сделали вовремя и качественно</p></li>
+        <li><span class="reasons__n">02</span><p data-i18n="t21">Готовая мебель получается «как на визуализации»</p></li>
+        <li><span class="reasons__n">03</span><p data-i18n="t22">По отзывам, материалы и фурнитура качественные, а по договору — в срок</p></li>
+        <li><span class="reasons__n">04</span><p data-i18n="t23">Собирают аккуратно: без зазоров и мусора, с учётом неровных стен</p></li>
+        <li><span class="reasons__n">05</span><p data-i18n="t24">Менеджер помогает с выбором цвета и дизайна</p></li>
+        <li><span class="reasons__n">06</span><p><span data-i18n="t25">Рейтинг 5.0 в 2ГИС: 128 оценок и 115 отзывов</span><br><a href="https://2gis.kz/almaty/firm/70000001045157114" target="_blank" rel="noopener" data-i18n="t26">Смотреть отзывы в 2ГИС</a></p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-bento — каталог «плиткой разного размера»; на телефоне — лента с прокруткой вбок -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t4">Что делаем</h2>
+      </header>
+      <p class="page__lead" data-i18n="t27">Мебельная компания: на заказ, для дома, офиса и учебных учреждений. Размеры и пожелания обсудим после заявки.</p>
+      <div class="bento">
+        <a class="bento__card" href="#request-form"><span class="bento__num">01</span><span class="bento__name" data-i18n="t28">Мебель на заказ</span><span class="bento__sub" data-i18n="t29">Под ваши размеры и место</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">02</span><span class="bento__name" data-i18n="t30">Мебель для кухни</span><span class="bento__sub" data-i18n="t31">Кухни — один из частых заказов в отзывах</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">03</span><span class="bento__name" data-i18n="t32">Корпусная мебель</span><span class="bento__sub" data-i18n="t33">Шкафы и другая корпусная мебель</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">04</span><span class="bento__name" data-i18n="t34">Мебель для ванных комнат</span><span class="bento__sub" data-i18n="t35">Для ванной комнаты</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">05</span><span class="bento__name" data-i18n="t36">Офисная мебель</span><span class="bento__sub" data-i18n="t37">Для офиса</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">06</span><span class="bento__name" data-i18n="t38">Детская мебель</span><span class="bento__sub" data-i18n="t39">Для детской комнаты</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">07</span><span class="bento__name" data-i18n="t40">Мебельные фасады</span><span class="bento__sub" data-i18n="t41">Фасады для мебели</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">08</span><span class="bento__name" data-i18n="t42">Мебель для учебных учреждений</span><span class="bento__sub" data-i18n="t43">Для школ и других учебных заведений</span><span class="bento__go" aria-hidden="true">→</span></a>
+      </div>
+      <p class="price-note" data-i18n="t44">Цена: уточняйте в WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- БЛОК: request-form -->
+  <section class="section section--light" id="request-form">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t5">Заявка на мебель</h2>
+      </header>
+      <div class="rq" data-request-form></div>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t6">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t47">Адрес</p><p class="contacts__big" data-i18n="t45">г. Алматы, проспект Абая, 68</p><p data-i18n="t46">Бостандыкский район</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t48">Часы</p><dl class="hours"><dt data-i18n="t18">Пн–Сб</dt><dd data-i18n="t19">10:00–18:00</dd><dt data-i18n="t49">Вс</dt><dd data-i18n="t50">выходной</dd></dl></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t52">Телефон / WhatsApp</p><p class="contacts__big" data-i18n="t51">[номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t53">Оплата</p><p data-i18n="t54">карта, наличные, через банк, QR</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t55">Доставка</p><p data-i18n="t56">уточняйте в WhatsApp [номер уточняется]</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t57">Instagram</p><p data-i18n="t58">diamond.mebel</p></div>
+        <div class="contacts__actions">
+        <a class="btn btn--dark" href="https://2gis.kz/almaty/firm/70000001045157114" target="_blank" rel="noopener" data-i18n="t10">Маршрут</a>
+        <button type="button" class="btn btn--outline is-placeholder" data-wa-stub data-i18n="t11">Написать в WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">Diamond <span>Mebel</span></span></a>
+      <p class="footer__note" data-i18n="t59">Демо-страница. Данные взяты из 2ГИС (07.11.2026), не является официальным сайтом компании. Не для публикации без согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <a class="btn btn--accent" href="#request-form" data-i18n="t5">Заявка на мебель</a>
+    <button type="button" class="btn fab__wa is-placeholder" data-wa-stub data-i18n="t60">WhatsApp</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>
