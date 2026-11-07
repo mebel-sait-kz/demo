@@ -193,6 +193,9 @@ select.input { appearance: none; background-image: url("data:image/svg+xml,%3Csv
 .s-err { margin: 0 0 12px; padding: 10px 12px; font-size: 14px; font-weight: 600; color: #FFD9D3; background: rgba(192,57,43,.28); border-radius: 10px; }
 .s-ok { margin: 10px 0 0; font-size: 14px; font-weight: 700; color: #8FE0B5; }
 
+/* плашка: правки владельца только в этом браузере */
+.edits { margin: 0; padding: 10px 16px; font-size: 14px; font-weight: 600; line-height: 1.4; text-align: center; color: #5B4210; background: #FDF0D2; border-bottom: 1px solid #F1DDB4; }
+
 /* подвал */
 .foot { margin-top: 40px; padding: 26px 0 8px; color: #B7C3CB; background: var(--panel); }
 .foot__in { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; }

@@ -37,7 +37,7 @@
     configText: function (a) {
       return "/* Настройки приложения «Заявка на спецтехнику». Скачано из Панели владельца " +
         new Date().toLocaleDateString("ru-RU") + ". Положите вместо старого config.js. */\n" +
-        "window.APP = " + JSON.stringify(a, null, 2) + ";\n";
+        "window.APP = " + JSON.stringify(Object.assign({}, a, { demo: false, ownerLink: false }), null, 2) + ";\n";
     }
   };
 

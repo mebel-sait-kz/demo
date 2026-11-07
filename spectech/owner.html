@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="app.css?v=3">
+  <link rel="stylesheet" href="app.css?v=4">
 </head>
 <body class="owner-page">
   <header class="top">
@@ -31,7 +31,7 @@
       <div>
         <p class="eyebrow">Рабочий кабинет</p>
         <h1 style="font-size:clamp(30px,5vw,46px)">Цены и доступность</h1>
-        <p>Меняйте цену за час, минимальную смену и статус техники. Клиент сразу видит это в каталоге и расчёте.</p>
+        <p>Меняйте цену за час, минимальную смену и статус техники. В этом браузере изменения сразу видны на странице клиента. Чтобы их увидели клиенты, скачайте config.js и замените файл на сайте.</p>
       </div>
     </section>
 
@@ -49,14 +49,14 @@
         <div class="o-card">
           <label class="label" for="wa">Номер WhatsApp для заявок</label>
           <input class="input" id="wa" inputmode="tel" placeholder="77001234567">
-          <p class="hint">Только цифры, с 7 в начале. Пусто — кнопка «Отправить» выключена.</p>
+          <p class="hint" id="waHint">Только цифры, 11 штук, с 7 в начале. Пусто — кнопка «Отправить» выключена.</p>
         </div>
       </div>
     </section>
 
     <p class="note" style="margin-top:24px">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
-      <span>Изменения сохраняются только в этом браузере. Чтобы их увидели клиенты, нажмите «Скачать config.js» и замените этот файл на сайте. В демо панель не защищена паролем — для настоящей компании ссылку на неё нужно убрать.</span>
+      <span>Изменения сохраняются только в этом браузере. Чтобы их увидели клиенты, нажмите «Скачать config.js» и замените этот файл на сайте. В скачанном файле пометка «демо» и ссылка на эту панель уже выключены (demo: false, ownerLink: false) — панель не защищена паролем, клиентам её показывать нельзя.</span>
     </p>
   </main>
 
@@ -68,8 +68,8 @@
     </div>
   </div>
 
-  <script src="config.js?v=1"></script>
-  <script src="store.js?v=1"></script>
-  <script src="owner.js?v=1"></script>
+  <script src="config.js?v=2"></script>
+  <script src="store.js?v=2"></script>
+  <script src="owner.js?v=2"></script>
 </body>
 </html>

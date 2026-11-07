@@ -53,10 +53,16 @@
     stats(); msg();
   }
 
+  function bad(el, text) {
+    el.setAttribute("aria-invalid", "true"); savedAt = null;
+    $("msg").innerHTML = '<span style="color:#C0392B;font-weight:700">Не сохранено:</span> ' + text;
+  }
   $("items").addEventListener("input", function (e) {
     var el = e.target, card = el.closest("[data-i]"); if (!card || !el.dataset.f) return;
-    var v = parseInt(el.value, 10);
-    if (isNaN(v) || v < (el.dataset.f === "min" ? 1 : 0)) return;
+    var v = Number(el.value), isMin = el.dataset.f === "min";
+    if (isMin ? !(Number.isInteger(v) && v >= 1 && v <= 24) : !(Number.isInteger(v) && v > 0))
+      return bad(el, isMin ? "мин. смена — целое число от 1 до 24" : "цена — целое число больше 0");
+    el.removeAttribute("aria-invalid");
     A.items[+card.dataset.i][el.dataset.f] = v; save();
   });
   $("items").addEventListener("click", function (e) {
@@ -68,11 +74,17 @@
   });
   $("zones").addEventListener("input", function (e) {
     var el = e.target; if (el.dataset.z === undefined) return;
-    var v = el.value.trim() === "" ? null : parseInt(el.value, 10);
-    if (v !== null && (isNaN(v) || v < 0)) return;
+    var v = el.value.trim() === "" ? null : Number(el.value);
+    if (v !== null && !(Number.isInteger(v) && v >= 0)) return bad(el, "доставка — целое число от 0 (или пусто)");
+    el.removeAttribute("aria-invalid");
     A.zones[+el.dataset.z].price = v; save();
   });
-  $("wa").addEventListener("input", function (e) { A.whatsapp = e.target.value.replace(/\D/g, ""); save(); });
+  $("wa").addEventListener("input", function (e) {
+    var d = e.target.value.replace(/\D/g, "");
+    if (d && !/^7\d{10}$/.test(d)) { $("waHint").style.color = "#C0392B"; return bad(e.target, "номер — 11 цифр, начинается с 7 (например 77001234567)"); }
+    $("waHint").style.color = ""; e.target.removeAttribute("aria-invalid");
+    A.whatsapp = d; save();
+  });
 
   $("reset").addEventListener("click", function () {
     if (!confirm("Вернуть цены и статусы из config.js? Ваши изменения в этом браузере пропадут.")) return;

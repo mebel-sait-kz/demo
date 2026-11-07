@@ -20,9 +20,9 @@
   var T = {
     ru: {
       cta: "Рассчитать", eyebrow: "Наша техника", h1: "Выберите технику под задачу",
-      heroLead: "Техника приезжает на объект с оператором. Выберите машину, укажите адрес и часы — увидите примерную цену и отправите заявку в WhatsApp.",
+      heroLead: "Выберите машину, укажите адрес и часы — увидите примерную цену и отправите заявку в WhatsApp.",
       flow1: "Техника", flow2: "Объект и часы", flow3: "WhatsApp",
-      photoPh: "здесь будет фото техники", perHour: "/час", minShift: "мин. смена", hShort: "ч",
+      photoPh: "здесь будет фото техники", perHour: "/час", approx: "≈ ", minShift: "мин. смена", hShort: "ч",
       pick: "Выбрать", picked: "Выбрано", pickedBtn: "Выбрана", busyBtn: "Сейчас занята",
       st: { free: "Свободна", busy: "Занята", ask: "Уточнить" },
       calcEyebrow: "Расчёт аренды", h2: "Укажите детали работы",
@@ -36,61 +36,65 @@
       photo: "У меня есть фото объекта — пришлю в чате",
       photoNote: "Фото помогают оценить подъезд и объём работ. Ссылка WhatsApp передаёт только текст — фото прикрепите в чате.",
       name: "Ваше имя", comment: "Комментарий", commentHint: "Что нужно сделать, подъезд, грунт",
-      phone: "Телефон не нужен: заявка придёт с вашего номера WhatsApp.",
+      phone: "Если отправите через WhatsApp, ваш номер придёт вместе с заявкой — отдельно писать телефон не нужно.",
       sEyebrow: "Расчёт заказа", sTitle: "Предварительная стоимость",
       sEquip: "Техника", sHours: "Время работы", sCalcH: "к расчёту", sRent: "Аренда", sZone: "Подача",
       sDate: "Дата", sAddr: "Адрес", empty: "не указано",
       range: function (a, b) { return "от " + a + " до " + b; },
-      rangeNote: "Точную стоимость владелец подтвердит после проверки адреса и условий на объекте.",
+      rangeNote: "Точную стоимость и то, свободна ли техника на вашу дату, владелец подтвердит после проверки адреса и условий на объекте.",
+      spreadNote: function (p) { return "Верхняя граница — запас " + p + "% на условия объекта."; },
       plusZone: "+ доставка — рассчитает владелец",
       send: "Отправить заявку в WhatsApp", copy: "Скопировать заявку", copied: "Заявка скопирована",
       noWa: "Номер компании ещё не подключён — это шаблон. Текст заявки можно скопировать.",
       needEquip: "Выберите технику.", needBusy: "Эта техника сейчас занята — выберите другую.",
-      needAddr: "Укажите адрес объекта.", needDate: "Укажите дату начала работ.",
-      needHours: "Укажите, сколько часов нужна техника.", needName: "Напишите, как к вам обращаться.",
+      needAddr: "Укажите адрес объекта.", needDate: "Укажите дату начала работ.", needPast: "Дата уже прошла — выберите сегодня или позже.",
+      needHours: "Укажите, сколько часов нужна техника: от 1 до 24.", needName: "Напишите, как к вам обращаться.",
       mbarEmpty: "Выберите технику", mbarGo: "К заявке",
       owner: "Панель владельца",
-      demo: "Демо-шаблон. Цены примерные. Данные заявки никуда не сохраняются.",
+      demo: "Демо-шаблон. Цены примерные. Сайт не сохраняет данные заявки — они уходят только в ваш WhatsApp.",
+      edits: "Вы видите цены из панели владельца, сохранённые только в этом браузере. Клиенты их не увидят, пока вы не замените config.js на сайте.",
       m: { hello: "Здравствуйте! Хочу заказать спецтехнику.", equip: "Техника", addr: "Адрес", date: "Дата", time: "Время подачи",
-           hours: "Время работы", h: "ч", calc: "к расчёту", zone: "Подача", price: "Предварительно", zoneAsk: "доставку рассчитаете вы",
+           hours: "Время работы", h: "ч", calc: "к расчёту", zone: "Подача", price: "Предварительно", zoneAsk: "доставку рассчитаете вы", plusZone: "+ доставка", bySite: "по сайту",
            photo: "Фото объекта", photoYes: "пришлю в чате", comment: "Комментарий", name: "Имя" }
     },
     kk: {
-      cta: "Есептеу", eyebrow: "Біздің техника", h1: "Міндетіңізге сай техника таңдаңыз",
-      heroLead: "Техника нысанға операторымен келеді. Машинаны таңдап, мекенжай мен сағатты көрсетіңіз — шамамен бағаны көріп, өтінімді WhatsApp-қа жібересіз.",
+      cta: "Есептеу", eyebrow: "Біздің техника", h1: "Жұмысыңызға сай техниканы таңдаңыз",
+      heroLead: "Машинаны таңдап, мекенжай мен сағатты көрсетіңіз — болжамды бағаны көріп, өтінімді WhatsApp-қа жібересіз.",
       flow1: "Техника", flow2: "Нысан мен сағат", flow3: "WhatsApp",
-      photoPh: "мұнда техника фотосы болады", perHour: "/сағ", minShift: "ең аз ауысым", hShort: "сағ",
+      photoPh: "мұнда техника фотосы болады", perHour: "/сағ", approx: "≈ ", minShift: "ең аз ауысым", hShort: "сағ",
       pick: "Таңдау", picked: "Таңдалды", pickedBtn: "Таңдалды", busyBtn: "Қазір бос емес",
-      st: { free: "Бос", busy: "Бос емес", ask: "Нақтылау" },
+      st: { free: "Бос", busy: "Бос емес", ask: "Нақтылау керек" },
       calcEyebrow: "Жалға алу есебі", h2: "Жұмыс мәліметтерін көрсетіңіз",
       h2lead: "Баға бірден қайта есептеледі. Бұл алдын ала сома — нақтысын иесі растайды.",
       equip: "Техника", choose: "— техниканы таңдаңыз —", optional: "(міндетті емес)",
       address: "Нысан мекенжайы", addressHint: "Көше, үй немесе бағдар",
       date: "Жұмыс басталатын күн", time: "Келу уақыты", hours: "Неше сағат", zone: "Жеткізу аймағы",
       zoneAsk: "иесі есептейді",
-      minNote: function (m) { return "Бұл техниканың ең аз ауысымы — " + m + " сағ. Ең аз ауысыммен есептейміз."; },
-      askNote: "Бұл техниканы иесі алдымен тексереді: сіздің күніңізге бос па.",
-      photo: "Менде нысанның фотосы бар — чатта жіберемін",
-      photoNote: "Фото кіреберіс пен жұмыс көлемін бағалауға көмектеседі. WhatsApp сілтемесі тек мәтін жібереді — фотоны чатқа тіркеңіз.",
-      name: "Атыңыз", comment: "Түсініктеме", commentHint: "Не істеу керек, кіреберіс, топырақ",
-      phone: "Телефон керек емес: өтінім сіздің WhatsApp нөміріңізден келеді.",
-      sEyebrow: "Тапсырыс есебі", sTitle: "Алдын ала құны",
-      sEquip: "Техника", sHours: "Жұмыс уақыты", sCalcH: "есепке", sRent: "Жалдау", sZone: "Жеткізу",
+      minNote: function (m) { return "Бұл техниканың ең аз ауысымы — " + m + " сағ. Есепті ең аз ауысым бойынша жасаймыз."; },
+      askNote: "Бұл техника сіз таңдаған күнге бос па — иесі алдымен тексереді.",
+      photo: "Менде нысанның фотосы бар — чатқа жіберемін",
+      photoNote: "Фото техника кіретін жол мен жұмыс көлемін бағалауға көмектеседі. WhatsApp сілтемесі тек мәтінді жібереді — фотоны чатқа тіркеңіз.",
+      name: "Атыңыз", comment: "Түсініктеме", commentHint: "Не істеу керек, кіру жолы, топырақ",
+      phone: "WhatsApp арқылы жіберсеңіз, нөміріңіз өтініммен бірге келеді — телефонды бөлек жазудың қажеті жоқ.",
+      sEyebrow: "Тапсырыс есебі", sTitle: "Алдын ала құн",
+      sEquip: "Техника", sHours: "Жұмыс уақыты", sCalcH: "есеп бойынша", sRent: "Жалдау", sZone: "Жеткізу",
       sDate: "Күні", sAddr: "Мекенжай", empty: "көрсетілмеген",
       range: function (a, b) { return a + " – " + b; },
-      rangeNote: "Нақты құнын иесі мекенжай мен нысандағы жағдайды тексергеннен кейін растайды.",
+      rangeNote: "Нақты құнын және техника сіз таңдаған күнге бос па екенін иесі мекенжай мен нысандағы жағдайды тексергеннен кейін растайды.",
+      spreadNote: function (p) { return "Жоғарғы шегі — нысандағы жағдайға " + p + "% қор."; },
       plusZone: "+ жеткізу — иесі есептейді",
       send: "Өтінімді WhatsApp-қа жіберу", copy: "Өтінімді көшіру", copied: "Өтінім көшірілді",
       noWa: "Компанияның нөмірі әлі қосылмаған — бұл үлгі. Өтінім мәтінін көшіруге болады.",
       needEquip: "Техниканы таңдаңыз.", needBusy: "Бұл техника қазір бос емес — басқасын таңдаңыз.",
-      needAddr: "Нысан мекенжайын көрсетіңіз.", needDate: "Жұмыс басталатын күнді көрсетіңіз.",
-      needHours: "Техника неше сағатқа керек екенін көрсетіңіз.", needName: "Сізге қалай хабарласу керегін жазыңыз.",
+      needAddr: "Нысан мекенжайын көрсетіңіз.", needDate: "Жұмыс басталатын күнді көрсетіңіз.", needPast: "Бұл күн өтіп кетті — бүгінді немесе кейінгі күнді таңдаңыз.",
+      needHours: "Техника неше сағатқа керек екенін көрсетіңіз: 1-ден 24-ке дейін.", needName: "Атыңызды жазыңыз.",
       mbarEmpty: "Техниканы таңдаңыз", mbarGo: "Өтінімге",
       owner: "Иесінің панелі",
-      demo: "Демо-үлгі. Бағалар шамамен алынған. Өтінім деректері ешқайда сақталмайды.",
-      m: { hello: "Сәлеметсіз бе! Арнайы техника тапсырыс бергім келеді.", equip: "Техника", addr: "Мекенжай", date: "Күні", time: "Келу уақыты",
-           hours: "Жұмыс уақыты", h: "сағ", calc: "есепке", zone: "Жеткізу", price: "Алдын ала", zoneAsk: "жеткізуді сіз есептейсіз",
-           photo: "Нысан фотосы", photoYes: "чатта жіберемін", comment: "Түсініктеме", name: "Аты" }
+      demo: "Демо-үлгі. Бағалар шамамен көрсетілген. Сайт өтінім деректерін сақтамайды — олар тек сіздің WhatsApp-қа кетеді.",
+      edits: "Сіз иесінің панеліндегі, тек осы браузерде сақталған бағаларды көріп отырсыз. Сайттағы config.js ауыстырылмайынша, клиенттер оларды көрмейді.",
+      m: { hello: "Сәлеметсіз бе! Арнайы техникаға тапсырыс бергім келеді.", equip: "Техника", addr: "Мекенжай", date: "Күні", time: "Келу уақыты",
+           hours: "Жұмыс уақыты", h: "сағ", calc: "есеп бойынша", zone: "Жеткізу", price: "Алдын ала баға", zoneAsk: "жеткізу құнын өзіңіз есептейсіз", plusZone: "+ жеткізу", bySite: "сайт бойынша",
+           photo: "Нысан фотосы", photoYes: "чатқа жіберемін", comment: "Түсініктеме", name: "Аты" }
     }
   };
 
@@ -108,16 +112,26 @@
   var zone = function () { return A.zones.filter(function (z) { return z.id === S.zone; })[0]; };
 
   /* ---------- расчёт ---------- */
+  /* часы: число, округлённое до 0,5; пусто или мусор — NaN */
+  function hoursVal() {
+    var v = String(S.hours).trim().replace(",", ".");
+    if (!/^\d+(\.\d+)?$/.test(v)) return NaN;
+    return Math.round(parseFloat(v) * 2) / 2;
+  }
+  var fh = function (n) { return String(n).replace(".", ","); };
   function calc() {
     var it = item(); if (!it) return null;
-    var h = parseFloat(String(S.hours).replace(",", ".")) || 0;
-    var billH = Math.max(h, it.min);
+    var h = hoursVal(), ok = h >= 1 && h <= 24;
+    var billH = ok ? Math.max(h, it.min) : it.min;
     var rent = billH * it.price, z = zone(), del = z && z.price !== null ? z.price : 0;
-    var base = rent + del, r = A.roundTo || 1000;
+    var base = rent + del;
+    var r = typeof A.roundTo === "number" && A.roundTo > 0 ? A.roundTo : 1000;
+    var sp = typeof A.spread === "number" && A.spread >= 0 ? A.spread : 0.1;
     return {
-      h: h, billH: billH, rent: rent, zone: z, del: del, under: h > 0 && h < it.min,
-      low: Math.round(base / r) * r,
-      high: Math.ceil(base * (1 + (A.spread || 0.1)) / r) * r
+      h: ok ? h : 0, billH: billH, rent: rent, zone: z, del: del, under: ok && h < it.min, sp: sp,
+      low: Math.floor(base / r) * r,
+      /* Math.round убирает хвост дробей (99000.00000000001), иначе ceil добавлял лишнюю 1000 */
+      high: Math.ceil(Math.round(base * (1 + sp)) / r) * r
     };
   }
 
@@ -132,7 +146,7 @@
           : svg(window.EQUIP_ICON[x.icon] || window.EQUIP_ICON.excavator) + "<small>" + t("photoPh") + "</small>") + "</div>" +
         '<div class="card__body"><div class="card__head"><h3 class="card__name">' + esc(L(x.label)) + "</h3>" + badge(x.status) + "</div>" +
         '<p class="card__purpose">' + esc(L(x.purpose)) + "</p>" +
-        '<p class="card__price"><b>' + M(x.price) + "</b><span>" + t("perHour") + " · " + t("minShift") + " " + x.min + " " + t("hShort") + "</span></p>" +
+        '<p class="card__price"><b>' + (A.demo ? t("approx") : "") + M(x.price) + "</b><span>" + t("perHour") + " · " + t("minShift") + " " + x.min + " " + t("hShort") + "</span></p>" +
         '<button type="button" class="pick" data-item="' + x.id + '"' + (busy ? " disabled" : "") + ' aria-pressed="' + on + '">' +
           (busy ? t("busyBtn") : on ? svg(I.check) + t("pickedBtn") : t("pick")) + "</button></div></article>";
     }).join("");
@@ -155,7 +169,7 @@
       '<div><label class="label" for="date">' + t("date") + "</label>" + ctl(I.cal, '<input class="input" type="date" id="date" data-key="date" min="' + today() + '" value="' + esc(S.date) + '">') + "</div>" +
       '<div><label class="label" for="time">' + t("time") + " <small>" + t("optional") + "</small></label>" + ctl(I.clock, '<input class="input" type="time" id="time" data-key="time" value="' + esc(S.time) + '">') + "</div></div>";
     h += '<div class="group row">' +
-      '<div><label class="label" for="hours">' + t("hours") + "</label>" + ctl(I.clock, '<input class="input" type="number" inputmode="numeric" min="1" max="24" id="hours" data-key="hours" value="' + esc(S.hours) + '">') + "</div>" +
+      '<div><label class="label" for="hours">' + t("hours") + "</label>" + ctl(I.clock, '<input class="input" type="text" inputmode="decimal" autocomplete="off" placeholder="1–24" id="hours" data-key="hours" value="' + esc(S.hours) + '">') + "</div>" +
       '<div><label class="label" for="zone">' + t("zone") + '</label><select class="input" id="zone" data-key="zone">' +
         A.zones.map(function (z) { return '<option value="' + z.id + '"' + (S.zone === z.id ? " selected" : "") + ">" + esc(L(z.label)) + " — " + (z.price === null ? t("zoneAsk") : M(z.price)) + "</option>"; }).join("") +
       "</select></div></div>";
@@ -177,6 +191,8 @@
   function fmtDate(v) {
     if (!v) return "";
     var p = v.split("-"), d = new Date(+p[0], +p[1] - 1, +p[2]);
+    /* казахские месяцы вручную: не все браузеры знают kk-KZ */
+    if (lang === "kk") return +p[0] + " жылғы " + +p[2] + " " + ["қаңтар", "ақпан", "наурыз", "сәуір", "мамыр", "маусым", "шілде", "тамыз", "қыркүйек", "қазан", "қараша", "желтоқсан"][+p[1] - 1];
     try { return d.toLocaleDateString(lang === "kk" ? "kk-KZ" : "ru-RU", { day: "numeric", month: "long", year: "numeric" }); } catch (e) { return v; }
   }
   function problem() {
@@ -185,22 +201,25 @@
     if (it.status === "busy") return ["needBusy", "equip"];
     if (!S.address.trim()) return ["needAddr", "address"];
     if (!S.date) return ["needDate", "date"];
+    if (S.date < today()) return ["needPast", "date"];
     if (!c.h) return ["needHours", "hours"];
     if (!S.name.trim()) return ["needName", "name"];
     return null;
   }
-  function priceText(c) {
-    return t("range")(M(c.low), M(c.high));
+  function priceText(c, forMsg) {
+    var s = t("range")(M(c.low), M(c.high));
+    if (forMsg && c.zone.price === null) s += " " + T[lang].m.plusZone;
+    return s;
   }
   function message() {
     var m = T[lang].m, it = item(), c = calc(), z = c.zone, lines = [m.hello, ""];
-    lines.push(m.equip + ": " + L(it.label) + " (" + M(it.price) + t("perHour") + ")");
+    lines.push(m.equip + ": " + L(it.label) + " (" + m.bySite + " " + M(it.price) + t("perHour") + ")");
     lines.push(m.addr + ": " + S.address.trim());
     lines.push(m.date + ": " + fmtDate(S.date));
     if (S.time) lines.push(m.time + ": " + S.time);
-    lines.push(m.hours + ": " + c.h + " " + m.h + (c.under ? " (" + m.calc + " " + c.billH + " " + m.h + ")" : ""));
+    lines.push(m.hours + ": " + fh(c.h) + " " + m.h + (c.under ? " (" + m.calc + " " + c.billH + " " + m.h + ")" : ""));
     lines.push(m.zone + ": " + L(z.label) + (z.price === null ? " — " + m.zoneAsk : ""));
-    lines.push(m.price + ": " + priceText(c));
+    lines.push(m.price + ": " + priceText(c, true));
     if (S.photo) lines.push(m.photo + ": " + m.photoYes);
     if (S.comment.trim()) lines.push(m.comment + ": " + S.comment.trim());
     lines.push(m.name + ": " + S.name.trim());
@@ -214,14 +233,14 @@
     var h = '<div class="summary__head"><span class="summary__icon">' + svg(I.calc) + "</span><span><small>" + t("sEyebrow") + "</small><strong>" + t("sTitle") + "</strong></span></div>" +
       '<dl class="lines">' +
       line("sEquip", it ? L(it.label) : "") +
-      line("sHours", c && c.h ? c.h + " " + t("hShort") : "", c && c.under ? t("sCalcH") + ": " + c.billH + " " + t("hShort") : "") +
-      line("sRent", c && c.h ? M(c.rent) : "", c && c.h ? c.billH + " × " + M(it.price) : "") +
+      line("sHours", c && c.h ? fh(c.h) + " " + t("hShort") : "", c && c.under ? t("sCalcH") + ": " + c.billH + " " + t("hShort") : "") +
+      line("sRent", c && c.h ? M(c.rent) : "", c && c.h ? fh(c.billH) + " × " + M(it.price) : "") +
       line("sZone", c ? (c.zone.price === null ? t("zoneAsk") : M(c.zone.price)) : "", c ? L(c.zone.label) : "") +
       line("sDate", fmtDate(S.date) + (S.time ? ", " + S.time : "")) +
       "</dl>";
     if (c && c.h) {
       h += '<div class="total"><b>' + priceText(c) + "</b>" + (c.zone.price === null ? "<small>" + t("plusZone") + "</small>" : "") +
-        '<p>' + t("rangeNote") + "</p></div>";
+        "<p>" + t("rangeNote") + (c.sp > 0 ? " " + t("spreadNote")(Math.round(c.sp * 100)) : "") + "</p></div>";
     } else {
       h += '<div class="total total--empty"><b>—</b><p>' + t("rangeNote") + "</p></div>";
     }
@@ -234,7 +253,7 @@
     $("summary").innerHTML = h;
 
     var mb = $("mbar");
-    mb.innerHTML = "<span>" + esc(it ? L(it.label) + (c && c.h ? " · " + M(c.low) + "+" : "") : t("mbarEmpty")) + "</span><b>" + t("mbarGo") + "</b>";
+    mb.innerHTML = "<span>" + esc(it ? L(it.label) + (c && c.h ? " · " + priceText(c, true) : "") : t("mbarEmpty")) + "</span><b>" + t("mbarGo") + "</b>";
     mb.setAttribute("href", it ? "#summary" : "#catalog");
   }
 
@@ -246,6 +265,7 @@
     document.querySelectorAll(".lang button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.lang === lang); });
     $("ownerLink").hidden = !A.ownerLink;
     $("demo").hidden = !A.demo;
+    var eb = $("edits"); eb.textContent = t("edits"); eb.hidden = !window.STORE.hasEdits();
   }
   function all() { texts(); cards(); form(); summary(); }
   function setItem(id, scroll) {
