@@ -567,3 +567,4 @@ textarea.rq__input { min-height: 96px; resize: vertical; }
 .acc__body p { margin: 0 0 12px; color: var(--muted); }
 .acc__go { font-weight: 700; color: var(--accent-text); }
 .acc-wrap .chapter .page__lead { margin-top: 14px; }
+@media (min-width: 1000px) { .rq__cards:has(> :nth-child(4):last-child) { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
