@@ -310,6 +310,12 @@ h1 em, h2 em { font-style: var(--em-style); font-weight: inherit; }
    Мелкие модификаторы (мастерские): плитки в 3 штуки, текстовые steps/reasons, подпись «здесь будет фото»
    ========================================================================= */
 @media (min-width: 768px) { .tiles--three li:nth-child(3) { grid-column: span 6; } }
+/* tiles--gallery: ровная галерея работ (2 в ряд на телефоне, 3 на компьютере) */
+.tiles--gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.tiles--gallery li { grid-column: auto !important; min-width: 0; }
+.tiles--gallery .tile { aspect-ratio: 4 / 5; min-height: 0; height: auto; padding: 14px; }
+.tiles--gallery .tile__name { font-size: clamp(15px, 1.8vw, 20px); overflow-wrap: break-word; }
+@media (min-width: 768px) { .tiles--gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; } .tiles--gallery .tile { padding: 20px; } }
 .tile__ph { position: absolute; top: 16px; left: 16px; z-index: 1; padding: 5px 10px; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--dark-deep); background: var(--light); border-radius: calc(var(--radius) * .5); }
 .steps__list--plain p { font-size: 18px; color: var(--dark); }
 .steps__note { margin: 0 0 28px; color: var(--muted); }
@@ -455,6 +461,16 @@ textarea.rq__input { min-height: 96px; resize: vertical; }
   .bento__card:first-child .bento__go { left: auto; right: 22px; top: 22px; bottom: auto; }
   .bento__card:last-child:nth-child(even) { grid-column: span 2; }
 }
+/* bento: плитка с фото работы — фото на весь фон, текст внизу на затемнении */
+.bento__card--photo { overflow: hidden; justify-content: flex-end; min-height: 280px; color: var(--white); background: var(--dark); border-color: transparent; }
+.bento__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.bento__card--photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,17,30,0) 35%, rgba(8,17,30,.82)); }
+.bento__card--photo > span { position: relative; z-index: 1; }
+.bento__card--photo .bento__go { position: absolute; }
+.bento__card--photo .bento__name, .bento__card--photo:first-child .bento__name { color: var(--white); }
+.bento__card--photo .bento__sub { color: rgba(255,255,255,.85); }
+.bento__card--photo .bento__num { color: var(--accent); }
+.bento__card--photo:hover .bento__img { transform: scale(1.04); }
 @media (max-width: 767px) { .hero-center__deco i:nth-child(3) { display: none; } }
 
 /* =========================================================================

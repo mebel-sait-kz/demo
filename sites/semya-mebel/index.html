@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Aibolat & Sons — мебель на заказ, Алматы — демо</title>
+  <meta name="description" content="Демо сайта семейной мебельной мастерской Aibolat &amp; Sons, Алматы.">
+  <!-- Собрано tools/build.py из content/semya-mebel.json. Стиль «industrial» + библиотека блоков -->
+  <link rel="stylesheet" href="../../styles/industrial/tokens.css?v=7">
+  <link rel="stylesheet" href="../../blocks/blocks.css?v=7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Onest:wght@400;600;700&display=swap">
+  <style>:root { --dark: #0F1B2D; --dark-deep: #08111E; --accent: #4FD1C5; --accent-hover: #74DDD3; --accent-text: #0B6A62; --on-accent: #08111E; --light: #F7FAFC; --text: #132033; --muted: #4F5D6E; --line: #DCE5EE; --font-head: "Play", Arial, sans-serif; --font-body: "Onest", system-ui, Arial, sans-serif; --radius: 14px; --light-bg: radial-gradient(38% 32% at 6% 8%, rgba(79,209,197,.22), transparent 70%), radial-gradient(34% 30% at 94% 14%, rgba(88,130,230,.20), transparent 70%), radial-gradient(40% 34% at 88% 96%, rgba(79,209,197,.15), transparent 70%), radial-gradient(30% 28% at 10% 92%, rgba(88,130,230,.12), transparent 70%), linear-gradient(rgba(15,27,45,.035) 1px, transparent 1px) 0 0 / 28px 28px, linear-gradient(90deg, rgba(15,27,45,.035) 1px, transparent 1px) 0 0 / 28px 28px, #FFFFFF; --tex-1: radial-gradient(60% 70% at 85% 10%, rgba(88,130,230,.35), transparent 65%), radial-gradient(50% 60% at 10% 100%, rgba(79,209,197,.22), transparent 65%), linear-gradient(160deg, #13233A, #0B1626 70%); --tex-2: radial-gradient(circle at 2px 2px, rgba(15,27,45,.10) 1.2px, transparent 1.6px) 0 0 / 18px 18px, linear-gradient(160deg, #EEF3F7, #D2DCE6); --tex-3: linear-gradient(100deg, #0B6A62, #4FD1C5 35%, #74DDD3 60%, #0B6A62); --tex-4: radial-gradient(circle at 3px 3px, #0F1B2D33 1.4px, transparent 1.8px) 0 0 / 10px 10px, #EEF3F7; --hero-pattern: radial-gradient(circle at 2px 2px, rgba(255,255,255,.05) 1.2px, transparent 1.6px) 0 0 / 18px 18px; }</style>
+</head>
+<body id="top">
+
+  <!-- БЛОК: header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Aibolat &amp; Sons">
+        <span class="logo__mark" aria-hidden="true">✦</span>
+        <span class="logo__text" data-i18n="t1">Aibolat <span>&amp; Sons</span></span>
+      </a>
+      <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      <nav class="nav" id="nav">
+        <a href="#catalog" data-i18n="t3">Что делаем</a>
+        <a href="#works" data-i18n="t4">Наши работы</a>
+        <a href="#why" data-i18n="t5">Почему мы</a>
+        <a href="#request-form" data-i18n="t6">Заявка на мебель</a>
+        <a href="#contacts" data-i18n="t7">Контакты</a>
+        <span class="lang" role="group" aria-label="Язык">
+          <button type="button" class="lang__item is-active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang__item" data-lang="kk" aria-pressed="false">KZ</button>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <!-- БЛОК: hero-center — первый экран по центру: крупный заголовок, кнопки и плашки-факты -->
+  <section class="hero-center">
+    <div class="hero-center__deco" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="container hero-center__inner">
+      <p class="hero-center__meta" data-i18n="t9">Алматы · семейная мастерская</p>
+      <h1 class="hero-center__title" data-i18n="t8">Мебель на заказ — <em>по вашим размерам</em></h1>
+      <p class="hero-center__lead" data-i18n="t10">Aibolat & Sons — семейная мебельная мастерская: отец и сыновья. Кухни, шкафы, гардеробные, прихожие, кровати и столы. Оставьте заявку — мастер свяжется и уточнит детали.</p>
+      <div class="buttons">
+        <a class="btn btn--accent" href="#request-form" data-i18n="t6">Заявка на мебель</a>
+        <a class="btn btn--line" href="https://wa.me/77474094597" target="_blank" rel="noopener" data-i18n="t11">Написать в WhatsApp</a>
+      </div>
+      <ul class="hero-center__facts">
+        <li><b data-i18n="t12">10+ лет</b><span data-i18n="t13">опыт мастера</span></li>
+        <li><b data-i18n="t14">Каждый день</b><span data-i18n="t15">время — по договорённости</span></li>
+        <li><b data-i18n="t16">Kaspi · Halyk</b><span data-i18n="t17">оплата</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-bento — каталог «плиткой разного размера»; на телефоне — лента с прокруткой вбок -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t3">Что делаем</h2>
+      </header>
+      <p class="page__lead" data-i18n="t18">Делаем по вашим размерам. Нажмите на вид мебели — откроется заявка.</p>
+      <div class="bento">
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/kitchen-1.jpg" alt="Кухня: серые фасады и верхний ряд под дерево" loading="lazy" data-i18n-alt="t21"><span class="bento__num">01</span><span class="bento__name" data-i18n="t19">Кухни</span><span class="bento__sub" data-i18n="t20">Прямые и угловые — по размерам</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/wardrobe-2.jpg" alt="Серый шкаф во всю стену с чёрными ручками" loading="lazy" data-i18n-alt="t24"><span class="bento__num">02</span><span class="bento__name" data-i18n="t22">Шкафы и гардеробные</span><span class="bento__sub" data-i18n="t23">До потолка, во всю стену</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/bed-1.jpg" alt="Кровать с мягким серым изголовьем" loading="lazy" data-i18n-alt="t27"><span class="bento__num">03</span><span class="bento__name" data-i18n="t25">Кровати</span><span class="bento__sub" data-i18n="t26">С тканью и из ЛДСП</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/hall-1.jpg" alt="Белая прихожая с крючками и мягкой скамьёй" loading="lazy" data-i18n-alt="t30"><span class="bento__num">04</span><span class="bento__name" data-i18n="t28">Прихожие</span><span class="bento__sub" data-i18n="t29">Шкаф, крючки, скамья</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/table-1.jpg" alt="Длинные белые столы" loading="lazy" data-i18n-alt="t33"><span class="bento__num">05</span><span class="bento__name" data-i18n="t31">Столы</span><span class="bento__sub" data-i18n="t32">Обеденные и длинные для зала</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card bento__card--photo" href="#request-form"><img class="bento__img" src="images/kids-1.jpg" alt="Двухъярусные детские кровати" loading="lazy" data-i18n-alt="t36"><span class="bento__num">06</span><span class="bento__name" data-i18n="t34">Детская мебель</span><span class="bento__sub" data-i18n="t35">Двухъярусные кровати и полки</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">07</span><span class="bento__name" data-i18n="t37">Тумбы под ТВ</span><span class="bento__sub" data-i18n="t38">Под ваш телевизор и стену</span><span class="bento__go" aria-hidden="true">→</span></a>
+        <a class="bento__card" href="#request-form"><span class="bento__num">08</span><span class="bento__name" data-i18n="t39">Другое</span><span class="bento__sub" data-i18n="t40">Опишите своими словами</span><span class="bento__go" aria-hidden="true">→</span></a>
+      </div>
+      <p class="price-note" data-i18n="t41">Цена — по размерам и материалу, мастер назовёт после заявки</p>
+    </div>
+  </section>
+
+  <!-- БЛОК: catalog-tiles -->
+  <section class="section" id="works">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t4">Наши работы</h2>
+      </header>
+      <p class="page__lead" data-i18n="t42">Фото мебели, которую мы сделали для клиентов.</p>
+      <ul class="tiles tiles--gallery">
+        <li><div class="tile tex-1"><img src="images/kitchen-2.jpg" alt="Белая кухня с нижним рядом под дерево" data-i18n-alt="t44"><span class="tile__text"><span class="tile__name" data-i18n="t43">Кухня</span></span></div></li>
+        <li><div class="tile tex-3"><img src="images/wardrobe-1.jpg" alt="Белый шкаф до потолка с зеркалами" data-i18n-alt="t46"><span class="tile__text"><span class="tile__name" data-i18n="t45">Шкаф с зеркалами</span></span></div></li>
+        <li><div class="tile tex-4"><img src="images/hall-2.jpg" alt="Прихожая с подсветкой и тумбой" data-i18n-alt="t48"><span class="tile__text"><span class="tile__name" data-i18n="t47">Прихожая с подсветкой</span></span></div></li>
+        <li><div class="tile tex-2"><img src="images/bed-2.jpg" alt="Кровать с коричневой тканью" data-i18n-alt="t50"><span class="tile__text"><span class="tile__name" data-i18n="t49">Кровать с тканью</span></span></div></li>
+        <li><div class="tile tex-1"><img src="images/bed-3.jpg" alt="Кровать с высоким мягким изголовьем" data-i18n-alt="t52"><span class="tile__text"><span class="tile__name" data-i18n="t51">Кровать с высоким изголовьем</span></span></div></li>
+        <li><div class="tile tex-3"><img src="images/bed-4.jpg" alt="Кровать из ЛДСП с узором на изголовье" data-i18n-alt="t54"><span class="tile__text"><span class="tile__name" data-i18n="t53">Кровать из ЛДСП</span></span></div></li>
+        <li><div class="tile tex-4"><img src="images/wardrobe-3.jpg" alt="Шкаф и открытые полки в прихожей" data-i18n-alt="t56"><span class="tile__text"><span class="tile__name" data-i18n="t55">Шкаф и полки</span></span></div></li>
+        <li><div class="tile tex-2"><img src="images/bed-5.jpg" alt="Детская кровать с розовой тканью" data-i18n-alt="t58"><span class="tile__text"><span class="tile__name" data-i18n="t57">Детская кровать</span></span></div></li>
+        <li><div class="tile tex-1"><img src="images/kids-2.jpg" alt="Двухъярусные кровати для детского сада" data-i18n-alt="t60"><span class="tile__text"><span class="tile__name" data-i18n="t59">Двухъярусные кровати</span></span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- БЛОК: reasons -->
+  <section class="section section--dark" id="why">
+    <div class="container">
+      <header class="chapter chapter--light">
+        <h2 class="chapter__title" data-i18n="t61">Почему нам доверяют</h2>
+      </header>
+      <ol class="reasons">
+        <li><span class="reasons__n">01</span><p data-i18n="t62">Семейная мастерская: отец и сыновья делают мебель сами</p></li>
+        <li><span class="reasons__n">02</span><p data-i18n="t63">Опыт мастера — больше 10 лет</p></li>
+        <li><span class="reasons__n">03</span><p data-i18n="t64">Заказы приходят в основном по рекомендациям знакомых</p></li>
+        <li><span class="reasons__n">04</span><p data-i18n="t65">Свой грузовой автомобиль — привезём мебель сами</p></li>
+        <li><span class="reasons__n">05</span><p data-i18n="t66">Оплата через Kaspi и Halyk</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- БЛОК: request-form -->
+  <section class="section section--light" id="request-form">
+    <div class="container">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t6">Заявка на мебель</h2>
+      </header>
+      <div class="rq" data-request-form></div>
+    </div>
+  </section>
+
+  <!-- БЛОК: contacts -->
+  <section class="section" id="contacts">
+    <div class="container split">
+      <header class="chapter">
+        <h2 class="chapter__title" data-i18n="t7">Контакты</h2>
+      </header>
+      <div class="contacts">
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t68">Адрес</p><p class="contacts__big" data-i18n="t67">г. Алматы, ул. Мухамеджана Туймебаева / ул. Жандосова, 55</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t70">Телефоны</p><p class="contacts__big" data-i18n="t69">+7 747 409 45 97 · +7 747 708 56 51</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t71">Часы</p><p data-i18n="t72">каждый день, время — по договорённости</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t73">Оплата</p><p data-i18n="t74">Kaspi, Halyk</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t75">Доставка</p><p data-i18n="t76">свой грузовой автомобиль</p></div>
+        <div class="contacts__block"><p class="contacts__label" data-i18n="t77">Сборка</p><p data-i18n="t78">обсуждаем отдельно — зависит от мебели и помещения (например, высокий шкаф в старом доме)</p></div>
+        <div class="contacts__actions">
+        <a class="btn btn--outline" href="https://wa.me/77474094597" target="_blank" rel="noopener" data-i18n="t11">Написать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- БЛОК: footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo" href="#top"><span class="logo__mark" aria-hidden="true">✦</span><span class="logo__text" data-i18n="t1">Aibolat <span>&amp; Sons</span></span></a>
+      <p class="footer__note" data-i18n="t79">Демо-версия сайта Aibolat & Sons. Не для публикации до согласия владельца.</p>
+    </div>
+  </footer>
+
+  <!-- БЛОК: fab — плавающие кнопки на телефоне -->
+  <div class="fab">
+    <a class="btn btn--accent" href="#request-form" data-i18n="t6">Заявка на мебель</a>
+    <a class="btn fab__wa" href="https://wa.me/77474094597" target="_blank" rel="noopener" data-i18n="t80">WhatsApp</a>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="site.js"></script>
+</body>
+</html>
