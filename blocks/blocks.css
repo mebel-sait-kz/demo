@@ -461,6 +461,11 @@ textarea.rq__input { min-height: 96px; resize: vertical; }
   .bento__card:first-child .bento__go { left: auto; right: 22px; top: 22px; bottom: auto; }
   .bento__card:last-child:nth-child(even) { grid-column: span 2; }
 }
+/* форма заявки: выпадающий список цветов ЛДСП */
+.rq__select { width: 100%; max-width: 100%; appearance: none; -webkit-appearance: none; padding-right: 40px; cursor: pointer;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 14px) 50%; background-size: 6px 6px; background-repeat: no-repeat; text-overflow: ellipsis; }
+
 /* =========================================================================
    БЛОК: materials — материалы и цвета (карточки, палитра RAL, ссылки на каталоги поставщиков)
    ========================================================================= */
