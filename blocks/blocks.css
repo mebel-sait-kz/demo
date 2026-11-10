@@ -461,6 +461,29 @@ textarea.rq__input { min-height: 96px; resize: vertical; }
   .bento__card:first-child .bento__go { left: auto; right: 22px; top: 22px; bottom: auto; }
   .bento__card:last-child:nth-child(even) { grid-column: span 2; }
 }
+/* =========================================================================
+   БЛОК: materials — материалы и цвета (карточки, палитра RAL, ссылки на каталоги поставщиков)
+   ========================================================================= */
+.mats { display: grid; gap: 14px; }
+@media (min-width: 900px) { .mats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } }
+.mats__card { display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 22px 20px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 10px 28px rgba(15,27,45,.06); }
+.mats__name { margin: 0; font-family: var(--font-head); font-weight: var(--head-weight); text-transform: var(--head-case); font-size: 20px; line-height: 1.2; color: var(--dark); }
+.mats__text { margin: 0; font-size: 15px; color: var(--muted); }
+.mats__sw { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.mats__sw li { display: flex; flex-direction: column; gap: 2px; min-width: 0; font-size: 12px; line-height: 1.25; }
+.mats__chip { display: block; height: 42px; margin-bottom: 4px; border-radius: calc(var(--radius) * .6); border: 1px solid rgba(15,27,45,.15); }
+.mats__sw b { font-size: 12px; color: var(--dark); }
+.mats__sw small { font-size: 11px; color: var(--muted); overflow-wrap: break-word; }
+.mats__hint { margin: 0; font-size: 12px; color: var(--muted); }
+.mats__link { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 46px; padding: 10px 14px; font-weight: 700; font-size: 15px; text-decoration: none; color: var(--accent-text); background: var(--light); border: 1px solid var(--line); border-radius: calc(var(--radius) * .7); }
+.mats__link::after { content: "↗"; }
+.mats__link:hover { border-color: var(--accent); }
+
+/* hero-center: нечётная последняя карточка фактов — на всю ширину (телефон); 3 факта — 3 колонки (компьютер) */
+@media (max-width: 767px) { .hero-center__facts li:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+@media (min-width: 768px) { .hero-center__facts:has(> li:nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 640px; } }
+.hero-center__facts { margin-left: auto; margin-right: auto; }
+
 /* bento: плитка с фото работы — фото на весь фон, текст внизу на затемнении */
 .bento__card--photo { overflow: hidden; justify-content: flex-end; min-height: 280px; color: var(--white); background: var(--dark); border-color: transparent; }
 .bento__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
