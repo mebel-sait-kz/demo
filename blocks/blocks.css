@@ -488,6 +488,8 @@ textarea.rq__input { min-height: 96px; resize: vertical; }
 @media (max-width: 767px) { .hero-center__facts li:last-child:nth-child(odd) { grid-column: 1 / -1; } }
 @media (min-width: 768px) { .hero-center__facts:has(> li:nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 640px; } }
 .hero-center__facts { margin-left: auto; margin-right: auto; }
+/* содержимое карточки фактов — ровно по центру (по горизонтали и вертикали), даже если соседняя карточка выше */
+.hero-center__facts li { justify-content: center; align-items: center; text-align: center; }
 
 /* bento: плитка с фото работы — фото на весь фон, текст внизу на затемнении */
 .bento__card--photo { overflow: hidden; justify-content: flex-end; min-height: 280px; color: var(--white); background: var(--dark); border-color: transparent; }
